@@ -1,0 +1,5 @@
+model_size,order,protein_mean_auroc,n_proteins,n_discriminating
+35M,1,0.667,69,59
+150M,2,0.71,69,63
+650M,3,0.725,69,62
+3B,4,0.725,69,63

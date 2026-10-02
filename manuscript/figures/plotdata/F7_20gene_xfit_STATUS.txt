@@ -1,0 +1,7 @@
+A3-XFIT-CAL-20260918
+NEW 5-fold cross-fitted calibration. NOT a restoration of the historical 0.2443/0.0207 pair.
+Historical STOP file F7_20gene_perbin_STATUS.txt is unchanged and remains the record that the old Platt bins are unrestorable.
+seed=20260918 folds=5 n_boot=2000 n_bins=10 equal-width
+full20 n=4677 OOF ECE uncalibrated=0.2485 [0.2371,0.2593] platt=0.0192 [0.0139,0.0315] isotonic=0.0067 [0.0067,0.0211]
+Never print 0.0207 / 91% as if recovered.
+status_file: manuscript/figures/plotdata/F7_20gene_xfit_STATUS.txt

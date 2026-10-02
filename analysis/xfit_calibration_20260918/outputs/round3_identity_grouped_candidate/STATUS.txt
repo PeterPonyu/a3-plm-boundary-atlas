@@ -1,0 +1,6 @@
+A3-XFIT-NESTED-IDENTITY-GROUPED-CANDIDATE
+Per-gene 10-bin reliability under the locked xfit maps, plus nested B=200 bootstrap that re-fits calibrators.
+NOT a restoration of 0.2443/0.0207. STOP file unchanged.
+replayed_uncal_ece=0.24848355100110145
+stop_sha256=ac011054a4175fb490a6b76a2190b5686181d877a55175b9c3eaa8d6502a3b20
+Ready: not claimed. Official PDF not rebuilt.

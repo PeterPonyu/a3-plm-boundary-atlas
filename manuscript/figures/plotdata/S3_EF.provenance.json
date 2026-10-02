@@ -1,0 +1,40 @@
+{
+  "blocked_downstream_actions": [
+    {
+      "action": "retire",
+      "panel": "F",
+      "reason": "No binding-row coordinates are committed in the robustness summary.",
+      "target": "S3 influence analysis until binding rows exist"
+    }
+  ],
+  "blocked_reasons": [
+    "No binding-row coordinates are committed in the robustness summary."
+  ],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S3",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "3c1e059ec873431b5cad5b9b552cd4bab67c8740521861d6750476d7f9484a8c",
+  "schema_version": 1,
+  "scientific_payload_sha256": "3c1e059ec873431b5cad5b9b552cd4bab67c8740521861d6750476d7f9484a8c",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "order",
+        "subset",
+        "method",
+        "n",
+        "rho",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "path": "manuscript/figures/plotdata/FS3_antibody_robustness.csv",
+      "rows": 15,
+      "sha256": "96205842095ca818a7bc8744c19acfe6a17ae448f4ab135c5b99d1ba740971fa"
+    }
+  ]
+}

@@ -1,0 +1,1006 @@
+{
+  "schema": "a3-graphical-abstract-native-vector-v1",
+  "status": "CURRENT_AUTHOR_REVIEW_GA_NOT_SCIENTIFIC_CLEARANCE",
+  "scientific_ready_attested": false,
+  "source_date_policy": "deterministic metadata; no wall-clock timestamp",
+  "dimensions": {
+    "width_in": 6.5,
+    "height_in": 4.3,
+    "page_size_pt": [
+      468.0,
+      309.6
+    ],
+    "png_dpi": 300
+  },
+  "command": "A3_FIGURE_OUTPUT=<existing-directory> Rscript scripts/R/make_a3_graphical_abstract.R",
+  "sources_sha256": {
+    "analysis/revision_20260923/row-scores/provenance.json": "f23da8217a42424851dd19cb457b0283db4340647b32ec818571aa7e887bb687",
+    "analysis/revision_20260923/row-scores/scores.csv": "0fac1a086b5b4797b336484f8f0a6ee6eb00334b83607c353b4ea4cd5788eccd",
+    "analysis/revision_20260923/clinical-unified/summary.json": "4d3029e9cf0a98f3dcd1672d7a4d0ce26d354c3e97d915542ebcb3403acd38ae",
+    "analysis/revision_20260923/clinical-unified/oof_predictions.csv": "e658cff982102527a8d84c799390ccfdc4774d32c7ca668bbc2985997027a800",
+    "manuscript/figures/plotdata/clinical_macro_20260923.csv": "88b40c659a5be6beb6f7531e19ac37db2af9f2aa11f74ac1bc1fd147b7f63854",
+    "manuscript/figures/plotdata/clinical_metrics_20260923.csv": "40e9a0aaefd18fe87c68285f880fcb40f46c864c5ba38b5ace8c1dbe88671fbd",
+    "manuscript/figures/plotdata/F1_scale_paired_650M_3B.json": "1eef587cd6a1ecbe370c8426ed5d15fc1cd4f25de8b9d40cf88cf0456f248df3",
+    "manuscript/figures/plotdata/F1_scale_paired_650M_3B.csv": "6496354cf21a4fc87954ace959d754bcc0f470f3dd6c7dbcde3177ab1a2c3d8c",
+    "manuscript/figures/plotdata/FS3_antibody_robustness.csv": "96205842095ca818a7bc8744c19acfe6a17ae448f4ab135c5b99d1ba740971fa",
+    "manuscript/figures/plotdata/F8_antibody_n4.csv": "9c1ce563848e74638d42200dfaa7273ec773ae20fc7da465b9552f6613edf148",
+    "manuscript/figures/plotdata/F5_developability.csv": "17c2f64b133c446ca316169d727f2e114308013fc515f5a32743c57b1b8ab878",
+    "manuscript/text/methods.tex": "f55a0c2ebad006cf2c94b33dab20c38b3fc84def319418cee9b4d8979041fc61",
+    "manuscript/scripts/R/make_a3_graphical_abstract.R": "b05d560cad5a309b36f28d014609bfb9df9d98a66bd131d203d7291117b2a74c",
+    "manuscript/scripts/make_a3_graphical_abstract_vector.py": "d136aa51a3ad5bffb6bf2b218d6af55175393d57e83434ee633c9f493b40e6b1"
+  },
+  "output_sha256": {
+    "A3_graphical_abstract.pdf": "b8f717a84e1a22aa8686f1b827ae4c4d11f1f0c7a703c4d684faf14567912c56",
+    "A3_graphical_abstract.png": "e89417c93275fbe3360a65a459247f188373835099fe3d459e6e00e5a5ae29be",
+    "A3_graphical_abstract.svg": "7200bdce22ab6f83ef512b3cc21f2d7afd76e699b2d6f8a345f139537ebbcaf4",
+    "A3_graphical_abstract.display.svg": "b4ee053f0be126497cab02b802874c7393e7a5dba0d6993c4121e5b33264702f"
+  },
+  "fonts": {
+    "regular": {
+      "family": "Arial",
+      "face": "regular",
+      "local_path": "/home/zeyufu/.local/share/fonts/scmetaintel-article/Arial.ttf",
+      "sha256": "c3044bcf00753e423e2afb40260b867a02038ddfc24db05b6c273d00ee680169",
+      "redistributed": false
+    },
+    "bold": {
+      "family": "Arial",
+      "face": "bold",
+      "local_path": "/home/zeyufu/.local/share/fonts/scmetaintel-article/Arial Bold.ttf",
+      "sha256": "c2a7bcbcfadf8b06698f334da0e4b888217fe61a2ad8c7b009899aa18d6abe96",
+      "redistributed": false
+    }
+  },
+  "typography": [
+    {
+      "text": "Task-specific reliability of zero-shot protein scores",
+      "size_pt": 10.5,
+      "role": "title",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        11.999999999999998,
+        9.0,
+        243.35999999999996,
+        18.839999999999975
+      ]
+    },
+    {
+      "text": "Sequence likelihood must be interpreted through endpoint-specific evidence.",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        11.999999999999998,
+        24.0,
+        266.30999999999995,
+        30.95999999999998
+      ]
+    },
+    {
+      "text": "A",
+      "size_pt": 10.8,
+      "role": "panel_label",
+      "font_face": "bold",
+      "region": null,
+      "bbox_pt": [
+        11.999999999999998,
+        42.0,
+        19.799999999999997,
+        51.839999999999975
+      ]
+    },
+    {
+      "text": "Sequence likelihood score",
+      "size_pt": 8.8,
+      "role": "title",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        28.999999999999996,
+        42.599999999999966,
+        131.6,
+        50.75999999999999
+      ]
+    },
+    {
+      "text": "B",
+      "size_pt": 10.8,
+      "role": "panel_label",
+      "font_face": "bold",
+      "region": null,
+      "bbox_pt": [
+        235.99999999999997,
+        42.0,
+        243.79999999999998,
+        51.839999999999975
+      ]
+    },
+    {
+      "text": "Evidence audit",
+      "size_pt": 8.8,
+      "role": "title",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        252.99999999999997,
+        42.599999999999966,
+        310.65999999999997,
+        50.75999999999999
+      ]
+    },
+    {
+      "text": "WT",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        23.0,
+        74.0,
+        34.669999999999995,
+        80.95999999999998
+      ]
+    },
+    {
+      "text": "mut",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        23.0,
+        97.0,
+        35.51,
+        103.96000000000001
+      ]
+    },
+    {
+      "text": "L = log p(mut | context)",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        95.0,
+        73.0,
+        174.55999999999997,
+        79.96000000000001
+      ]
+    },
+    {
+      "text": "    - log p(wt | context)",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        95.0,
+        86.99999999999997,
+        169.82,
+        93.95999999999998
+      ]
+    },
+    {
+      "text": "Context-specific scoring",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        95.0,
+        103.99999999999997,
+        174.73999999999998,
+        110.95999999999998
+      ]
+    },
+    {
+      "text": "LLR is a score, not a probability.",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        23.0,
+        122.99999999999997,
+        129.64999999999998,
+        129.95999999999998
+      ]
+    },
+    {
+      "text": "Endpoint & native metric",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        278.99999999999994,
+        74.99999999999997,
+        363.59999999999997,
+        81.95999999999998
+      ]
+    },
+    {
+      "text": "Score version & row identity",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        278.99999999999994,
+        91.0,
+        375.80999999999995,
+        97.96000000000001
+      ]
+    },
+    {
+      "text": "Control applicability",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        278.99999999999994,
+        106.99999999999997,
+        346.61999999999995,
+        113.95999999999998
+      ]
+    },
+    {
+      "text": "Single-parent: germline control N/A",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        248.0,
+        121.99999999999997,
+        364.88,
+        128.95999999999998
+      ]
+    },
+    {
+      "text": "C",
+      "size_pt": 10.8,
+      "role": "panel_label",
+      "font_face": "bold",
+      "region": null,
+      "bbox_pt": [
+        11.999999999999998,
+        154.99999999999997,
+        19.799999999999997,
+        164.83999999999997
+      ]
+    },
+    {
+      "text": "Clinical",
+      "size_pt": 8.8,
+      "role": "title",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        28.999999999999996,
+        155.6,
+        57.41,
+        163.76
+      ]
+    },
+    {
+      "text": "D",
+      "size_pt": 10.8,
+      "role": "panel_label",
+      "font_face": "bold",
+      "region": null,
+      "bbox_pt": [
+        163.0,
+        154.99999999999997,
+        170.79999999999998,
+        164.83999999999997
+      ]
+    },
+    {
+      "text": "Paired DMS",
+      "size_pt": 8.8,
+      "role": "title",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        179.99999999999997,
+        155.6,
+        227.45999999999995,
+        163.76
+      ]
+    },
+    {
+      "text": "E",
+      "size_pt": 10.8,
+      "role": "panel_label",
+      "font_face": "bold",
+      "region": null,
+      "bbox_pt": [
+        314.0,
+        154.99999999999997,
+        321.2,
+        164.83999999999997
+      ]
+    },
+    {
+      "text": "Binding / antibody",
+      "size_pt": 8.8,
+      "role": "title",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        330.99999999999994,
+        155.6,
+        400.86999999999995,
+        163.76
+      ]
+    },
+    {
+      "text": "4,677 variants",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        52.0,
+        178.99999999999997,
+        100.96,
+        185.95999999999998
+      ]
+    },
+    {
+      "text": "20 genes; same LLR",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        52.0,
+        191.99999999999997,
+        121.11999999999999,
+        198.95999999999998
+      ]
+    },
+    {
+      "text": "Macro-AUROC  0.7841",
+      "size_pt": 7.9,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        23.0,
+        214.0,
+        104.57,
+        221.44
+      ]
+    },
+    {
+      "text": "5-fold within-panel calibration",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        23.0,
+        227.0,
+        120.38,
+        233.95999999999998
+      ]
+    },
+    {
+      "text": "Brier",
+      "size_pt": 7.7,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        23.0,
+        242.0,
+        39.26,
+        248.95999999999998
+      ]
+    },
+    {
+      "text": "lower is better",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        97.25999999999999,
+        242.0,
+        143.99999999999997,
+        248.95999999999998
+      ]
+    },
+    {
+      "text": "Platt",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        23.0,
+        254.99999999999997,
+        37.97,
+        261.96
+      ]
+    },
+    {
+      "text": "0.1412",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        121.07999999999998,
+        254.99999999999997,
+        143.99999999999997,
+        261.96
+      ]
+    },
+    {
+      "text": "Isotonic",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        23.0,
+        267.0,
+        48.85999999999999,
+        273.96
+      ]
+    },
+    {
+      "text": "0.1407",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        121.04999999999998,
+        267.0,
+        143.99999999999997,
+        273.96
+      ]
+    },
+    {
+      "text": "Gene prior",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        23.0,
+        278.99999999999994,
+        58.459999999999994,
+        285.96
+      ]
+    },
+    {
+      "text": "0.1517",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        20,
+        176,
+        147,
+        288
+      ],
+      "bbox_pt": [
+        121.04999999999998,
+        278.99999999999994,
+        143.99999999999997,
+        285.96
+      ]
+    },
+    {
+      "text": "69 paired proteins",
+      "size_pt": 7.7,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        171,
+        176,
+        297,
+        288
+      ],
+      "bbox_pt": [
+        202.0,
+        178.99999999999997,
+        263.53,
+        185.95999999999998
+      ]
+    },
+    {
+      "text": "3B minus 650M",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        171,
+        176,
+        297,
+        288
+      ],
+      "bbox_pt": [
+        202.0,
+        191.99999999999997,
+        254.07999999999998,
+        198.95999999999998
+      ]
+    },
+    {
+      "text": "AUROC difference  -0.00015",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        171,
+        176,
+        297,
+        288
+      ],
+      "bbox_pt": [
+        173.99999999999997,
+        214.0,
+        269.81999999999994,
+        220.95999999999998
+      ]
+    },
+    {
+      "text": "95% CI [-0.0134, 0.0168]",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        171,
+        176,
+        297,
+        288
+      ],
+      "bbox_pt": [
+        173.99999999999997,
+        245.99999999999997,
+        257.28,
+        252.95999999999998
+      ]
+    },
+    {
+      "text": "No gain detected",
+      "size_pt": 7.8,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        171,
+        176,
+        297,
+        288
+      ],
+      "bbox_pt": [
+        173.99999999999997,
+        263.0,
+        233.00999999999996,
+        269.96000000000004
+      ]
+    },
+    {
+      "text": "Not an equivalence test",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        171,
+        176,
+        297,
+        288
+      ],
+      "bbox_pt": [
+        173.99999999999997,
+        278.0,
+        252.41999999999996,
+        284.96
+      ]
+    },
+    {
+      "text": "Archived binding",
+      "size_pt": 7.7,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        351.99999999999994,
+        178.99999999999997,
+        408.87999999999994,
+        185.95999999999998
+      ]
+    },
+    {
+      "text": "Spearman, not AUROC",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        351.99999999999994,
+        191.99999999999997,
+        429.90999999999997,
+        198.95999999999998
+      ]
+    },
+    {
+      "text": "ESM-2 650M WT-marginal",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        323.99999999999994,
+        214.0,
+        412.43999999999994,
+        220.95999999999998
+      ]
+    },
+    {
+      "text": "General (non-Ab)",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        323.99999999999994,
+        228.0,
+        381.9599999999999,
+        234.95999999999998
+      ]
+    },
+    {
+      "text": "0.222",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        426.30999999999995,
+        228.0,
+        444.99999999999994,
+        234.95999999999998
+      ]
+    },
+    {
+      "text": "Ab-antigen",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        323.99999999999994,
+        241.0,
+        360.3299999999999,
+        247.95999999999998
+      ]
+    },
+    {
+      "text": "0.079",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        426.24999999999994,
+        241.0,
+        444.99999999999994,
+        247.95999999999998
+      ]
+    },
+    {
+      "text": "Row/scorer/resampling unresolved.",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        323.99999999999994,
+        261.0,
+        441.7199999999999,
+        267.96
+      ]
+    },
+    {
+      "text": "Same SKEMPI set; archived points",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        323.99999999999994,
+        270.0,
+        440.7299999999999,
+        276.96
+      ]
+    },
+    {
+      "text": "only; no model claim.",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": [
+        322,
+        176,
+        449,
+        288
+      ],
+      "bbox_pt": [
+        323.99999999999994,
+        280.0,
+        394.4699999999999,
+        286.96
+      ]
+    },
+    {
+      "text": "Native AUROC, Brier and Spearman units; no common reliability scale or external clinical validation.",
+      "size_pt": 7.5,
+      "role": "body",
+      "font_face": "regular",
+      "region": null,
+      "bbox_pt": [
+        11.999999999999998,
+        299.0,
+        343.7699999999999,
+        305.96
+      ]
+    }
+  ],
+  "svg_profiles": {
+    "svg": {
+      "text_elements": 51,
+      "path_elements": 71,
+      "image_elements": 0,
+      "viewBox": "0 0 468 309.6",
+      "width": "468pt",
+      "height": "309.6pt",
+      "bold_texts": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "non_label_bold": 0,
+      "minimum_text_pt": 7.5
+    },
+    "display.svg": {
+      "text_elements": 0,
+      "path_elements": 144,
+      "image_elements": 0,
+      "viewBox": "0 0 468 309.6",
+      "width": "468pt",
+      "height": "309.6pt",
+      "bold_texts": [],
+      "non_label_bold": 0,
+      "minimum_text_pt": null
+    }
+  },
+  "automatic_geometry_checks": {
+    "page_count": 1,
+    "page_size_pt": [
+      468.0,
+      309.6
+    ],
+    "embedded_fonts": true,
+    "non_label_bold": 0,
+    "minimum_text_pt": 7.5,
+    "font_report": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDQLSPY+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     11  0\nFLTGSM+ArialMT                       CID TrueType      Identity-H       yes yes yes     18  0\n",
+    "text_collision_pairs": 0,
+    "out_of_panel_text": 0,
+    "minimum_authored_text_pt": 7.5,
+    "manual_visual_review": "Required separately; automatic bounds are not a visual verdict."
+  },
+  "numerical_bindings": {
+    "clinical": {
+      "protocol": "A3-CLINICAL-UNIFIED-20260923",
+      "scorer": "N6c fp32 WT-marginal",
+      "n_variants": 4677,
+      "n_genes": 20,
+      "macro_auroc": 0.7840631994738414,
+      "macro_gene_bootstrap_ci": [
+        0.7428235430859527,
+        0.8237763521093894
+      ],
+      "brier": {
+        "platt": 0.14116026176481256,
+        "isotonic": 0.14071118577175812,
+        "gene_prevalence": 0.1516820734009144
+      },
+      "interpretation": "Same recovered score; fitting-fold-only five-fold calibration; fixed panel, not external validation."
+    },
+    "paired_dms": {
+      "analysis": "paired protein bootstrap of 3B minus 650M raw-score AUROC",
+      "estimator": "per-assay AUROC, averaged within protein, then equal-protein mean",
+      "paired_bootstrap": {
+        "ci_high": 0.016825872153946993,
+        "ci_low": -0.013395916806306326,
+        "estimate": -0.00015399309505886248,
+        "replicates": 10000,
+        "seed": 20260823,
+        "spans_zero": true
+      },
+      "paired_n_proteins": 69,
+      "scoring": "masked-marginal raw model_score_primary",
+      "sources": {
+        "subset_3b": {
+          "file": "manifest_3B_masked.csv",
+          "sha256": "b73428b57a88851a8ad1cf395462995582dc7f7c40b39a449f44c29adc61aba1"
+        },
+        "subset_650m": {
+          "file": "manifest_650M_masked.csv",
+          "sha256": "5de408bbe4a3c6942aa5548a1244913936a1d42f8154595f23f07d029e1974be"
+        }
+      },
+      "subset_3b": {
+        "n_discriminating_proteins": 63,
+        "n_proteins": 69,
+        "n_rows": 27389,
+        "n_scored_assays": 79,
+        "protein_mean_auroc": 0.7251432594036811
+      },
+      "subset_650m": {
+        "n_discriminating_proteins": 62,
+        "n_proteins": 69,
+        "n_rows": 27389,
+        "n_scored_assays": 79,
+        "protein_mean_auroc": 0.7252972524987216
+      }
+    },
+    "archived_binding": {
+      "source": "manuscript/figures/plotdata/FS3_antibody_robustness.csv",
+      "general": {
+        "order": "1",
+        "subset": "general",
+        "method": "ESM-2 650M (WT)",
+        "n": "2797",
+        "rho": "0.2222255919909328",
+        "ci_lo": "0.1848751734460791",
+        "ci_hi": "0.2579811619250653"
+      },
+      "antibody": {
+        "order": "2",
+        "subset": "antibody",
+        "method": "ESM-2 650M (WT)",
+        "n": "627",
+        "rho": "0.07884932747536114",
+        "ci_lo": "0.001791963413535797",
+        "ci_hi": "0.1570751608730418"
+      },
+      "alternate_archive": {
+        "model": "ESM-2 650M",
+        "rho": "0.0788",
+        "ci_lo": "-0.0022",
+        "ci_hi": "0.1597"
+      },
+      "subset_semantics": {
+        "cohort": "same SKEMPI set",
+        "partition": "Table 2 partition A",
+        "relationship": "complementary_non_overlapping",
+        "general": "General (non-Ab)",
+        "antibody": "Ab-antigen",
+        "n_total": 3424,
+        "independent_experiments": false
+      },
+      "interpretation": "Same SKEMPI set; Table 2 partition A contains complementary general (non-Ab) and antibody-antigen subsets; archived points only; row/scorer/resampling identity unresolved. No independent complex-level CI or model-comparison inference."
+    }
+  },
+  "scope": [
+    "Icons are schematic, not an experimental observation or predicted molecular structure.",
+    "AUROC, Brier and Spearman are not merged, null-shifted or transformed into a common reliability score.",
+    "DMS absence of detected gain is not equivalence or a universal scaling plateau.",
+    "Single-parent germline control is inapplicable, not a negative discovery.",
+    "Archived 650M binding and antibody scorer identities remain unreconciled; alternate intervals are not pooled.",
+    "No model inference, resampling, manuscript compilation, other-figure edit or method-contract rebinding."
+  ]
+}

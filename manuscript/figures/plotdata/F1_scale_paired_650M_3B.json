@@ -1,0 +1,38 @@
+{
+  "analysis": "paired protein bootstrap of 3B minus 650M raw-score AUROC",
+  "estimator": "per-assay AUROC, averaged within protein, then equal-protein mean",
+  "paired_bootstrap": {
+    "ci_high": 0.016825872153946993,
+    "ci_low": -0.013395916806306326,
+    "estimate": -0.00015399309505886248,
+    "replicates": 10000,
+    "seed": 20260823,
+    "spans_zero": true
+  },
+  "paired_n_proteins": 69,
+  "scoring": "masked-marginal raw model_score_primary",
+  "sources": {
+    "subset_3b": {
+      "file": "manifest_3B_masked.csv",
+      "sha256": "b73428b57a88851a8ad1cf395462995582dc7f7c40b39a449f44c29adc61aba1"
+    },
+    "subset_650m": {
+      "file": "manifest_650M_masked.csv",
+      "sha256": "5de408bbe4a3c6942aa5548a1244913936a1d42f8154595f23f07d029e1974be"
+    }
+  },
+  "subset_3b": {
+    "n_discriminating_proteins": 63,
+    "n_proteins": 69,
+    "n_rows": 27389,
+    "n_scored_assays": 79,
+    "protein_mean_auroc": 0.7251432594036811
+  },
+  "subset_650m": {
+    "n_discriminating_proteins": 62,
+    "n_proteins": 69,
+    "n_rows": 27389,
+    "n_scored_assays": 79,
+    "protein_mean_auroc": 0.7252972524987216
+  }
+}

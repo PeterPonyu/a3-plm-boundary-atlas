@@ -1,0 +1,28 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S5",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "94df474daeccd24db904319b5b98b0d5c404969b233e827cd89889abaed1db21",
+  "schema_version": 1,
+  "scientific_payload_sha256": "94df474daeccd24db904319b5b98b0d5c404969b233e827cd89889abaed1db21",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "predictor",
+        "n_proteins",
+        "median_abs_spearman",
+        "supervised"
+      ],
+      "path": "manuscript/figures/plotdata/FS5_vep_comparison.csv",
+      "rows": 7,
+      "sha256": "7f0799e3865167ec26c09930bee4b8996d0b7123d16a25a53520682e6f375f86"
+    }
+  ]
+}

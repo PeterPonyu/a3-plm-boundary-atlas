@@ -1,0 +1,13 @@
+predictor,outcome,rho,p,n_perm
+n,delta_pooled_platt,-0.341353,0.143428,2000
+log_n,delta_pooled_platt,-0.341353,0.143428,2000
+base_rate,delta_pooled_platt,0.815038,0.0005,2000
+abs_base_minus_pooled,delta_pooled_platt,0.553383,0.009995,2000
+base_minus_pooled,delta_pooled_platt,0.815038,0.0005,2000
+ece_uncal,delta_pooled_platt,-0.821053,0.0005,2000
+citl_uncal,delta_pooled_platt,-0.92782,0.0005,2000
+citl_pooled_platt,delta_pooled_platt,-0.97594,0.0005,2000
+s_shift_vs_pooled,delta_pooled_platt,0.054135,0.82059,2000
+sd_s,delta_pooled_platt,-0.097744,0.692154,2000
+ks_uncal_vs_pooled,delta_pooled_platt,0.192481,0.396302,2000
+mean_p_uncal,delta_pooled_platt,0.067669,0.771614,2000

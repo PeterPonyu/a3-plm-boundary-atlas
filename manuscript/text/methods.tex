@@ -1,0 +1,77 @@
+\subsection{Models and scoring}
+ESM-2 (35M, 150M, 650M and 3B) and ProtBERT use public model weights. The variant score is the per-position log-likelihood ratio
+$L=\log p(\mathrm{mut}\mid\mathrm{context})-\log p(\mathrm{wt}\mid\mathrm{context})$.
+Here $p$ is the model's categorical probability for an amino acid at the
+queried position; $\mathrm{wt}$ and $\mathrm{mut}$ are its reference and
+substituted residues. Natural logarithms make $L$ a dimensionless score,
+not an energy or a probability of clinical pathogenicity.
+Masked-marginal scoring masks the queried residue; wild-type-marginal scoring retains the wild-type context. Discrimination uses raw LLRs without per-assay rescaling or clamping. The revised clinical analysis uses the complete official ESM-2 650M checkpoint (2,604,537,549 bytes; SHA-256 recorded with the outputs), verified by archive CRC and loaded in fp32 with TF32 disabled. Full-sequence log probabilities were computed twice per gene and were bitwise identical in this run. For sequences longer than 1,024 residues, the primary LLR uses the recovered N6c mutation-centred window: for one-based residue $p$, the zero-based half-open slice is $[\max(0,p-512),\min(\ell,p+511))$. The maximum window is therefore 1,023 residues and is clipped, not shifted, at sequence ends. Whole-sequence LLRs are also retained for all genes. All 24 full-sequence/window AUROC comparisons reproduced the historical corrected N6c summaries to their recorded four decimal places. The score table retains variant identity, reference-sequence hash, window bounds, labels and both LLRs; no score is reconstructed from an aggregate AUROC.
+
+\subsection{DMS labels and protein-level discrimination}
+ProteinGym fitness labels use the released binary classification field. Assays with fewer than 20 scored variants or only one class are excluded. Scores are evaluated per assay and then averaged within protein; the protein identity is given by the first two underscore-delimited tokens of the assay identifier. The same assay labels and protein aggregation are used for all model sizes and encoders. The scale panel, full ProteinGym panel and position-held-out calibration subset retain separate sampling frames. Wild-type- and masked-marginal scoring are analysed separately.
+For assay $a$, ties receive half credit:
+\begin{equation}\label{eq:dms-auroc}
+\widehat A_a=\frac{1}{n_a^+n_a^-}\sum_{u\in S_a^+}\sum_{v\in S_a^-}
+\left[\mathbf{1}\{u>v\}+\tfrac12\mathbf{1}\{u=v\}\right].
+\end{equation}
+In Equation~\ref{eq:dms-auroc}, $S_a^+$ and $S_a^-$ are the positive- and
+negative-class raw score sets for assay $a$, and $n_a^+$ and $n_a^-$ are
+their sizes. The indicator $\mathbf{1}$ equals one when its condition
+holds. Assays for protein $p$ are averaged as
+$A_p=|J_p|^{-1}\sum_{a\in J_p}\widehat A_a$, where $J_p$ is that protein's
+retained assay set; the panel summary is $P^{-1}\sum_p A_p$ for $P$
+retained proteins. Multiple assays therefore do not increase a protein's
+weight.
+
+\subsection{Clinical labels and benign-source controls}
+Missense variants are selected from ClinVar using the exact clinical-significance terms pathogenic and benign. Protein changes are parsed from HGVS notation; conflicting labels for identical position, wild-type and mutant identities are excluded. A wild-type residue mismatch with the corresponding reference sequence triggers an isoform-mismatch exclusion. Per-gene AUROC uses benign as the positive class, consistent with higher LLR. The population control substitutes gnomAD v4 missense variants with allele count at least two for ClinVar-benign variants, excluding sites also labelled pathogenic in the same gene.
+
+\subsection{Calibration protocols and selective prediction}
+Calibration reverses score orientation, $s=-L$, so higher scores indicate pathogenicity. The 4,677 rows are sorted by stable variant identity and assigned to five folds by class-stratified shuffle (seed 20260923). For each held-out fold, the score mean and population-form standard deviation use only fitting folds. A pooled unpenalized logistic maximum-likelihood map is fitted by BFGS, with gradient convergence checked. The isotonic map aggregates equal scores by their total weight before weighted pool-adjacent-violators fitting. Prediction is a step function using the fitted value at the greatest training score no larger than the query, with constant extrapolation at either end and clipping to $[10^{-6},1-10^{-6}]$. This convention makes equal-score predictions invariant to row order. Pooled- and gene-prevalence baselines use fitting-fold labels only. No calibrator is evaluated on the variants used to fit it.
+For a fitting-fold score mean $\bar s$ and standard deviation $\widehat\sigma_s$,
+\begin{align}
+z_i&=(s_i-\bar s)/\widehat\sigma_s,\label{eq:clinical-z}\\
+\widehat p_i&=\operatorname{logit}^{-1}(\widehat\beta_0+\widehat\beta_1z_i),\label{eq:clinical-platt}\\
+\mathrm{ECE}&=\sum_{b=1}^{10}\frac{|B_b|}{n}\left|\overline{\widehat p}_{B_b}-\overline y_{B_b}\right|.\label{eq:clinical-ece}
+\end{align}
+Equation~\ref{eq:clinical-z} uses the fitting-fold moments for the evaluated
+variant $i$. In Equation~\ref{eq:clinical-platt}, $\widehat\beta_0$ and
+$\widehat\beta_1$ are the fitting-fold logistic coefficients and
+$\operatorname{logit}^{-1}(t)=1/(1+e^{-t})$. In
+Equation~\ref{eq:clinical-ece}, $B_b$ contains evaluated predictions in bin
+$b$, $n$ is the evaluated variant count and $y_i=1$ denotes pathogenicity.
+The bars are bin means and empty bins contribute zero. This label
+orientation differs explicitly from benign-positive discrimination.
+ECE uses ten equal-width probability bins; the last bin includes one. Brier score is $n^{-1}\sum_i(\widehat p_i-y_i)^2$; log loss uses probabilities clipped to $[10^{-6},1-10^{-6}]$. All are computed on out-of-fold predictions, pooled and separately by gene. Sigmoid($z$) is an arbitrary uncalibrated comparator, not a native PLM probability. Exploratory selective prediction ranks $|\widehat p-0.5|$ with stable identity ordering to break confidence ties; archived decision-curve coordinates use prespecified thresholds 0.05--0.50 and are not evidence of externally validated clinical benefit. The retired six-gene illustration actually used seed 1 and standardization on all 1,093 scores, not the previously stated protocol. That illustration and the old twenty-gene calibration are excluded from the current numerical evidence \citep{Pejaver2022,Guo2017,Platt1999}.
+
+\subsection{Stability and binding endpoints}
+MegaScale single mutations use the reliable subset and ThermoMPNN MMseqs2 clusters at 25\% sequence identity. The clean split excludes every held-out cluster overlapping the training partition. For each scoring convention, a deterministic permutation from a NumPy generator seeded at zero allocates 80\% of training mutations to an ordinary least-squares fit with intercept and 20\% to held-in evaluation. Homology-held-out mutations form the separate evaluation partition:
+\begin{align}
+\widehat y_{is}&=\widehat\alpha_s+\widehat\beta_sL_{is},\label{eq:stability-map}\\
+\mathrm{RMSE}_{s,E}&=\left[|E|^{-1}\sum_{i\in E}(\widehat y_{is}-y_i)^2\right]^{1/2}.\label{eq:stability-rmse}
+\end{align}
+In Equation~\ref{eq:stability-map}, $i$ indexes mutations, $s$ indexes the
+scoring convention, and $\widehat\alpha_s$ and $\widehat\beta_s$ are the
+training-partition intercept and slope. In Equation~\ref{eq:stability-rmse},
+$E$ is the specified evaluation partition, and $y_i$ and $\widehat y_{is}$
+are measured and fitted stability values. Here $y_i$ is a continuous
+assay target, not the binary clinical label used above; RMSE retains that
+target's native units.
+The target is dataset-native MegaScale \texttt{ddG\_ML}; it is not converted to a universal kcal/mol scale. Post-linear-map summaries without retained coefficients do not define a reusable prediction function.
+SKEMPI v2 single mutations are mapped to deposited structures, excluding unresolved numbering disagreements. Binding association uses Spearman correlation between LLR and $-\Delta\Delta G$. Antibody versus non-antibody and interface versus non-interface are separate, potentially overlapping partitions of the same mutation set. The antibody--interface intersection is also distinct. Illustrative same-site substitutions are selected from directly mapped existing records with matching background and temperature. Deposited coordinates and side-chain connectivity diagrams provide context without generating mutant conformations.
+The N4 aggregate and the antibody-language-model comparison are separate archived summary sources. For ESM-2 antibody--antigen binding, their saved intervals are respectively $[0.0018,0.1571]$ and $[-0.0022,0.1597]$. The first is recorded as a 1,000-draw mutation bootstrap; the second table lacks sufficient row/scorer/resampling identities here to establish equivalence. Missing 650M score pairs prevent reconciliation by independent re-bootstrap. Both summaries are retained with their own source identity, not pooled or interpreted through whether a bound crosses zero. Mutations from one complex are also dependent, so these archived mutation intervals do not establish complex-level uncertainty.
+
+\subsection{Developability and control applicability}
+FLAb datasets are classified by property and by single-parent versus multi-germline design. Dataset-level Spearman tests are Benjamini--Hochberg adjusted at $q=0.05$ across all tested datasets. Germline-distance partial correlation is defined only when the control has variance and the design is non-collinear. Inapplicable controls are not encoded as failed discoveries. Discovery fractions use tested datasets as the denominator; control-applicability counts are reported separately.
+Spearman correlation is the Pearson correlation of midranks. Partial Spearman correlation uses rank residuals after separately regressing each ranked variable on the defined control. For $M$ tests, Benjamini--Hochberg rejects through $k=\max\{j:p_{(j)}\le qj/M\}$. An absence of rejection is not an equivalence test.
+
+\subsection{Shift uncertainty and retrospective acquisition}
+Supervised predictors fitted to frozen ESM-2 embeddings return a mean $\widehat\mu(x)$ and uncertainty $\widehat\sigma(x)$ from ensemble dispersion, Monte-Carlo dropout or a Bayesian baseline. On each FLIP split, uncertainty association is
+$\operatorname{cor}\{\operatorname{rank}(\widehat\sigma_i),\operatorname{rank}(|y_i-\widehat\mu_i|)\}$.
+Retrospective acquisition ranks an already-labelled candidate set with either $a_{\mathrm{greedy}}(x)=\widehat\mu(x)$ or $a_{\mathrm{UCB}}(x)=\widehat\mu(x)+\kappa\widehat\sigma(x)$, using the fixed acquisition settings in the source pipeline. Final-best observations retain their original dataset units. Different source runs and cache-based summaries are not pooled or treated as interchangeable replicates. This design does not measure prospective wet-lab yield \citep{Greenman2025UQ}.
+
+\subsection{Resampling, multiplicity and provenance}
+Retained non-clinical intervals use nonparametric percentile bootstrapping: proteins for DMS means and paired model differences and mutations for the saved SKEMPI rank correlations. The paired scale contrast uses 10,000 replicates (seed 20260823), with a separate 2,000-replicate rendering analysis (seed 20260824); these are resamplings of the same pairs, not independent studies. SKEMPI uses 1,000 replicates. The corrected clinical per-gene intervals use 2,000 class-stratified variant draws per gene; the macro-AUROC interval uses 10,000 resamples of the 20 observed gene AUROCs and does not incorporate additional within-gene sampling uncertainty. These replace the unsupported historical intervals, rather than reusing their bounds. Per-gene intervals are nominal, not multiplicity-adjusted. Developability retains its separate multiple-testing family.
+Clinical calibration uses 1,000 refitting bootstrap draws within each gene-by-class stratum (NumPy generator seed 20260923, following the discrimination draws). An original variant has one array entry and its sampled multiplicity becomes a fitting/evaluation weight. Active original identities receive one class-stratified fold assignment per draw (seed 20260924 plus draw index); all copies remain in that fold. Every fold refits standardization, Platt, isotonic and both prevalence baselines, asserts identity separation and rejects single-class or otherwise unestimable fits. Paired Brier differences use the same resampling draw for map and baseline. The original OOF point, bootstrap mean and percentile endpoints are saved separately, as are first- versus second-half endpoints to assess Monte Carlo stability. This conditions on gene and class composition and does not establish independence across positions, genes or homologues. No historical old-score refitting interval is promoted.
+For bootstrap estimates $\widehat\theta^{*(1)},\ldots,\widehat\theta^{*(B)}$, the percentile interval is $[Q_{0.025}(\widehat\theta^*),Q_{0.975}(\widehat\theta^*)]$. Paired differences preserve the same biological unit in both conditions. AUROC is undefined if either class is absent. The task synthesis keeps AUROC and Spearman in separate panels; null subtraction does not create a common effect scale. Overlapping binding subsets are not counted as independent tasks, and no heuristic reliability-zone thresholds are used. No effect interval or minimum detectable effect is inferred from aggregate discovery counts without the required independent effect estimates and variances.
+The reproducibility package links numerical inputs, rendering code, biological units and scope statements with a checksum inventory. Figures regenerate from saved observations without repeating model inference. Render-time checks refuse mismatched source identities or changed numerical inputs.

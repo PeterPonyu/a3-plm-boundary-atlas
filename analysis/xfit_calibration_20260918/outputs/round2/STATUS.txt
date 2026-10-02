@@ -1,0 +1,9 @@
+A3-XFIT-CAL-R2-20260918
+Follow-up to A3-XFIT-CAL-20260918. Same seed=20260918, 5 class-stratified folds, B=2000 OOF-pair bootstrap.
+NOT a restoration of the historical 0.2443/0.0207 pair. STOP file F7_20gene_perbin_STATUS.txt unchanged.
+7/20 pooled-Platt degradation is prevalence mismatch (Spearman base_rate vs dECE = +0.815, p=0.0005), not small-n (Spearman n vs dECE = -0.341, p=0.143).
+Holm-Bonferroni alpha=0.05 across 20 genes: significant degraders OTC, PIK3CA. P53 nominal p=0.038 does not survive (q_BH=0.058).
+Per-gene Platt ECE 0.0146 [0.0115,0.0283] does not significantly beat pooled Platt 0.0192 (delta=-0.0047, p=0.656).
+Cox uncal slope 0.850 [0.779,0.921] intercept -1.322; Platt slope 0.999 [0.915,1.083] intercept -0.001.
+Decision-curve NB: no gain at t<=0.10; positive at t>=0.20.
+Ready: not claimed.

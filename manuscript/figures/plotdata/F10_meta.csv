@@ -1,0 +1,6 @@
+field,value
+n_train,164094
+n_heldout,42563
+clusters_train,66
+clusters_heldout,26
+cluster_overlap,0

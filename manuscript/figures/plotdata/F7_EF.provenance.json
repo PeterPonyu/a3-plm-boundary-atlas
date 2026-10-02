@@ -1,0 +1,39 @@
+{
+  "blocked_downstream_actions": [
+    {
+      "action": "replace_with",
+      "panel": "E",
+      "reason": "Committed binding table stores subgroup estimates and intervals, not binding-level coordinates.",
+      "target": "F7 locked CI-width diagnostic"
+    }
+  ],
+  "blocked_reasons": [
+    "Committed binding table stores subgroup estimates and intervals, not binding-level coordinates."
+  ],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F7",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "b682f8e404f046e983d8f207bdb7bf7fcf71813a296a32c77495e7621d1e83f8",
+  "schema_version": 1,
+  "scientific_payload_sha256": "b682f8e404f046e983d8f207bdb7bf7fcf71813a296a32c77495e7621d1e83f8",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "subset",
+        "key",
+        "spearman",
+        "ci_lo",
+        "ci_hi",
+        "n"
+      ],
+      "path": "manuscript/figures/plotdata/F4_binding.csv",
+      "rows": 5,
+      "sha256": "a80bae0108a354f1fa9ff89ef58ffff18f1ceacc21fdc6e4dfffdb9780f3f186"
+    }
+  ]
+}

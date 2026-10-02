@@ -1,0 +1,91 @@
+{
+  "claim_ceiling": "descriptive; locked derived table only, not a promoted panel",
+  "cohort_id": "A3-frozen",
+  "cpu_only": true,
+  "definition": "arithmetic mean of locked rho_unc values grouped by method and shift_class",
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "grouping": [
+    "method",
+    "shift_class"
+  ],
+  "output_sha256": "4afb2cc0f2249c152f206b054f5a074cd27e74c06074ccb77ff8f63c4bd8a3d4",
+  "registry_binding": {
+    "estimand_id": "EQ-S7",
+    "figure_id": "S7",
+    "output": "figures/plotdata/S7A_method_shift_mean_rho_unc.csv",
+    "panel_id": "A"
+  },
+  "schema_version": 1,
+  "scientific_payload_sha256": "4afb2cc0f2249c152f206b054f5a074cd27e74c06074ccb77ff8f63c4bd8a3d4",
+  "seed": "20260824",
+  "sort_order": [
+    [
+      "BayesianRidge",
+      "extreme"
+    ],
+    [
+      "BayesianRidge",
+      "moderate-shift"
+    ],
+    [
+      "BayesianRidge",
+      "in-distribution"
+    ],
+    [
+      "Deep Ensemble",
+      "extreme"
+    ],
+    [
+      "Deep Ensemble",
+      "moderate-shift"
+    ],
+    [
+      "Deep Ensemble",
+      "in-distribution"
+    ],
+    [
+      "GP-RBF",
+      "extreme"
+    ],
+    [
+      "GP-RBF",
+      "moderate-shift"
+    ],
+    [
+      "GP-RBF",
+      "in-distribution"
+    ],
+    [
+      "MC-Dropout",
+      "extreme"
+    ],
+    [
+      "MC-Dropout",
+      "moderate-shift"
+    ],
+    [
+      "MC-Dropout",
+      "in-distribution"
+    ]
+  ],
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "method",
+        "split",
+        "shift_class",
+        "rho_unc",
+        "ci_lo",
+        "ci_hi",
+        "pred_pearson"
+      ],
+      "path": "manuscript/figures/plotdata/F9_rho_unc.csv",
+      "rows": 28,
+      "sha256": "fa9a9802dde03c738220bc075818768d5f8af1b2fc56e52acbc4447f2df2cb37"
+    }
+  ],
+  "table": "S7A_method_shift_mean_rho_unc",
+  "units": "mean uncertainty-signal Spearman rho"
+}

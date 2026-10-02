@@ -1,0 +1,45 @@
+{
+  "claim_ceiling": "descriptive; locked derived table only, not a promoted panel",
+  "cohort_id": "A3-frozen",
+  "cpu_only": true,
+  "definition": "arithmetic mean of locked median_abs_spearman values grouped by supervised",
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "grouping": [
+    "supervised"
+  ],
+  "output_sha256": "6b426933db158889e1e91a0bbe830c9a4644dd3e9433ac6cdc55a88daac4b9f6",
+  "registry_binding": {
+    "estimand_id": "EQ-S5",
+    "figure_id": "S5",
+    "output": "figures/plotdata/S5B_supervised_group_mean_median_abs_spearman.csv",
+    "panel_id": "B"
+  },
+  "schema_version": 1,
+  "scientific_payload_sha256": "6b426933db158889e1e91a0bbe830c9a4644dd3e9433ac6cdc55a88daac4b9f6",
+  "seed": "20260824",
+  "sort_order": [
+    [
+      "no"
+    ],
+    [
+      "yes"
+    ]
+  ],
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "predictor",
+        "n_proteins",
+        "median_abs_spearman",
+        "supervised"
+      ],
+      "path": "manuscript/figures/plotdata/FS5_vep_comparison.csv",
+      "rows": 7,
+      "sha256": "7f0799e3865167ec26c09930bee4b8996d0b7123d16a25a53520682e6f375f86"
+    }
+  ],
+  "table": "S5B_supervised_group_mean_median_abs_spearman",
+  "units": "mean median absolute Spearman rho"
+}

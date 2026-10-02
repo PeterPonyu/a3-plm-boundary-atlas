@@ -1,0 +1,245 @@
+{
+  "status": "internal candidate; manuscript HOLD",
+  "scorer": "N6c fp32 WT-marginal",
+  "checkpoint_sha256": "ea9d0522b335a8778dea6535a65301f10208dece28cd5865482b0b1fc446168c",
+  "checkpoint_bytes": 2604537549,
+  "scores_sha256": "0fac1a086b5b4797b336484f8f0a6ee6eb00334b83607c353b4ea4cd5788eccd",
+  "checkpoint_zip_crc": "all members passed",
+  "clinical_source_sha256": {
+    "AICDA_HUMAN": "3e1222bccc9a7c0e9e3363f1f78db9b333b30bea4d2c356f0cb3d8d3a1aef69a",
+    "BRAF_GOF": "9905826d6df0ec6535f76025e70706c71b51bcfc7e2ef16439822c8ff7fd21e8",
+    "EGFR_GOF": "ee66c04dbe95478a45f1f24f9668483002488853b1d661b255bd88b1efd39d2a",
+    "FGFR3_GOF": "d6d126357c8cd0c8dd69b3f9fcc936d7d8d73312e9ebb37195e46d7596209730",
+    "HEM3_HUMAN": "701041297032e4de6697b094167be22ce05e162190dfc6e7253ad05b104d3705",
+    "HRAS_GOF": "ee8dc9ed04de6ea1731c609ca4ec25f0d86cf92ace735d423ae85916d73813e0",
+    "KCNE1_HUMAN": "ecef690b9bd0a5702c122e778ecb1bfb9321e2811db82e457a35bf90aaaf968a",
+    "KIT_GOF": "319f6ed0fa8493cbb97605a79123a1a1a330a0b771cd7d50936f94cc3353ea43",
+    "KRAS_GOF": "49d5059a7718e783c5768315949f3566c06447bb2d0a639981921cdc3be6b843",
+    "MET_HUMAN": "62c9f5971f8b7e1dbe21ec7604f44edf42400c5f1c2d6f8b0e078610a40568ee",
+    "NRAS_GOF": "849ef6ed8ec57c8823b280d078f326fbf5017bc3957f428f1d84485e7e0be326",
+    "OPSD_HUMAN": "9ccf7d4e422fdfae38f5992a5ff0740cf0c539a58839ac3b8d438a8c63b05d8f",
+    "OTC_HUMAN": "9c88039760048445a65f0d26ed307f39bc4cc9bde86e71dbf45bd812bb18bf73",
+    "P53_HUMAN": "895de6f1244024e86df2bd1ab9499ef385f611962c294e9eff373d74a040551a",
+    "PIK3CA_GOF": "abd71ff536392e1438519a451fe959b8053e083aa148a6908538781fae23d360",
+    "PTEN_GOF": "5c356f7f23ec3fd918acefd8286cb5af5fee6cc12e1d3c7ef60b634c37c783e6",
+    "RB1_GOF": "939509cc407bca9a46cec9d96d29dfd9a09c4cd74362b08c48c8f0576ae948c4",
+    "RET_GOF": "ca84538bca555b9c5c7b9349401e9c8a0b5aed959e9ee1f5d319a52c9a60b247",
+    "STK11_GOF": "2136272961dcf650c6c7fa4d3a47a115ae6cd6b19bfa34940469d0018c346bd1",
+    "VHL_GOF": "6f9cb14f71a1f286580dd5bcfc4f97019f5960a9d7453ee2c7babf96b51b436b"
+  },
+  "wt_sequence_sha256": {
+    "AICDA_HUMAN": "042b90517121a874d1afcd05e9b675b692777341b89bd3babe0c3a3cf49cad86",
+    "BRAF_GOF": "1a1d669b0622fbe831f52ddb1be8e99ed35c39eea791b55b52db12a80811e274",
+    "EGFR_GOF": "dbb4583267ad40a7dfd854ee3c44ce4be38e137d0570e3eb76cf1854a74e7246",
+    "FGFR3_GOF": "9c4089da85ef3c06dde2c14def7afc4a2e1452947ca9abf34025f90a101db770",
+    "HEM3_HUMAN": "0357a836b3f2fc54e934b9cab6530110c24fa0bccf95d2ad315b1f3c477685a3",
+    "HRAS_GOF": "d9360238882c010c8474ef1eba1d2532cd96e706c7d7f689ea2014f37f8f886c",
+    "KCNE1_HUMAN": "07505bc0d400eb52c0f69a9efdfea1944fb17a7261c3008f1842f3eac5714f18",
+    "KIT_GOF": "7b430dd4888d7410e8d65d331b8bd4f5bd9abd4f3a9290f2a93f37b0ed495c5c",
+    "KRAS_GOF": "1d5a9ab11f64cb886d8ffa08a153c412b2d190fcf70e5690cd4b4c7efcdee53a",
+    "MET_HUMAN": "cc24e8701a5717fd1fa418174adb3b6cbaeae8a76f78b33a995f44c5bb394056",
+    "NRAS_GOF": "89016168d82568aa2caa97166c99ff0b61c6fb19d5729272a7e3f03ab26ce518",
+    "OPSD_HUMAN": "b59611b13c3509dcbb28613b8c35f400f97e67788dcf416dce0511a576c347c1",
+    "OTC_HUMAN": "35d9672d82f6d9568b8af25ab5534caa47a1bdda9b27e554ad90f564f969cba4",
+    "P53_HUMAN": "e3ca60f18e3b6e98986ad6749215ee3b7a3abc09c191675213d1f243c035c9a3",
+    "PIK3CA_GOF": "d3e28ff8f2168f2761be02fb067e5259b4e759814600f522127a8e2a8d383555",
+    "PTEN_GOF": "2675a6cc946076d70342977845afe793269c5987a998382100bede64d1e61b42",
+    "RB1_GOF": "8be63dca6cc82885cff6629df4ff5401afaa56f9a463140e77a51e46ba011ad0",
+    "RET_GOF": "10ec8a9e8316e42cd33c02e147ccc5d057ce4ecac76498c455a230ec4485d6be",
+    "STK11_GOF": "07709ab07a513c4dce1a7959395be60cbd9c5b95c7f6810f9e2bbbac5fb11a0a",
+    "VHL_GOF": "9635f5e11bc2e95cb5b4aca19e52963af7b7cacd94b962e99be1d66499686daf"
+  },
+  "manifest_sha256": "35bec90f46bac58bddd862fe99d4767053b1653ddfb5bacb2b366745c67b15b2",
+  "N6c_summary_sha256": "c642957e137d4f213d08c129c281d7aa6bf4ee90f7bec4f7625f764a4fecc412",
+  "N6c_scorer_sha256": "eccdae70089ea939050b16020e20e3ad288772a90a42fe68455dde38dce53302",
+  "versions": {
+    "torch": "2.12.1",
+    "fair-esm": "2.0.0",
+    "scikit-learn": "1.6.1"
+  },
+  "context": 1024,
+  "device": "cuda",
+  "n_rows": 4677,
+  "auc_gates": {
+    "AICDA_HUMAN:whole": {
+      "auroc": 1.0,
+      "N6c_rounded": 1.0
+    },
+    "BRAF_GOF:whole": {
+      "auroc": 0.8277777777777778,
+      "N6c_rounded": 0.8278
+    },
+    "EGFR_GOF:whole": {
+      "auroc": 0.8150887573964496,
+      "N6c_rounded": 0.8151
+    },
+    "EGFR_GOF:win": {
+      "auroc": 0.8127773668639053,
+      "N6c_rounded": 0.8128
+    },
+    "FGFR3_GOF:whole": {
+      "auroc": 0.6972909305064782,
+      "N6c_rounded": 0.6973
+    },
+    "HEM3_HUMAN:whole": {
+      "auroc": 0.7503974562798092,
+      "N6c_rounded": 0.7504
+    },
+    "HRAS_GOF:whole": {
+      "auroc": 0.8580645161290323,
+      "N6c_rounded": 0.8581
+    },
+    "KCNE1_HUMAN:whole": {
+      "auroc": 0.7996453900709221,
+      "N6c_rounded": 0.7996
+    },
+    "KIT_GOF:whole": {
+      "auroc": 0.7686170212765957,
+      "N6c_rounded": 0.7686
+    },
+    "KRAS_GOF:whole": {
+      "auroc": 0.8215686274509805,
+      "N6c_rounded": 0.8216
+    },
+    "MET_HUMAN:whole": {
+      "auroc": 0.8057047380355651,
+      "N6c_rounded": 0.8057
+    },
+    "MET_HUMAN:win": {
+      "auroc": 0.7977085571070534,
+      "N6c_rounded": 0.7977
+    },
+    "NRAS_GOF:whole": {
+      "auroc": 0.8333333333333333,
+      "N6c_rounded": 0.8333
+    },
+    "OPSD_HUMAN:whole": {
+      "auroc": 0.7450572320499479,
+      "N6c_rounded": 0.7451
+    },
+    "OTC_HUMAN:whole": {
+      "auroc": 0.7600129198966408,
+      "N6c_rounded": 0.76
+    },
+    "P53_HUMAN:whole": {
+      "auroc": 0.8733335996910251,
+      "N6c_rounded": 0.8733
+    },
+    "PIK3CA_GOF:whole": {
+      "auroc": 0.649537037037037,
+      "N6c_rounded": 0.6495
+    },
+    "PIK3CA_GOF:win": {
+      "auroc": 0.663888888888889,
+      "N6c_rounded": 0.6639
+    },
+    "PTEN_GOF:whole": {
+      "auroc": 0.6446323234834984,
+      "N6c_rounded": 0.6446
+    },
+    "RB1_GOF:whole": {
+      "auroc": 0.7994957983193277,
+      "N6c_rounded": 0.7995
+    },
+    "RET_GOF:whole": {
+      "auroc": 0.7818417965476789,
+      "N6c_rounded": 0.7818
+    },
+    "RET_GOF:win": {
+      "auroc": 0.7934053963465729,
+      "N6c_rounded": 0.7934
+    },
+    "STK11_GOF:whole": {
+      "auroc": 0.5571120689655172,
+      "N6c_rounded": 0.5571
+    },
+    "VHL_GOF:whole": {
+      "auroc": 0.8771447850395219,
+      "N6c_rounded": 0.8771
+    }
+  },
+  "diagnostics": {
+    "AICDA_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.4075282199992216
+    },
+    "BRAF_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.17748525600109133
+    },
+    "EGFR_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 32.35305125499872
+    },
+    "FGFR3_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.21870536999995238
+    },
+    "HEM3_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.09848520299783559
+    },
+    "HRAS_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.06613509200178669
+    },
+    "KCNE1_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.059888258001592476
+    },
+    "KIT_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.257557299999462
+    },
+    "KRAS_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.06839197899898863
+    },
+    "MET_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 42.255808529000205
+    },
+    "NRAS_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.06686364299821435
+    },
+    "OPSD_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.09617492699908325
+    },
+    "OTC_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.09730269200008479
+    },
+    "P53_HUMAN": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.11785937499735155
+    },
+    "PIK3CA_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 9.36505534599928
+    },
+    "PTEN_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.1196323330004816
+    },
+    "RB1_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.25137990199800697
+    },
+    "RET_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 45.725323957998626
+    },
+    "STK11_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.12111455900230794
+    },
+    "VHL_GOF": {
+      "repeat_max_abs_logp_diff": 0.0,
+      "seconds": 0.07589146600003005
+    }
+  },
+  "tf32": false,
+  "runtime_gpu": "NVIDIA GeForce RTX 5090 Laptop GPU"
+}

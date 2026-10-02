@@ -1,0 +1,8 @@
+{
+  "official_url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt",
+  "bytes": 2604537549,
+  "sha256": "ea9d0522b335a8778dea6535a65301f10208dece28cd5865482b0b1fc446168c",
+  "range_size": 16777216,
+  "n_parts": 156,
+  "clinical_score_status": "not yet inferred"
+}

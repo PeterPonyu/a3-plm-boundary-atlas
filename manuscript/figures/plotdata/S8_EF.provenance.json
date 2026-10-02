@@ -1,0 +1,39 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S8",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "9d28755b05902d0688fec8d043123314648dd51c22ef9e48e084ca59bb3f4684",
+  "schema_version": 1,
+  "scientific_payload_sha256": "9d28755b05902d0688fec8d043123314648dd51c22ef9e48e084ca59bb3f4684",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "model",
+        "rho",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "path": "manuscript/figures/plotdata/F8_antibody_n4.csv",
+      "rows": 2,
+      "sha256": "9c1ce563848e74638d42200dfaa7273ec773ae20fc7da465b9552f6613edf148"
+    },
+    {
+      "columns": [
+        "property",
+        "n_datasets",
+        "antiberty_bh_sig",
+        "esm2_bh_sig"
+      ],
+      "path": "manuscript/figures/plotdata/F8_antibody_n9.csv",
+      "rows": 2,
+      "sha256": "4e517221a935bcf45394e35872da26da74d20cda334758f70b4e737811052deb"
+    }
+  ]
+}

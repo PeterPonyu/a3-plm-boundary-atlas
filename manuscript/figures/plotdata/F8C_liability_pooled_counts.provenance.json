@@ -1,0 +1,46 @@
+{
+  "claim_ceiling": "descriptive; locked derived table only, not a promoted panel",
+  "cohort_id": "A3-frozen",
+  "cpu_only": true,
+  "definition": "sum locked BH-significant counts and dataset counts within prespecified liability group, then divide counts",
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "grouping": [
+    "liability_group"
+  ],
+  "output_sha256": "41d36ed55c54ef00c08ed4b49c80cfbc3dee051410ad5bb12c0750a8453cc3d5",
+  "registry_binding": {
+    "estimand_id": "A3-EQ-F8-POOL-01",
+    "figure_id": "F8",
+    "output": "figures/plotdata/F8C_liability_pooled_counts.csv",
+    "panel_id": "C"
+  },
+  "schema_version": 1,
+  "scientific_payload_sha256": "41d36ed55c54ef00c08ed4b49c80cfbc3dee051410ad5bb12c0750a8453cc3d5",
+  "seed": "20260824",
+  "sort_order": [
+    [
+      "liability"
+    ],
+    [
+      "non-liability"
+    ]
+  ],
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "property",
+        "n_datasets",
+        "n_sig_raw_bh",
+        "frac_sig",
+        "n_applicable_multigermline"
+      ],
+      "path": "manuscript/figures/plotdata/F5_developability.csv",
+      "rows": 7,
+      "sha256": "17c2f64b133c446ca316169d727f2e114308013fc515f5a32743c57b1b8ab878"
+    }
+  ],
+  "table": "F8C_liability_pooled_counts",
+  "units": "pooled BH-significant fraction"
+}

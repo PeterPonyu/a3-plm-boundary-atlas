@@ -1,0 +1,4 @@
+task,value,lo,hi,note
+DMS fitness (ESM-2 650M),0.725,0.689,0.76,n=69 proteins (raw masked-marginal)
+DMS fitness (ProtBERT),0.71,,,encoder-robust (no committed per-protein CI)
+ClinVar path/benign (per-gene),0.783,0.743,0.824,n=20 genes

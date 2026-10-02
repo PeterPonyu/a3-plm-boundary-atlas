@@ -1,0 +1,49 @@
+{
+  "selection": "Existing two directly mapped substitutions at hormone residue 58; same background, temperature and one record each. Illustrative, not an independent validation cohort.",
+  "structure_source": "https://files.rcsb.org/download/1A22.cif",
+  "structure_identity": "Human growth hormone G120R (chain A), receptor (chain B). Auth residue A58 is ILE; residue A120 is ARG. No hypothetical mutant coordinates drawn.",
+  "source_table": "analysis/xfit_calibration_20260918/inputs/scored_3b_wt.csv",
+  "source_sha256": "0d7782b5ff8d6b310c9d5049a776f42cc6a2c290813f207fcda746f85fd9b69e",
+  "structure_sha256": "ce576fa6b09cf179e85abba617059323e268a88c3799c2b85e5b76bd6757bf07",
+  "rows": [
+    {
+      "mutkey": "1A22_A_B|A|I58A",
+      "pdb": "1A22_A_B",
+      "pdbid": "1A22",
+      "chain": "A",
+      "seqkey": "1A22_A",
+      "wt": "I",
+      "mut": "A",
+      "idx0": 57,
+      "map_method": "direct(pos=58)",
+      "T": 298.0,
+      "ddg": 1.6590566728238971,
+      "loc": "INT",
+      "ab": false,
+      "interface": false,
+      "hold_out": NaN,
+      "n_rep": 1,
+      "llr_3b_wt": -11.109375
+    },
+    {
+      "mutkey": "1A22_A_B|A|I58L",
+      "pdb": "1A22_A_B",
+      "pdbid": "1A22",
+      "chain": "A",
+      "seqkey": "1A22_A",
+      "wt": "I",
+      "mut": "L",
+      "idx0": 57,
+      "map_method": "direct(pos=58)",
+      "T": 298.0,
+      "ddg": 0.3162766350688223,
+      "loc": "INT",
+      "ab": false,
+      "interface": false,
+      "hold_out": NaN,
+      "n_rep": 1,
+      "llr_3b_wt": -4.34375
+    }
+  ],
+  "scope": "Physical binding changes use existing ddg values. 3B sensitivity scores must not be substituted for the 650M aggregate."
+}

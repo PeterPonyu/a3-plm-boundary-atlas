@@ -1,0 +1,56 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F5",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "7d67987c4b863aa18adddaee99bfb425b34498633a128880bab2c95495ed7976",
+  "schema_version": 1,
+  "scientific_payload_sha256": "7d67987c4b863aa18adddaee99bfb425b34498633a128880bab2c95495ed7976",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "variant",
+        "split",
+        "spearman"
+      ],
+      "path": "manuscript/figures/plotdata/F10_discrimination.csv",
+      "rows": 4,
+      "sha256": "af5087e57a441cc3a1bab8fb3fc0e04967b7a25144f9c2f5d3dcb57d5ffdfe68"
+    },
+    {
+      "columns": [
+        "variant",
+        "split",
+        "calib_rmse",
+        "inflation"
+      ],
+      "path": "manuscript/figures/plotdata/F10_calibration.csv",
+      "rows": 4,
+      "sha256": "cd170a4642c9a1ab665cdbc694c08c6786766b37f8132aa90392a6af1b2e6df7"
+    },
+    {
+      "columns": [
+        "field",
+        "value"
+      ],
+      "path": "manuscript/figures/plotdata/F10_meta.csv",
+      "rows": 5,
+      "sha256": "6dbf14a56139eefae96a5f20647795cc9c798c0c72a790248c256b79c2ebbde5"
+    },
+    {
+      "columns": [
+        "label",
+        "spearman"
+      ],
+      "path": "manuscript/figures/plotdata/F10_reference.csv",
+      "rows": 1,
+      "sha256": "18be39ad6cda3fbdd0b1318db61d8434989f1e228bca746ac57370724ffa778a"
+    }
+  ]
+}

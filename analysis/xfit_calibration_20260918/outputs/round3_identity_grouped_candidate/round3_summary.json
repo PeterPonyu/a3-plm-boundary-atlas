@@ -1,0 +1,55 @@
+{
+  "protocol_id": "A3-XFIT-NESTED-IDENTITY-GROUPED-CANDIDATE",
+  "parent_protocol": "A3-XFIT-CAL-20260918",
+  "not_a_restoration": true,
+  "forbidden_claim": "Do not treat any number here as recovery of 0.0207 or 91%",
+  "historical_stop_file": "/home/zeyufu/Desktop/labs/capsules/a3-plm-boundary-atlas/manuscript/figures/plotdata/F7_20gene_perbin_STATUS.txt",
+  "historical_stop_sha256": "ac011054a4175fb490a6b76a2190b5686181d877a55175b9c3eaa8d6502a3b20",
+  "historical_stop_unchanged": true,
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "seed": 20260918,
+  "nested_seed": 20260919,
+  "k_folds": 5,
+  "n_bins": 10,
+  "n_nested": 200,
+  "n": 4677,
+  "n_genes": 20,
+  "input_sha256": "35bec90f46bac58bddd862fe99d4767053b1653ddfb5bacb2b366745c67b15b2",
+  "replayed_uncal_ece": 0.24848355100110145,
+  "bin_definition": "equal-width 10 bins on [0,1]; bin b=[b/10,(b+1)/10) for b=0..8; bin 9=[0.9,1.0]",
+  "nested_bootstrap": "resample n rows with replacement; stratify original example identities into 5 folds; keep all copies of an original example in one fold; re-fit z-score sigmoid + Platt + isotonic on complementary folds; evaluate ECE on the bootstrap OOF map. Calibrators ARE refit.",
+  "oof_pair_bootstrap_note": "R1/R2 CIs resample OOF (p,y) pairs and do not refit calibrators",
+  "supersedes_only": "The archived nested bootstrap; original unique-row OOF maps are unchanged.",
+  "nested": {
+    "uncalibrated": {
+      "n_boot": 200,
+      "mean": 0.248735,
+      "ci_lo": 0.237547,
+      "ci_hi": 0.260993,
+      "point_oof_pair_ece": 0.248484,
+      "oof_pair_ci_lo": 0.237105,
+      "oof_pair_ci_hi": 0.259314
+    },
+    "pooled_platt": {
+      "n_boot": 200,
+      "mean": 0.020427,
+      "ci_lo": 0.013016,
+      "ci_hi": 0.029036,
+      "point_oof_pair_ece": 0.019244,
+      "oof_pair_ci_lo": 0.013864,
+      "oof_pair_ci_hi": 0.031532
+    },
+    "pooled_isotonic": {
+      "n_boot": 200,
+      "mean": 0.013056,
+      "ci_lo": 0.006587,
+      "ci_hi": 0.020948,
+      "point_oof_pair_ece": 0.006727,
+      "oof_pair_ci_lo": 0.006731,
+      "oof_pair_ci_hi": 0.02106
+    }
+  },
+  "ready": "NO",
+  "printed": false
+}

@@ -1,0 +1,436 @@
+{
+  "orig6_reproduction": {
+    "label": "6-gene subset (reproduction of clinical_calibration.json)",
+    "n_genes": 6,
+    "genes": [
+      "AICDA_HUMAN",
+      "HEM3_HUMAN",
+      "KCNE1_HUMAN",
+      "OPSD_HUMAN",
+      "OTC_HUMAN",
+      "P53_HUMAN"
+    ],
+    "n": 1093,
+    "n_pathogenic": 389,
+    "n_benign": 704,
+    "majority_class_acc": 0.6441,
+    "auroc_raw_pooled": 0.6992,
+    "auroc_ci95_pooled": [
+      0.667,
+      0.7314
+    ],
+    "auroc_gene_mean": 0.7979,
+    "n_test_heldout": 547,
+    "ece_raw": 0.1574,
+    "ece_calibrated": 0.0466,
+    "ece_reduction_pct": 70.4,
+    "full_coverage_accuracy": 0.6837,
+    "coverage50_accuracy": 0.7847,
+    "coverage50_error": 0.2153,
+    "coverage50_pathogenic_precision": 0.6316,
+    "cov_curve": [
+      {
+        "coverage": 0.1,
+        "n_kept": 55,
+        "accuracy": 0.7091,
+        "error": 0.2909,
+        "pathogenic_precision": 0.5
+      },
+      {
+        "coverage": 0.2,
+        "n_kept": 109,
+        "accuracy": 0.7982,
+        "error": 0.2018,
+        "pathogenic_precision": 0.6667
+      },
+      {
+        "coverage": 0.3,
+        "n_kept": 164,
+        "accuracy": 0.7988,
+        "error": 0.2012,
+        "pathogenic_precision": 0.5714
+      },
+      {
+        "coverage": 0.4,
+        "n_kept": 219,
+        "accuracy": 0.8037,
+        "error": 0.1963,
+        "pathogenic_precision": 0.5385
+      },
+      {
+        "coverage": 0.5,
+        "n_kept": 274,
+        "accuracy": 0.7847,
+        "error": 0.2153,
+        "pathogenic_precision": 0.6316
+      },
+      {
+        "coverage": 0.6,
+        "n_kept": 328,
+        "accuracy": 0.7561,
+        "error": 0.2439,
+        "pathogenic_precision": 0.5455
+      },
+      {
+        "coverage": 0.7,
+        "n_kept": 383,
+        "accuracy": 0.7415,
+        "error": 0.2585,
+        "pathogenic_precision": 0.6
+      },
+      {
+        "coverage": 0.8,
+        "n_kept": 438,
+        "accuracy": 0.7283,
+        "error": 0.2717,
+        "pathogenic_precision": 0.5934
+      },
+      {
+        "coverage": 0.9,
+        "n_kept": 492,
+        "accuracy": 0.7073,
+        "error": 0.2927,
+        "pathogenic_precision": 0.6034
+      },
+      {
+        "coverage": 1.0,
+        "n_kept": 547,
+        "accuracy": 0.6837,
+        "error": 0.3163,
+        "pathogenic_precision": 0.5797
+      }
+    ]
+  },
+  "full20": {
+    "label": "FULL 20-gene panel",
+    "n_genes": 20,
+    "genes": [
+      "AICDA_HUMAN",
+      "BRAF_GOF",
+      "EGFR_GOF",
+      "FGFR3_GOF",
+      "HEM3_HUMAN",
+      "HRAS_GOF",
+      "KCNE1_HUMAN",
+      "KIT_GOF",
+      "KRAS_GOF",
+      "MET_HUMAN",
+      "NRAS_GOF",
+      "OPSD_HUMAN",
+      "OTC_HUMAN",
+      "P53_HUMAN",
+      "PIK3CA_GOF",
+      "PTEN_GOF",
+      "RB1_GOF",
+      "RET_GOF",
+      "STK11_GOF",
+      "VHL_GOF"
+    ],
+    "n": 4677,
+    "n_pathogenic": 1108,
+    "n_benign": 3569,
+    "majority_class_acc": 0.7631,
+    "auroc_raw_pooled": 0.7091,
+    "auroc_ci95_pooled": [
+      0.6897,
+      0.7284
+    ],
+    "auroc_gene_mean": 0.656,
+    "n_test_heldout": 2339,
+    "ece_raw": 0.2443,
+    "ece_calibrated": 0.0207,
+    "ece_reduction_pct": 91.5,
+    "full_coverage_accuracy": 0.7948,
+    "coverage50_accuracy": 0.8487,
+    "coverage50_error": 0.1513,
+    "coverage50_pathogenic_precision": 0.0,
+    "cov_curve": [
+      {
+        "coverage": 0.1,
+        "n_kept": 234,
+        "accuracy": 0.859,
+        "error": 0.141,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.2,
+        "n_kept": 468,
+        "accuracy": 0.8718,
+        "error": 0.1282,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.3,
+        "n_kept": 702,
+        "accuracy": 0.8547,
+        "error": 0.1453,
+        "pathogenic_precision": 0.0
+      },
+      {
+        "coverage": 0.4,
+        "n_kept": 936,
+        "accuracy": 0.8462,
+        "error": 0.1538,
+        "pathogenic_precision": 0.0
+      },
+      {
+        "coverage": 0.5,
+        "n_kept": 1170,
+        "accuracy": 0.8487,
+        "error": 0.1513,
+        "pathogenic_precision": 0.0
+      },
+      {
+        "coverage": 0.6,
+        "n_kept": 1403,
+        "accuracy": 0.8525,
+        "error": 0.1475,
+        "pathogenic_precision": 0.5
+      },
+      {
+        "coverage": 0.7,
+        "n_kept": 1637,
+        "accuracy": 0.8509,
+        "error": 0.1491,
+        "pathogenic_precision": 0.75
+      },
+      {
+        "coverage": 0.8,
+        "n_kept": 1871,
+        "accuracy": 0.8455,
+        "error": 0.1545,
+        "pathogenic_precision": 0.7451
+      },
+      {
+        "coverage": 0.9,
+        "n_kept": 2105,
+        "accuracy": 0.8257,
+        "error": 0.1743,
+        "pathogenic_precision": 0.7027
+      },
+      {
+        "coverage": 1.0,
+        "n_kept": 2339,
+        "accuracy": 0.7948,
+        "error": 0.2052,
+        "pathogenic_precision": 0.6331
+      }
+    ]
+  },
+  "full20_minus_p53": {
+    "label": "20-gene panel minus P53 (LOGO sensitivity)",
+    "n_genes": 19,
+    "genes": [
+      "AICDA_HUMAN",
+      "BRAF_GOF",
+      "EGFR_GOF",
+      "FGFR3_GOF",
+      "HEM3_HUMAN",
+      "HRAS_GOF",
+      "KCNE1_HUMAN",
+      "KIT_GOF",
+      "KRAS_GOF",
+      "MET_HUMAN",
+      "NRAS_GOF",
+      "OPSD_HUMAN",
+      "OTC_HUMAN",
+      "PIK3CA_GOF",
+      "PTEN_GOF",
+      "RB1_GOF",
+      "RET_GOF",
+      "STK11_GOF",
+      "VHL_GOF"
+    ],
+    "n": 4125,
+    "n_pathogenic": 865,
+    "n_benign": 3260,
+    "majority_class_acc": 0.7903,
+    "auroc_raw_pooled": 0.6946,
+    "auroc_ci95_pooled": [
+      0.672,
+      0.7172
+    ],
+    "auroc_gene_mean": 0.6491,
+    "n_test_heldout": 2063,
+    "ece_raw": 0.2708,
+    "ece_calibrated": 0.0239,
+    "ece_reduction_pct": 91.2,
+    "full_coverage_accuracy": 0.8071,
+    "coverage50_accuracy": 0.8527,
+    "coverage50_error": 0.1473,
+    "coverage50_pathogenic_precision": null,
+    "cov_curve": [
+      {
+        "coverage": 0.1,
+        "n_kept": 206,
+        "accuracy": 0.8544,
+        "error": 0.1456,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.2,
+        "n_kept": 413,
+        "accuracy": 0.8717,
+        "error": 0.1283,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.3,
+        "n_kept": 619,
+        "accuracy": 0.8595,
+        "error": 0.1405,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.4,
+        "n_kept": 825,
+        "accuracy": 0.8545,
+        "error": 0.1455,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.5,
+        "n_kept": 1032,
+        "accuracy": 0.8527,
+        "error": 0.1473,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.6,
+        "n_kept": 1238,
+        "accuracy": 0.8611,
+        "error": 0.1389,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.7,
+        "n_kept": 1444,
+        "accuracy": 0.8608,
+        "error": 0.1392,
+        "pathogenic_precision": 0.6667
+      },
+      {
+        "coverage": 0.8,
+        "n_kept": 1650,
+        "accuracy": 0.86,
+        "error": 0.14,
+        "pathogenic_precision": 0.8235
+      },
+      {
+        "coverage": 0.9,
+        "n_kept": 1857,
+        "accuracy": 0.8352,
+        "error": 0.1648,
+        "pathogenic_precision": 0.622
+      },
+      {
+        "coverage": 1.0,
+        "n_kept": 2063,
+        "accuracy": 0.8071,
+        "error": 0.1929,
+        "pathogenic_precision": 0.6
+      }
+    ]
+  },
+  "orig6_minus_p53": {
+    "label": "6-gene subset minus P53 (LOGO sensitivity)",
+    "n_genes": 5,
+    "genes": [
+      "AICDA_HUMAN",
+      "HEM3_HUMAN",
+      "KCNE1_HUMAN",
+      "OPSD_HUMAN",
+      "OTC_HUMAN"
+    ],
+    "n": 546,
+    "n_pathogenic": 146,
+    "n_benign": 400,
+    "majority_class_acc": 0.7326,
+    "auroc_raw_pooled": 0.6761,
+    "auroc_ci95_pooled": [
+      0.6236,
+      0.7262
+    ],
+    "auroc_gene_mean": 0.7984,
+    "n_test_heldout": 273,
+    "ece_raw": 0.2185,
+    "ece_calibrated": 0.0331,
+    "ece_reduction_pct": 84.8,
+    "full_coverage_accuracy": 0.7326,
+    "coverage50_accuracy": 0.8529,
+    "coverage50_error": 0.1471,
+    "coverage50_pathogenic_precision": null,
+    "cov_curve": [
+      {
+        "coverage": 0.1,
+        "n_kept": 27,
+        "accuracy": 0.9259,
+        "error": 0.0741,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.2,
+        "n_kept": 55,
+        "accuracy": 0.8727,
+        "error": 0.1273,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.3,
+        "n_kept": 82,
+        "accuracy": 0.8659,
+        "error": 0.1341,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.4,
+        "n_kept": 109,
+        "accuracy": 0.8716,
+        "error": 0.1284,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.5,
+        "n_kept": 136,
+        "accuracy": 0.8529,
+        "error": 0.1471,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.6,
+        "n_kept": 164,
+        "accuracy": 0.8232,
+        "error": 0.1768,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.7,
+        "n_kept": 191,
+        "accuracy": 0.8063,
+        "error": 0.1937,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.8,
+        "n_kept": 218,
+        "accuracy": 0.7844,
+        "error": 0.2156,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 0.9,
+        "n_kept": 246,
+        "accuracy": 0.7439,
+        "error": 0.2561,
+        "pathogenic_precision": null
+      },
+      {
+        "coverage": 1.0,
+        "n_kept": 273,
+        "accuracy": 0.7326,
+        "error": 0.2674,
+        "pathogenic_precision": 0.5
+      }
+    ]
+  }
+}

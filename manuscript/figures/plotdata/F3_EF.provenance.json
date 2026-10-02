@@ -1,0 +1,40 @@
+{
+  "blocked_downstream_actions": [
+    {
+      "action": "replace_with",
+      "panel": "F",
+      "reason": "Locked F3 table contains gene-level summaries only, not per-variant predicted/observed coordinates.",
+      "target": "F3 gene-summary sensitivity"
+    }
+  ],
+  "blocked_reasons": [
+    "Locked F3 table contains gene-level summaries only, not per-variant predicted/observed coordinates."
+  ],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F3",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "dffa83a3a437a7bd6f604f3e6cd0e4ba39e7f6787a62ac9db68ba8f941e8b7e5",
+  "schema_version": 1,
+  "scientific_payload_sha256": "dffa83a3a437a7bd6f604f3e6cd0e4ba39e7f6787a62ac9db68ba8f941e8b7e5",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "gene",
+        "auroc_clinvar",
+        "n_path",
+        "wt_len",
+        "auroc_gnomad",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "path": "manuscript/figures/plotdata/F3_clinvar.csv",
+      "rows": 20,
+      "sha256": "ee6dcc67cba8a3356015f611a578d272a6a593211a2c87ae2b63b5ee6a6c6012"
+    }
+  ]
+}

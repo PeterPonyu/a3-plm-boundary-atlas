@@ -1,0 +1,45 @@
+{
+  "blocked_downstream_actions": [
+    {
+      "action": "merge_into",
+      "panel": "E",
+      "reason": "F5_developability.csv has aggregate BH counts, not per-dataset effect estimates or independent-unit identifiers.",
+      "target": "F8 developability provenance/family audit"
+    },
+    {
+      "action": "retire",
+      "panel": "F",
+      "reason": "The committed developability table lacks independent dataset outcomes/variance for a valid alpha=0.05, power=0.80 calculation.",
+      "target": "F8 power/MDE until dataset-level locked results exist"
+    }
+  ],
+  "blocked_reasons": [
+    "F5_developability.csv has aggregate BH counts, not per-dataset effect estimates or independent-unit identifiers.",
+    "The committed developability table lacks independent dataset outcomes/variance for a valid alpha=0.05, power=0.80 calculation."
+  ],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F8",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "104618136b97c207627ef63116bad2206261f191d1926e7298d51152f00df594",
+  "schema_version": 1,
+  "scientific_payload_sha256": "104618136b97c207627ef63116bad2206261f191d1926e7298d51152f00df594",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "property",
+        "n_datasets",
+        "n_sig_raw_bh",
+        "frac_sig",
+        "n_applicable_multigermline"
+      ],
+      "path": "manuscript/figures/plotdata/F5_developability.csv",
+      "rows": 7,
+      "sha256": "17c2f64b133c446ca316169d727f2e114308013fc515f5a32743c57b1b8ab878"
+    }
+  ]
+}

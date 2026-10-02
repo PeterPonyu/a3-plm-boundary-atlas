@@ -1,0 +1,5 @@
+method,mean_rho_unc_all,mean_rho_unc_highshift,ucb_beats_greedy,ucb_beats_random,n_splits
+BayesianRidge,0.021,0.001,0,7,7
+Deep Ensemble,0.104,0.069,0,7,7
+GP-RBF,-0.02,0.015,0,6,7
+MC-Dropout,0.127,0.122,0,6,7

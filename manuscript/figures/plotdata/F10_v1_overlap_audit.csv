@@ -1,0 +1,12 @@
+field,value
+status,superseded; excluded from headline panels
+n_train,164094
+n_heldout,55592
+clusters_train,66
+clusters_heldout,30
+cluster_overlap,4
+discrimination_spearman_train,0.381
+discrimination_spearman_heldout,0.336
+calib_rmse_train_heldin,0.913
+calib_rmse_homology_heldout,0.91
+calib_rmse_inflation,-0.004

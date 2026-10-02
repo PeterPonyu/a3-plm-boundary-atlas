@@ -1,0 +1,41 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S2",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "a1e7d9751f27433751bb9b7814cd7817ae8d3cd85f54f4d384ef734fd39c7fa2",
+  "schema_version": 1,
+  "scientific_payload_sha256": "a1e7d9751f27433751bb9b7814cd7817ae8d3cd85f54f4d384ef734fd39c7fa2",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "gene",
+        "class",
+        "auroc_clinvar_benign",
+        "auroc_gnomad_benign",
+        "delta_gnomad_minus_clinvar",
+        "n_path",
+        "wt_len"
+      ],
+      "path": "manuscript/figures/plotdata/FS2_clinvar_vs_gnomad.csv",
+      "rows": 20,
+      "sha256": "d4b461b0e87ab6d8d5c45975fe9c154c99cb9f07b487761c12feac34da96db60"
+    },
+    {
+      "columns": [
+        "class",
+        "mean_clinvar_auroc",
+        "n_genes"
+      ],
+      "path": "manuscript/figures/plotdata/FS2_class_means.csv",
+      "rows": 2,
+      "sha256": "e33c5b9ca6d1615cc7d9934dadf27fafb5025fcb29a9e2c533c1a97602dd8c3d"
+    }
+  ]
+}

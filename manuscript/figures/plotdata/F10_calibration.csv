@@ -1,0 +1,5 @@
+variant,split,calib_rmse,inflation
+v2 WT,train,0.913,0.037
+v2 WT,homology-held-out,0.95,0.037
+v2 masked,train,0.911,0.039
+v2 masked,homology-held-out,0.951,0.039

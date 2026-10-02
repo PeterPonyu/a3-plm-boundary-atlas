@@ -1,0 +1,35 @@
+{
+  "allowed_statuses": [
+    "READY",
+    "BLOCKED_NO_COORDINATES",
+    "BLOCKED_NO_ROW_LEVEL",
+    "BLOCKED_NO_RETAINED_COEFFICIENTS"
+  ],
+  "columns": {
+    "blocked_reason": "string",
+    "claim": "string",
+    "cluster_unit": "string",
+    "cohort_id": "string",
+    "downstream_action": "string",
+    "downstream_target": "string",
+    "estimand_id": "string",
+    "input_id": "string",
+    "interval_hi": "number|null",
+    "interval_lo": "number|null",
+    "logical_figure": "string",
+    "method": "string",
+    "multiplicity": "string",
+    "nonclaim": "string",
+    "seed": "string",
+    "source_path": "string",
+    "source_sha256": "string",
+    "status": "string",
+    "target_panel": "string",
+    "tie_handling": "string",
+    "uncertainty_method": "string",
+    "units": "string",
+    "value": "number|null"
+  },
+  "required_null_behavior": "CSV empty value/interval fields represent null; BLOCKED rows require all three numeric fields empty.",
+  "schema_version": 1
+}

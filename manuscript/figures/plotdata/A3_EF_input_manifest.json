@@ -1,0 +1,427 @@
+{
+  "cpu_only": true,
+  "derived_outputs": [
+    "F8C_liability_pooled_counts",
+    "S5B_supervised_group_mean_median_abs_spearman",
+    "S6D_family_mean_protein_auroc",
+    "S7A_method_shift_mean_rho_unc"
+  ],
+  "output_count": 61,
+  "schema_version": 2,
+  "seed": "20260824",
+  "sources": [
+    {
+      "columns": [
+        "model_size",
+        "order",
+        "protein_mean_auroc",
+        "n_proteins",
+        "n_discriminating"
+      ],
+      "path": "manuscript/figures/plotdata/F1_scale.csv",
+      "rows": 4,
+      "sha256": "21c1073c5018ea717b16947ac67ebc94996085510083207aed0ef8cebd90a4c2"
+    },
+    {
+      "columns": [
+        "protein",
+        "auroc_650m_masked",
+        "auroc_3b_masked",
+        "delta_3b_minus_650m"
+      ],
+      "path": "manuscript/figures/plotdata/F1_scale_paired_650M_3B.csv",
+      "rows": 69,
+      "sha256": "6496354cf21a4fc87954ace959d754bcc0f470f3dd6c7dbcde3177ab1a2c3d8c"
+    },
+    {
+      "columns": [
+        "model",
+        "scoring",
+        "score_field",
+        "n_attempted_assays",
+        "n_scored_assays",
+        "n_proteins",
+        "n_variants",
+        "protein_mean_auroc",
+        "n_discriminating_proteins",
+        "fraction_discriminating_proteins"
+      ],
+      "path": "manuscript/figures/plotdata/F1_full217_scoring.csv",
+      "rows": 2,
+      "sha256": "243493d2fcb7724644465e9a96efd9c350672fce3126db143ad9b83c9451f278"
+    },
+    {
+      "columns": [
+        "gene",
+        "auroc_clinvar",
+        "n_path",
+        "wt_len",
+        "auroc_gnomad",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "path": "manuscript/figures/plotdata/F3_clinvar.csv",
+      "rows": 20,
+      "sha256": "ee6dcc67cba8a3356015f611a578d272a6a593211a2c87ae2b63b5ee6a6c6012"
+    },
+    {
+      "columns": [
+        "subset",
+        "key",
+        "spearman",
+        "ci_lo",
+        "ci_hi",
+        "n"
+      ],
+      "path": "manuscript/figures/plotdata/F4_binding.csv",
+      "rows": 5,
+      "sha256": "a80bae0108a354f1fa9ff89ef58ffff18f1ceacc21fdc6e4dfffdb9780f3f186"
+    },
+    {
+      "columns": [
+        "property",
+        "n_datasets",
+        "n_sig_raw_bh",
+        "frac_sig",
+        "n_applicable_multigermline"
+      ],
+      "path": "manuscript/figures/plotdata/F5_developability.csv",
+      "rows": 7,
+      "sha256": "17c2f64b133c446ca316169d727f2e114308013fc515f5a32743c57b1b8ab878"
+    },
+    {
+      "columns": [
+        "which",
+        "bin_mid",
+        "mean_pred",
+        "obs_rate",
+        "n"
+      ],
+      "path": "manuscript/figures/plotdata/F7_reliability.csv",
+      "rows": 19,
+      "sha256": "e1fec4da0d6459d4e46bee325f0f9279af59f27acf2b98ba9a835ecea631a2d7"
+    },
+    {
+      "columns": [
+        "gene",
+        "n_overlap",
+        "auroc_esm2",
+        "esm2_lo",
+        "esm2_hi",
+        "auroc_esm1v",
+        "esm1v_lo",
+        "esm1v_hi"
+      ],
+      "path": "manuscript/figures/plotdata/F7_headtohead.csv",
+      "rows": 4,
+      "sha256": "8de9595ef64cd26518e1a6f90fb5b3c8f86c9020025ee057bacf49d31c0e488b"
+    },
+    {
+      "columns": [
+        "coverage",
+        "accuracy",
+        "error",
+        "pathogenic_precision",
+        "n_kept",
+        "n_pathogenic_calls"
+      ],
+      "path": "manuscript/figures/plotdata/F7_coverage.csv",
+      "rows": 10,
+      "sha256": "051381eab0cecde67b88737f5a7767b77b74b43f424841d82ca5e991e86f26e4"
+    },
+    {
+      "columns": [
+        "panel",
+        "score",
+        "ece",
+        "n",
+        "n_heldout",
+        "source"
+      ],
+      "path": "manuscript/figures/plotdata/F7_20gene_ece_summary.csv",
+      "rows": 4,
+      "sha256": "0a6ea22ae4c60c2412356bccce4bde353a004dddd55dd506fa3f52fb73b947f6"
+    },
+    {
+      "columns": [
+        "coverage",
+        "n_kept",
+        "accuracy",
+        "error",
+        "pathogenic_precision"
+      ],
+      "path": "manuscript/figures/plotdata/F7_20gene_coverage.csv",
+      "rows": 10,
+      "sha256": "63fdc2adaa59f86269c952023b7c4d4f6812529239c16cc41eab24329a03c69d"
+    },
+    {
+      "columns": [
+        "model",
+        "rho",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "path": "manuscript/figures/plotdata/F8_antibody_n4.csv",
+      "rows": 2,
+      "sha256": "9c1ce563848e74638d42200dfaa7273ec773ae20fc7da465b9552f6613edf148"
+    },
+    {
+      "columns": [
+        "property",
+        "n_datasets",
+        "antiberty_bh_sig",
+        "esm2_bh_sig"
+      ],
+      "path": "manuscript/figures/plotdata/F8_antibody_n9.csv",
+      "rows": 2,
+      "sha256": "4e517221a935bcf45394e35872da26da74d20cda334758f70b4e737811052deb"
+    },
+    {
+      "columns": [
+        "variant",
+        "split",
+        "spearman"
+      ],
+      "path": "manuscript/figures/plotdata/F10_discrimination.csv",
+      "rows": 4,
+      "sha256": "af5087e57a441cc3a1bab8fb3fc0e04967b7a25144f9c2f5d3dcb57d5ffdfe68"
+    },
+    {
+      "columns": [
+        "variant",
+        "split",
+        "calib_rmse",
+        "inflation"
+      ],
+      "path": "manuscript/figures/plotdata/F10_calibration.csv",
+      "rows": 4,
+      "sha256": "cd170a4642c9a1ab665cdbc694c08c6786766b37f8132aa90392a6af1b2e6df7"
+    },
+    {
+      "columns": [
+        "field",
+        "value"
+      ],
+      "path": "manuscript/figures/plotdata/F10_meta.csv",
+      "rows": 5,
+      "sha256": "6dbf14a56139eefae96a5f20647795cc9c798c0c72a790248c256b79c2ebbde5"
+    },
+    {
+      "columns": [
+        "label",
+        "spearman"
+      ],
+      "path": "manuscript/figures/plotdata/F10_reference.csv",
+      "rows": 1,
+      "sha256": "18be39ad6cda3fbdd0b1318db61d8434989f1e228bca746ac57370724ffa778a"
+    },
+    {
+      "columns": [
+        "field",
+        "value"
+      ],
+      "path": "manuscript/figures/plotdata/F10_v1_overlap_audit.csv",
+      "rows": 11,
+      "sha256": "011aa0188de397b347b088d3432449ee5e842bfdd2d54a755e735a6a540b80f1"
+    },
+    {
+      "columns": [
+        "id",
+        "axis",
+        "auroc",
+        "n",
+        "score_mean",
+        "score_std",
+        "score_entropy",
+        "length",
+        "length_is_proxy",
+        "class_balance"
+      ],
+      "path": "manuscript/figures/plotdata/F10_reliability_predictor.csv",
+      "rows": 89,
+      "sha256": "9ab60e46d9e4c29127343a3c07306a4f2297c67ae22ab2adba304359c59e9766"
+    },
+    {
+      "columns": [
+        "task",
+        "value",
+        "lo",
+        "hi",
+        "note"
+      ],
+      "path": "manuscript/figures/plotdata/F11_atlas_auroc.csv",
+      "rows": 3,
+      "sha256": "9109235593d5aad0a177e478548900a6b65e402c634f16ab6c4722213feb7cef"
+    },
+    {
+      "columns": [
+        "task",
+        "value",
+        "lo",
+        "hi",
+        "note"
+      ],
+      "path": "manuscript/figures/plotdata/F11_atlas_spearman.csv",
+      "rows": 6,
+      "sha256": "a80a53a87e934e9d70f771cfdc674bb5492669844614b6fe399e0336ae18f857"
+    },
+    {
+      "columns": [
+        "assay",
+        "auroc",
+        "ci_lo",
+        "ci_hi",
+        "n_test",
+        "ci_excludes_chance"
+      ],
+      "path": "manuscript/figures/plotdata/FS1_proteingym_atlas.csv",
+      "rows": 19,
+      "sha256": "8e1e330a65fb8ff0f7946ca5502641e6f9214ceb7b8e6b4dfb3b6d0c8a99c7fb"
+    },
+    {
+      "columns": [
+        "metric",
+        "value",
+        "ci_lo",
+        "ci_hi",
+        "n_variants",
+        "n_assays",
+        "n_discriminating"
+      ],
+      "path": "manuscript/figures/plotdata/FS1_proteingym_pooled.csv",
+      "rows": 1,
+      "sha256": "f1e20a5451e18b82807476f18b420a230414f5dd8ab904fceef138ac23d4d389"
+    },
+    {
+      "columns": [
+        "gene",
+        "class",
+        "auroc_clinvar_benign",
+        "auroc_gnomad_benign",
+        "delta_gnomad_minus_clinvar",
+        "n_path",
+        "wt_len"
+      ],
+      "path": "manuscript/figures/plotdata/FS2_clinvar_vs_gnomad.csv",
+      "rows": 20,
+      "sha256": "d4b461b0e87ab6d8d5c45975fe9c154c99cb9f07b487761c12feac34da96db60"
+    },
+    {
+      "columns": [
+        "class",
+        "mean_clinvar_auroc",
+        "n_genes"
+      ],
+      "path": "manuscript/figures/plotdata/FS2_class_means.csv",
+      "rows": 2,
+      "sha256": "e33c5b9ca6d1615cc7d9934dadf27fafb5025fcb29a9e2c533c1a97602dd8c3d"
+    },
+    {
+      "columns": [
+        "order",
+        "subset",
+        "method",
+        "n",
+        "rho",
+        "ci_lo",
+        "ci_hi"
+      ],
+      "path": "manuscript/figures/plotdata/FS3_antibody_robustness.csv",
+      "rows": 15,
+      "sha256": "96205842095ca818a7bc8744c19acfe6a17ae448f4ab135c5b99d1ba740971fa"
+    },
+    {
+      "columns": [
+        "order",
+        "tier",
+        "condition",
+        "auroc",
+        "anti_helpful"
+      ],
+      "path": "manuscript/figures/plotdata/FS4_abstention_tiers.csv",
+      "rows": 12,
+      "sha256": "61f05e9fbf418a83b91ec21be3a8d403881057c851ff01c146a3ac42e7415d7e"
+    },
+    {
+      "columns": [
+        "coverage",
+        "conf_auroc",
+        "shuffle_auroc",
+        "n_proteins"
+      ],
+      "path": "manuscript/figures/plotdata/FS4_abstention_coverage.csv",
+      "rows": 6,
+      "sha256": "b556222588812c69833bb86262a8508cf4af5667533d32e7c0d7ce33a62d3c63"
+    },
+    {
+      "columns": [
+        "predictor",
+        "n_proteins",
+        "median_abs_spearman",
+        "supervised"
+      ],
+      "path": "manuscript/figures/plotdata/FS5_vep_comparison.csv",
+      "rows": 7,
+      "sha256": "7f0799e3865167ec26c09930bee4b8996d0b7123d16a25a53520682e6f375f86"
+    },
+    {
+      "columns": [
+        "comparison",
+        "spearman"
+      ],
+      "path": "manuscript/figures/plotdata/F2_agreement.csv",
+      "rows": 2,
+      "sha256": "137f2bedf37a369fd1329fe89479a49de6ea0c258fd40711dec52fc3173177b7"
+    },
+    {
+      "columns": [
+        "model",
+        "family",
+        "protein_mean_auroc"
+      ],
+      "path": "manuscript/figures/plotdata/F2_crossmodel.csv",
+      "rows": 3,
+      "sha256": "40a3726ed0f8062703e919de23f4af900d143f4ff6762c4fbe20816524980800"
+    },
+    {
+      "columns": [
+        "method",
+        "split",
+        "shift_class",
+        "rho_unc",
+        "ci_lo",
+        "ci_hi",
+        "pred_pearson"
+      ],
+      "path": "manuscript/figures/plotdata/F9_rho_unc.csv",
+      "rows": 28,
+      "sha256": "fa9a9802dde03c738220bc075818768d5f8af1b2fc56e52acbc4447f2df2cb37"
+    },
+    {
+      "columns": [
+        "method",
+        "mean_rho_unc_all",
+        "mean_rho_unc_highshift",
+        "ucb_beats_greedy",
+        "ucb_beats_random",
+        "n_splits"
+      ],
+      "path": "manuscript/figures/plotdata/F9_summary.csv",
+      "rows": 4,
+      "sha256": "7090ff790816fafabe5a9711b1abc854648bf9bae5add3e28a2be85c7b45f9a6"
+    },
+    {
+      "columns": [
+        "split",
+        "shift_class",
+        "greedy",
+        "ucb",
+        "random",
+        "thompson"
+      ],
+      "path": "manuscript/figures/plotdata/F9_bo_acquisition.csv",
+      "rows": 7,
+      "sha256": "e0ac52a02bc732fd966820a2e98651f9d7137ef72b7bcd99643ddc0a8c6cbadc"
+    }
+  ]
+}

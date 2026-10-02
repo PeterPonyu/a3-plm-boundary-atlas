@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "requested": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "runtime_reported": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "source": "nodeRepl.requestMeta.x-codex-turn-metadata",
+  "actual_matches_request": true,
+  "codex_version": "0.159.2",
+  "thread_source": "subagent",
+  "subagent_kind": "thread_spawn",
+  "scope": "A3 local public export sidecar",
+  "remote_writes_performed": false,
+  "network_calls_performed": false,
+  "model_inference_performed": false,
+  "scientific_fits_performed": false
+}

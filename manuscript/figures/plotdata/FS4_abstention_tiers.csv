@@ -1,0 +1,13 @@
+order,tier,condition,auroc,anti_helpful
+0,ESM-2 35M,full (100%),0.6613,True
+0,ESM-2 35M,keep-hi 50%,0.5793,True
+0,ESM-2 35M,shuffle 50%,0.6616,True
+1,ESM-2 150M,full (100%),0.6892,True
+1,ESM-2 150M,keep-hi 50%,0.6096,True
+1,ESM-2 150M,shuffle 50%,0.6864,True
+2,ESM-2 650M,full (100%),0.7021,True
+2,ESM-2 650M,keep-hi 50%,0.6453,True
+2,ESM-2 650M,shuffle 50%,0.7006,True
+3,ESM-1v,full (100%),0.7113,True
+3,ESM-1v,keep-hi 50%,0.6538,True
+3,ESM-1v,shuffle 50%,0.7129,True

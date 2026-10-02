@@ -1,0 +1,8 @@
+predictor,n_proteins,median_abs_spearman,supervised
+ESM-1v,10,0.489,no
+REVEL,10,0.473,yes
+DeepSequence,10,0.449,no
+VESPA,10,0.403,yes
+SIFT4G,10,0.395,no
+CADD,10,0.365,yes
+EVE,7,0.349,no

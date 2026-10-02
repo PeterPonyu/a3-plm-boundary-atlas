@@ -1,0 +1,87 @@
+{
+  "schema_version": "A3-local-public-export-verification-v1",
+  "date": "2026-10-02",
+  "scope": "local source-only export; remote publication and DOI/DAS integration excluded",
+  "model_metadata_record": "provenance/model-runtime.json",
+  "source_copy": {
+    "files": 365,
+    "bytes": 15500421,
+    "all_copy_hashes_matched": true,
+    "source_files_rechecked_after_tests": 365,
+    "source_drift": [],
+    "locked_method_files": 256,
+    "current_manuscript_build_inputs": 237
+  },
+  "checks": [
+    {
+      "command": "python3 -B tools/verify_public_release.py",
+      "result": "PASS: 11392 checks at the 385-file checkpoint; fresh final inventory check follows this record",
+      "rows": 4677,
+      "genes": 20,
+      "oof_rows": 4677,
+      "saved_refit_metric_records": 5000,
+      "n6c_gates": 24,
+      "new_inference": false,
+      "new_calibrator_fits": false
+    },
+    {
+      "command": "python3 -B -m pytest -q -p no:cacheprovider tests/test_public_release.py reproducibility/tests/test_a3_method_integrity.py manuscript/scripts/tests/test_a3_visual_contract.py manuscript/scripts/tests/test_shipped_figure_legibility.py analysis/revision_20260923/test_current_contract.py -k 'not test_no_latex_warning_or_missing_references'",
+      "result": "36 passed, 1 deselected in 2.03s",
+      "deselected_reason": "Original compiler-log test requires excluded .log temporary files; no compilation was authorized in this sidecar. This is not a skipped placeholder or claimed pass."
+    },
+    {
+      "command": "python3 -B reproducibility/verify_method_contract.py",
+      "result": "PASS: 256 bound inputs/code files match; scientific HOLD retained"
+    },
+    {
+      "command": "python3 -B manuscript/scripts/verify_figure_release.py --output manuscript/figures",
+      "result": "PASS: 17 assets; Arial embedded; no Type 3; required panel tags visible"
+    },
+    {
+      "command": "bash -n tools/build_public.sh; AST parse of tools/*.py and tests/*.py",
+      "result": "PASS: shell syntax and all 4 public Python files parse"
+    },
+    {
+      "command": "python3 -B tools/score_clinvar.py --help",
+      "result": "PASS: explicit upstream input adapter help; no scoring or upstream preflight performed"
+    },
+    {
+      "command": "pdfinfo manuscript/manuscript.pdf; pdfinfo manuscript/SI.pdf; PyMuPDF read-only page/hash/HOLD checks",
+      "result": "PASS: Article 29 pages, SI 10 pages; both source hashes match and first-page not-submission-ready marks retained",
+      "pdfs_modified": false,
+      "manual_visual_acceptance_claimed": false
+    },
+    {
+      "command": "python3 -E -B <independent-copy>/tools/verify_public_release.py (cwd=/)",
+      "result": "PASS: 11392 checks, same 385-file checkpoint; independent directory copy, no original workspace path required",
+      "temporary_copy_removed": true,
+      "network_required": false
+    }
+  ],
+  "exclusions": {
+    "files": 340,
+    "bytes": 5245243977,
+    "official_weights_and_parts": true,
+    "private_submission_cover_letters_admin": true,
+    "raw_upstream_datasets": true,
+    "backups_old_pdfs_caches_compile_temp": true
+  },
+  "not_performed": [
+    "remote git or Zenodo writes",
+    "git mutations",
+    "ZIP or archive creation",
+    "model inference",
+    "new scientific fits or refit runs",
+    "dependency installation",
+    "PDF editing or compilation",
+    "independent scientific approval or visual acceptance"
+  ],
+  "known_boundaries": [
+    "Complete reference sequences and prepared upstream clinical CSVs are absent from the sole permitted source; 20 hashes/lengths and all labels/source hashes are exported.",
+    "Exact upstream archive release IDs/access dates not recorded in the capsule remain unrecorded in DATA_SOURCES.md.",
+    "Original private submission and compiler-log tests are not fully runnable in the clean public payload without their deliberately excluded dependencies.",
+    "Scientific HOLD, historical gnomAD boundaries and unresolved archived antibody interval identities are preserved.",
+    "Zenodo 10.5281/zenodo.23101189 is reserved and unpublished until the coordinator publishes.",
+    "Coordinator must inject final manuscript DOI/DAS, compile and refresh the public manifest before publication."
+  ]
+}

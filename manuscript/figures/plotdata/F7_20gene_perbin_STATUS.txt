@@ -1,0 +1,31 @@
+A3 full-20 per-bin ECE inventory
+writer: manuscript/scripts/R/make_f7_20gene_perbin.R
+policy: no Platt re-fit; no synthesised mean_pred/obs_rate substitutes
+run_utc: 2026-08-18T15:36:22Z
+
+PRESENT (capsule plotdata):
+  manuscript/figures/plotdata/F7_20gene_ece_summary.csv
+    rows=4 cols=panel,score,ece,n,n_heldout,source
+    full20 raw ECE=0.2443 calibrated=0.0207 n=4677 n_heldout=2339
+  manuscript/figures/plotdata/F7_20gene_coverage.csv  (coverage curve; not reliability bins; rows=10)
+  manuscript/figures/plotdata/F7_reliability.csv  (SIX-GENE bins only; rows=19; which=raw,calibrated)
+
+six-gene bin-weighted ECE from F7_reliability.csv: raw=0.1574 cal=0.0466 (lock 0.1574 / 0.0466)
+
+PINNED JSON: results-snapshot/N6_clinvar/clinical_calibration_full20.json exists=TRUE
+  top_keys: orig6_reproduction, full20, full20_minus_p53, orig6_minus_p53
+  full20_keys: label, n_genes, genes, n, n_pathogenic, n_benign, majority_class_acc, auroc_raw_pooled, auroc_ci95_pooled, auroc_gene_mean, n_test_heldout, ece_raw, ece_calibrated, ece_reduction_pct, full_coverage_accuracy, coverage50_accuracy, coverage50_error, coverage50_pathogenic_precision, cov_curve
+  full20 ece_raw=0.2443 ece_calibrated=0.0207 n=4677 n_test_heldout=2339
+  text_scan_binlike_lines=0
+  json_has_bin_coordinates=FALSE
+
+MISSING (cannot emit F7_20gene_reliability.csv):
+  - 20-gene reliability-bin CSV with columns which,bin_mid,mean_pred,obs_rate,n (never written)
+  - clinical_calibration_full20.json reliability_points / per-bin arrays (JSON has pooled ECE tokens + cov_curve only)
+  - the original full20 calibration writer (not in this capsule; a3_clinical_calibration.py writes six-gene F7_reliability.csv only)
+  - capsule-local 20-gene per-variant held-out probabilities after the locked Platt fit (re-fitting Platt is forbidden)
+
+VERDICT: STOP. Full-20 per-bin coordinates are not recoverable from capsule files.
+No substitute CSV written.
+PRINTED FACE (2026-09-11 revision): no longer names a full-20 Platt pair. Locked calibrated pooled tokens above are inventory only; they are NOT A PRINTED CLAIM.
+status_file: manuscript/figures/plotdata/F7_20gene_perbin_STATUS.txt

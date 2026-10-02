@@ -1,0 +1,10 @@
+panel,protocol,calibrator,ece,ci_lo,ci_hi,n,n_boot,seed,degrades_vs_uncalibrated,delta_vs_uncalibrated,reduction_pct
+full20_gof,5-fold-xfit,uncalibrated,0.248484,0.237105,0.259314,4677,2000,20260918,,,
+full20_gof,5-fold-xfit,platt,0.019244,0.013864,0.031532,4677,2000,20260918,False,-0.22924,92.255518
+full20_gof,5-fold-xfit,isotonic,0.006727,0.006731,0.02106,4677,2000,20260918,False,-0.241756,97.292753
+six_from_gof,5-fold-xfit,uncalibrated,0.146337,0.121135,0.174175,1101,2000,20260918,,,
+six_from_gof,5-fold-xfit,platt,0.038268,0.025449,0.069312,1101,2000,20260918,False,-0.10807,73.849746
+six_from_gof,5-fold-xfit,isotonic,0.017043,0.016316,0.052705,1101,2000,20260918,False,-0.129294,88.35357
+six_clinvar,5-fold-xfit,uncalibrated,0.143119,0.117834,0.171061,1093,2000,20260918,,,
+six_clinvar,5-fold-xfit,platt,0.042222,0.026818,0.071515,1093,2000,20260918,False,-0.100897,70.49842
+six_clinvar,5-fold-xfit,isotonic,0.02498,0.021691,0.059843,1093,2000,20260918,False,-0.11814,82.546165

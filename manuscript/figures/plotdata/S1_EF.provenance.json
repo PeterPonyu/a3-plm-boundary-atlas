@@ -1,0 +1,53 @@
+{
+  "blocked_downstream_actions": [
+    {
+      "action": "merge_into",
+      "panel": "F",
+      "reason": "Committed pooled ProteinGym summary lacks exposure labels needed for an exposure sensitivity.",
+      "target": "S1 assay CI coverage"
+    }
+  ],
+  "blocked_reasons": [
+    "Committed pooled ProteinGym summary lacks exposure labels needed for an exposure sensitivity."
+  ],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S1",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "a624d39f297f16fdfaf8c81ce67dc70250ef328ad3af4226795e2d3d917ac795",
+  "schema_version": 1,
+  "scientific_payload_sha256": "a624d39f297f16fdfaf8c81ce67dc70250ef328ad3af4226795e2d3d917ac795",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "assay",
+        "auroc",
+        "ci_lo",
+        "ci_hi",
+        "n_test",
+        "ci_excludes_chance"
+      ],
+      "path": "manuscript/figures/plotdata/FS1_proteingym_atlas.csv",
+      "rows": 19,
+      "sha256": "8e1e330a65fb8ff0f7946ca5502641e6f9214ceb7b8e6b4dfb3b6d0c8a99c7fb"
+    },
+    {
+      "columns": [
+        "metric",
+        "value",
+        "ci_lo",
+        "ci_hi",
+        "n_variants",
+        "n_assays",
+        "n_discriminating"
+      ],
+      "path": "manuscript/figures/plotdata/FS1_proteingym_pooled.csv",
+      "rows": 1,
+      "sha256": "f1e20a5451e18b82807476f18b420a230414f5dd8ab904fceef138ac23d4d389"
+    }
+  ]
+}

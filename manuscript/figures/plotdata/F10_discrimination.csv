@@ -1,0 +1,5 @@
+variant,split,spearman
+v2 WT,train,0.381
+v2 WT,homology-held-out,0.362
+v2 masked,train,0.384
+v2 masked,homology-held-out,0.358

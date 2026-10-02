@@ -1,0 +1,3 @@
+mutkey,pdb,pdbid,chain,seqkey,wt,mut,idx0,map_method,T,ddg,loc,ab,interface,hold_out,n_rep,llr_3b_wt
+1A22_A_B|A|I58A,1A22_A_B,1A22,A,1A22_A,I,A,57,direct(pos=58),298.0,1.6590566728238971,INT,False,False,,1,-11.109375
+1A22_A_B|A|I58L,1A22_A_B,1A22,A,1A22_A,I,L,57,direct(pos=58),298.0,0.3162766350688223,INT,False,False,,1,-4.34375

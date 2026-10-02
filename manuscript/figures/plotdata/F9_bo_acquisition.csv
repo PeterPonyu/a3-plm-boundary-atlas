@@ -1,0 +1,8 @@
+split,shift_class,greedy,ucb,random,thompson
+gb1/low_vs_high,extreme,6.2911,7.2287,5.5946,6.1745
+gb1/sampled,in-distribution,7.3127,7.3127,5.3132,4.6077
+gb1/three_vs_rest,moderate-shift,8.762,8.762,5.0111,5.0835
+gb1/two_vs_rest,moderate-shift,7.2287,7.2287,5.327,5.6531
+meltome/human,in-distribution,64.5312,64.5312,63.5292,64.54
+meltome/human_cell,in-distribution,64.6583,64.6583,63.229,63.8874
+meltome/mixed_split,in-distribution,98.9942,98.9942,90.853,98.9694

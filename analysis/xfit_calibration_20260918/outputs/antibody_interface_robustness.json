@@ -1,0 +1,61 @@
+{
+  "analysis": "A3-ABINT-ROBUST-20260918",
+  "locked_650M_cell": {
+    "source": "results-snapshot/N4_antibody_ddg/results.json",
+    "source_sha256": "b4923b01fe4909206a2d49e1e44134944942f9395d4bcc05a2fe8bce64a48836",
+    "n": 525,
+    "rho": 0.16455136822299407,
+    "rounded_3dp": 0.165,
+    "ci_lo": 0.07488797898712214,
+    "ci_hi": 0.24877955515794664,
+    "printed": "0.165 [0.075, 0.249]",
+    "historical_bootstrap": "n4_stats.py seed=0 B=1000 mutation-level percentile"
+  },
+  "650M_row_status": {
+    "scored_csv_expected": "~/biochem-data/N4_skempi/scored.csv",
+    "present": false,
+    "consequence": "cannot independently re-bootstrap the locked 650M n=525 pairs from raw LLR"
+  },
+  "sensitivity_3B": {
+    "file": "scored_3b_wt.csv",
+    "sha256": "0d7782b5ff8d6b310c9d5049a776f42cc6a2c290813f207fcda746f85fd9b69e",
+    "n_mapped": 3424,
+    "n_antibody_interface": 525,
+    "matches_locked_n": true,
+    "model": "ESM-2 3B WT-marginal (not the locked 650M score)",
+    "bootstrap_seed_20260918_B2000": {
+      "rho": 0.1243527467958634,
+      "ci_lo": 0.04013885427635562,
+      "ci_hi": 0.20708467828711682,
+      "n": 525,
+      "n_boot": 2000,
+      "seed": 20260918
+    },
+    "bootstrap_seed_0_B1000_like_n4_stats": {
+      "rho": 0.1243527467958634,
+      "ci_lo": 0.03958575352771621,
+      "ci_hi": 0.21053762260512363,
+      "n": 525,
+      "n_boot": 1000,
+      "seed": 0
+    },
+    "ddg_winsor_1_99": {
+      "rho": 0.12444493788250031,
+      "ci_lo": 0.040150190030007894,
+      "ci_hi": 0.20716535199554703,
+      "n": 525,
+      "n_boot": 2000,
+      "seed": 20260918
+    },
+    "n_pdbs": 46,
+    "leave_one_pdb_max_abs_delta": {
+      "pdbid": "3HFM",
+      "n_dropped": 71,
+      "n_kept": 454,
+      "rho": 0.0768045739398717,
+      "delta_vs_full": -0.04754817285599171
+    },
+    "leave_one_pdb_rho_min": 0.0768045739398717,
+    "leave_one_pdb_rho_max": 0.14643000894647154
+  }
+}

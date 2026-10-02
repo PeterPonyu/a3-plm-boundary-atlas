@@ -1,0 +1,8 @@
+property,n_datasets,n_sig_raw_bh,frac_sig,n_applicable_multigermline
+polyreactivity,14,0,0.0,14
+aggregation,7,0,0.0,6
+pharmacokinetics,3,1,0.3333,2
+thermostability,4,1,0.25,3
+immunogenicity,1,1,1.0,1
+expression,4,4,1.0,2
+binding,30,16,0.5333,3

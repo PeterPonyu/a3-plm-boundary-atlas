@@ -1,0 +1,32 @@
+{
+  "column_types": {
+    "frac": "finite-number",
+    "n_datasets": "positive-integer",
+    "n_sig": "nonnegative-integer",
+    "sort_order": "positive-integer"
+  },
+  "columns": [
+    "logical_figure",
+    "target_panel",
+    "estimand_id",
+    "status",
+    "group",
+    "n_sig",
+    "n_datasets",
+    "frac",
+    "units",
+    "cohort_id",
+    "source_path",
+    "source_sha256",
+    "method",
+    "uncertainty_method",
+    "cluster_unit",
+    "seed",
+    "sort_order",
+    "claim",
+    "nonclaim"
+  ],
+  "definition": "group is prespecified liability membership; n_sig and n_datasets are explicit locked counts; frac=n_sig/n_datasets",
+  "schema_version": 1,
+  "status": "READY means deterministic locked-summary pooling only; it is not a promoted panel."
+}

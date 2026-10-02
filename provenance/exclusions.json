@@ -1,0 +1,49 @@
+{
+  "source_inventory_regular_files": 705,
+  "source_inventory_bytes": 5260744398,
+  "explicitly_copied_source_files": 365,
+  "explicitly_copied_bytes": 15500421,
+  "excluded_files": 340,
+  "excluded_bytes": 5245243977,
+  "groups": {
+    "source_host_metadata_or_unneeded_historical_file": {
+      "files": 31,
+      "bytes": 843452
+    },
+    "official_weights_parts_or_download_cache": {
+      "files": 163,
+      "bytes": 5209185970
+    },
+    "compiled_or_run_temporary": {
+      "files": 19,
+      "bytes": 318322
+    },
+    "backup_or_superseded_source": {
+      "files": 5,
+      "bytes": 19786267
+    },
+    "old_rendered_qa": {
+      "files": 44,
+      "bytes": 7899495
+    },
+    "noncurrent_site_assets": {
+      "files": 10,
+      "bytes": 930241
+    },
+    "unconsumed_old_pdf": {
+      "files": 15,
+      "bytes": 2528430
+    },
+    "private_submission_admin_or_historical_upload_bundle": {
+      "files": 53,
+      "bytes": 3751800
+    }
+  },
+  "upstream_raw_datasets_copied": false,
+  "official_weights_copied": false,
+  "private_submission_payload_copied": false,
+  "old_pdfs_copied": false,
+  "capsule_written": false,
+  "git_mutations": false,
+  "zip_created": false
+}

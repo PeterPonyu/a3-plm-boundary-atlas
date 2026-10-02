@@ -1,0 +1,3 @@
+group,n,n_pathogenic,n_benign,ece_uncalibrated,ece_uncalibrated_ci_lo,ece_uncalibrated_ci_hi,ece_platt,ece_platt_ci_lo,ece_platt_ci_hi,ece_isotonic,ece_isotonic_ci_lo,ece_isotonic_ci_hi
+ORIG6,1101,389,712,0.214633,0.189181,0.241065,0.073898,0.051663,0.101834,0.07473,0.05477,0.103875
+OTHER14,3576,719,2857,0.259007,0.246893,0.271634,0.033356,0.023908,0.04644,0.020782,0.013673,0.034644

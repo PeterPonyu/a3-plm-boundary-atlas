@@ -1,0 +1,3 @@
+comparison,spearman
+ProtBERT vs ESM-2 (masked),0.646
+ProtBERT vs ESM-2 (WT),0.671

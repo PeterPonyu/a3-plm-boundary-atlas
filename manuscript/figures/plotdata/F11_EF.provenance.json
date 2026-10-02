@@ -1,0 +1,41 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F11",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "098616b2880353e2ef1c117e68072c833e504a414017714e33f7fa107aeae29d",
+  "schema_version": 1,
+  "scientific_payload_sha256": "098616b2880353e2ef1c117e68072c833e504a414017714e33f7fa107aeae29d",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "task",
+        "value",
+        "lo",
+        "hi",
+        "note"
+      ],
+      "path": "manuscript/figures/plotdata/F11_atlas_auroc.csv",
+      "rows": 3,
+      "sha256": "9109235593d5aad0a177e478548900a6b65e402c634f16ab6c4722213feb7cef"
+    },
+    {
+      "columns": [
+        "task",
+        "value",
+        "lo",
+        "hi",
+        "note"
+      ],
+      "path": "manuscript/figures/plotdata/F11_atlas_spearman.csv",
+      "rows": 6,
+      "sha256": "a80a53a87e934e9d70f771cfdc674bb5492669844614b6fe399e0336ae18f857"
+    }
+  ]
+}

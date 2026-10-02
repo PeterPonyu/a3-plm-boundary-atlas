@@ -1,0 +1,2213 @@
+{
+  "schema_version": "A3-public-export-allowlist-v1",
+  "source_scope": "capsules/a3-plm-boundary-atlas only",
+  "source_files": [
+    {
+      "path": "REPRODUCIBILITY-CURRENT.md",
+      "source_sha256": "f6c63ef258a102bb7eb3e9219fc4ca237e9b88218423b9593ca41b510d758eae",
+      "bytes": 5438,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260922/candidate-v1-checkpoint/download-provenance.json",
+      "source_sha256": "e46fefffcf048a58551bd16a807001fdbcb1e9eafafda0c88bbfc3be30d48d1a",
+      "bytes": 288,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260922/fetch_official_checkpoint.py",
+      "source_sha256": "aaf05d93568e6db95add6b0f3c2b02d743d53f57ace6a75c4a756136ed724b80",
+      "bytes": 5615,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260922/rescore_clinvar_candidate.py",
+      "source_sha256": "a5f922ce30d99cf737fb3cfdc8a31d93f49e6c47555c40648013b8742c14c091",
+      "bytes": 14364,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260922/test_rescore_clinvar_candidate.py",
+      "source_sha256": "c2154bb3f02abfa48057ad5b35d2603a1fc7b0b562329d3fa98eb8f40e599827",
+      "bytes": 2685,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/HANDOFF.md",
+      "source_sha256": "873bc82aaebc680b9ef76fe5ecc9257173eee03922f926cc19df41315819fcdb",
+      "bytes": 12659,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/analyze_clinical.py",
+      "source_sha256": "bb7a6b7bd3b2da4ff6a437873a03648bc42d85dd0e613e4c2175fd035d411ecb",
+      "bytes": 13916,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/bind_author_review.py",
+      "source_sha256": "5db262f96624eebb58ff30651b7c21887b9f6bdc4c436ba05d46f4e3e1d046af",
+      "bytes": 5735,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/build_clinical_plotdata.py",
+      "source_sha256": "098ad422c5006b7cc389e4870e038edf523221f79b1a4a728cdd706616d2027e",
+      "bytes": 4441,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/decision_curve.csv",
+      "source_sha256": "e125a5645f874256e95c5da5cad821edfed29224edfae2d511dc97368122e473",
+      "bytes": 1899,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/identity_bootstrap.csv",
+      "source_sha256": "128aca19f6560b57b88b39b9ca9e5f0d0e751ff52c71165c8e7b9f261d59af78",
+      "bytes": 381657,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/oof_predictions.csv",
+      "source_sha256": "e658cff982102527a8d84c799390ccfdc4774d32c7ca668bbc2985997027a800",
+      "bytes": 616512,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/per_gene_calibration.csv",
+      "source_sha256": "239e83426dd68d5b361934dd1a134aeb27329516d95157fc98d94e1af462d19e",
+      "bytes": 8905,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/per_gene_discrimination.csv",
+      "source_sha256": "039327549755681059266651229204023451c659a2c1bfb653b7bc3f291b0605",
+      "bytes": 2651,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/reliability_bins.csv",
+      "source_sha256": "210cb4ab4af7f11405f0221b638cef41fd7ab2af43ad26de4e0ba909c1a39d30",
+      "bytes": 47953,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/selective_prediction.csv",
+      "source_sha256": "e24cbd4c275237bc66d83a07c4363d64bf96675748c6e1953f3469c0c25a50fb",
+      "bytes": 1220,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-unified/summary.json",
+      "source_sha256": "4d3029e9cf0a98f3dcd1672d7a4d0ce26d354c3e97d915542ebcb3403acd38ae",
+      "bytes": 8182,
+      "role": "current_clinical_analysis"
+    },
+    {
+      "path": "analysis/revision_20260923/clinical-validation.json",
+      "source_sha256": "4af4e34057b221b521b72d53e95013563b94cf16503003404d9e328233baabb8",
+      "bytes": 4249,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/qa_documents.py",
+      "source_sha256": "df1336dd54b46ef90b5ecf5c1808bcf6f3061d9842a3889e58822e6c1e0c3b37",
+      "bytes": 3928,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/AICDA_HUMAN.json",
+      "source_sha256": "357346c932619ea5a45a172c7e09cebb6d9c1f08cf66e259b8222b31cd83c9c5",
+      "bytes": 12212,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/BRAF_GOF.json",
+      "source_sha256": "1471e59aada81514e2b7d7eb1a8a5c4c0439237791d0f61f4d80f6d98bec9c76",
+      "bytes": 60139,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/EGFR_GOF.json",
+      "source_sha256": "90ca0b0dd71b65225036a3abbb6b4c123cf3e4786eb378614c4c325f9876e1c8",
+      "bytes": 191369,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/FGFR3_GOF.json",
+      "source_sha256": "4a94ac8eb634c928b33822ad42df7ada85502158e7475b726f5c256075b2de81",
+      "bytes": 148861,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/HEM3_HUMAN.json",
+      "source_sha256": "81103e9a0597d0d64bff6d4814c9dc9f2104114f738773fc4fd67b62a88dfc77",
+      "bytes": 82929,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/HRAS_GOF.json",
+      "source_sha256": "0700cef1e0ebaf3c2817e98abd7ae358a993688910ee6ca5bd8e265893fb12e1",
+      "bytes": 22917,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/KCNE1_HUMAN.json",
+      "source_sha256": "c8f3f782879596992dfce39c7ec35ff08083ddfa2df20a49121d85aca6c89d70",
+      "bytes": 29841,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/KIT_GOF.json",
+      "source_sha256": "59b4a9f9d785ee60f79b377883169f7d0855438a280d56d64a19378184f45f8a",
+      "bytes": 189068,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/KRAS_GOF.json",
+      "source_sha256": "fc08844061f2b23488bad0dca1bf6ac9282aa9b108c837dee1fda3d6eda6b176",
+      "bytes": 23387,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/MET_HUMAN.json",
+      "source_sha256": "3026b402f57d0d58db2eec690830eb5cde8ea44ad06e5c6192bf4d90d33cfad0",
+      "bytes": 239067,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/NRAS_GOF.json",
+      "source_sha256": "7ed1b71e7758af8c6326e95ba2da6ad01e37b33f22c1ec65988be60090ad02b2",
+      "bytes": 13979,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/OPSD_HUMAN.json",
+      "source_sha256": "3f381c6b3e4f5661d86e613e53da625b1bfa7fe3004a1a71c3a5ea0ebdb33ab0",
+      "bytes": 93477,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/OTC_HUMAN.json",
+      "source_sha256": "f521b69c0b78e02b900e8ef567368cf4c213cf1d3536625788e78ac5db0f2090",
+      "bytes": 57526,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/P53_HUMAN.json",
+      "source_sha256": "d2ca4f1666b1bdff19a48cf6386f40b3cd13b08332aecb177c521ad1dd880369",
+      "bytes": 275621,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/PIK3CA_GOF.json",
+      "source_sha256": "d04a9c6910a9a5c07e1d3250828eac43fcc666b9af8ae351f66b21a4162c6138",
+      "bytes": 49209,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/PTEN_GOF.json",
+      "source_sha256": "82f7d5ac35300717f8a7d0bb1a4ad62e0d7ca4237f6d2bed86fba53389182ce5",
+      "bytes": 283932,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/RB1_GOF.json",
+      "source_sha256": "089cff3da83925ba76ba4f43774989a84a68e11465293b565778860d2409b175",
+      "bytes": 142197,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/RET_GOF.json",
+      "source_sha256": "daa556a3b694e5d8e72c00dbe3208adc5fc0726988ef169e7ecda7e8a6c9e600",
+      "bytes": 266372,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/STK11_GOF.json",
+      "source_sha256": "0da22aef6e96cf105b3e88c186b6edf5d05d4eebdbbf8db995b17c6a66e4af5b",
+      "bytes": 30572,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/VHL_GOF.json",
+      "source_sha256": "6fb3a928961de00b54dbe4816fcc5d8a83c7bb0f161bb3a1cbab54e7875ad281",
+      "bytes": 142506,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/provenance.json",
+      "source_sha256": "f23da8217a42424851dd19cb457b0283db4340647b32ec818571aa7e887bb687",
+      "bytes": 8604,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/run-binding.json",
+      "source_sha256": "e970d5c07a6c31deee9b61d74d5368543acbf6eef1b9429f5faf2b0490ccb884",
+      "bytes": 2128,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/row-scores/scores.csv",
+      "source_sha256": "0fac1a086b5b4797b336484f8f0a6ee6eb00334b83607c353b4ea4cd5788eccd",
+      "bytes": 815427,
+      "role": "current_clinical_score_and_run_record"
+    },
+    {
+      "path": "analysis/revision_20260923/test_clinical.py",
+      "source_sha256": "9df791242bfe054c5639571c6ac39a04d1087aee8a209f4b9a7bd9d28131048a",
+      "bytes": 3408,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/test_current_contract.py",
+      "source_sha256": "a091f3cbda15ee1320acf4561fa9aa1e30b3fedb3daad9b001103a754492aa08",
+      "bytes": 3000,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/validate_clinical.py",
+      "source_sha256": "63fa4635827efcc156faa7612eada4e5acaf448a9719d640fefb97bf747a25db",
+      "bytes": 5787,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/revision_20260923/verify_integration.py",
+      "source_sha256": "21c1158dc0e98d9b6e44e19bdd408f451c9ce41f8c067f36a62da8331e4522d5",
+      "bytes": 3233,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/README.md",
+      "source_sha256": "12092e2b8db02ed6154497b7871d9cab119c08da0d7f8afe1d904b04a6fae175",
+      "bytes": 590,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/calibrators.py",
+      "source_sha256": "1d23dda159bd391f00395aebb27600451578827a422fa8999d1115446119e567",
+      "bytes": 4691,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/inputs/manifest_clinical_650M.csv",
+      "source_sha256": "9b6b6461a9f1a814277e51c881eb9e0f2fd35fd1ed7e43a838aeb7cae9e030cd",
+      "bytes": 498277,
+      "role": "upstream_derived_label_or_binding_input"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/inputs/manifest_gof_650M.csv",
+      "source_sha256": "35bec90f46bac58bddd862fe99d4767053b1653ddfb5bacb2b366745c67b15b2",
+      "bytes": 2086625,
+      "role": "upstream_derived_label_or_binding_input"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/inputs/scored_3b_wt.csv",
+      "source_sha256": "0d7782b5ff8d6b310c9d5049a776f42cc6a2c290813f207fcda746f85fd9b69e",
+      "bytes": 412774,
+      "role": "upstream_derived_label_or_binding_input"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/antibody_interface_loo_pdb.csv",
+      "source_sha256": "8b25818938e9d0d8f4b421478ee215ab65fd7beac0bcb7e4c8e289254fb41de9",
+      "bytes": 1446,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/antibody_interface_robustness.json",
+      "source_sha256": "c413af896b7978ec8dcd52331f1cac7a062469bd5893e343847867a4e48c8613",
+      "bytes": 1918,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/ece_xfit_summary.csv",
+      "source_sha256": "1ed9ebd581f5818c41a2b2d050707c25b3696ad6b8935e903bfa488cd2d5ab96",
+      "bytes": 999,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/full20_gof_fold_counts.csv",
+      "source_sha256": "0cdaccc0eca782fa2a8df11c529714a6e6fab005c8db39e70afba72dee552fa3",
+      "bytes": 443,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/full20_gof_per_gene_ece.csv",
+      "source_sha256": "d43c01c0c981a5794b44edecd536884da8f0b8acd7c5197838cf78548c634ddc",
+      "bytes": 2222,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/full20_gof_reliability_bins.csv",
+      "source_sha256": "7987bbd4cbfe8c04379eacc96c0f406124a078219fc08198df283b65fc06828e",
+      "bytes": 1403,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/STATUS.txt",
+      "source_sha256": "991ee7d8b8e15720019f2511f4d6b73d95d36a6deb37dd03a55d6fd8e110c333",
+      "bytes": 821,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/decision_curve.csv",
+      "source_sha256": "4bc745679f030f11c2cb6f457e4e104c8340493e6294e61abf407d73bf964e52",
+      "bytes": 2300,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/mechanism_correlations.csv",
+      "source_sha256": "29ed06301207cd778ff5f95b85edebc24621c2c2ce15d306f491b99d90b7f7a6",
+      "bytes": 693,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/per_gene_mechanism.csv",
+      "source_sha256": "bc08986b05910cafa0d4c2a85024b2b646b96a38ec2310c3066c0aea8cd7a656",
+      "bytes": 11326,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/per_gene_print.csv",
+      "source_sha256": "aa144b03110bfc1512e5a351e2acb6a6f1c22f01bc1cc01072bff452a5cf62f7",
+      "bytes": 4586,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/round2_summary.json",
+      "source_sha256": "5a31c84a029328940d7cc58f40619f7aeb00ea6b7c51b90a2aa8ece8c2be46ff",
+      "bytes": 11089,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/scheme_ece.csv",
+      "source_sha256": "a8d3f73f1a031a1396eb2eb8e9b440e40daf1460f982c74728370c9e979d2986",
+      "bytes": 1407,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round2/slope_intercept.csv",
+      "source_sha256": "beb3bc821ef88c1777b2269f7585633759e763419164e040a1ea7611af7157a8",
+      "bytes": 499,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3/STATUS.txt",
+      "source_sha256": "c0bc915065b44f4b096bb42c82688fdffce9badc2655d8d82d4febeb49d1fd52",
+      "bytes": 353,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3/WITHDRAWN-NESTED-INTERVALS.md",
+      "source_sha256": "d9f70c2a12d1e4462d0f77ac8582bd75eb0c70d02bafe4d115532e58591305cd",
+      "bytes": 814,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3/per_gene_ece_by_map.csv",
+      "source_sha256": "5b9390b0cf7265a5a00400e2ce14a38cf2eccd8c382f1939b3b458a9438b04c8",
+      "bytes": 4640,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3/per_gene_reliability_bins.csv",
+      "source_sha256": "38cfb0c46f858c8b556787df724d422aa88f2c2aad749a7b0ed40b1650dcfa23",
+      "bytes": 60861,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3/pooled_reliability_bins.csv",
+      "source_sha256": "2edff4d0507191e638f513ebb892c59d725165be28dcf5063abe9ade8aff089a",
+      "bytes": 2048,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3/round3_summary.json",
+      "source_sha256": "c953d171a27a8ce2e1a31403bed4e1ee396985e82c15f13ff428d2c7426e7613",
+      "bytes": 2058,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3_identity_grouped_candidate/REPLACEMENT-NESTED-INTERVALS.md",
+      "source_sha256": "a1c19bf6a4a20a38826f95bd204cf3258863f0a1def866cefd0aebb9367e89bd",
+      "bytes": 1095,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3_identity_grouped_candidate/STATUS.txt",
+      "source_sha256": "b76eaec24ea0563c31c49154221135d99ea082ecf90432ccb1396f31eba0fc52",
+      "bytes": 371,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3_identity_grouped_candidate/per_gene_ece_by_map.csv",
+      "source_sha256": "5b9390b0cf7265a5a00400e2ce14a38cf2eccd8c382f1939b3b458a9438b04c8",
+      "bytes": 4640,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3_identity_grouped_candidate/per_gene_reliability_bins.csv",
+      "source_sha256": "38cfb0c46f858c8b556787df724d422aa88f2c2aad749a7b0ed40b1650dcfa23",
+      "bytes": 60861,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3_identity_grouped_candidate/pooled_reliability_bins.csv",
+      "source_sha256": "2edff4d0507191e638f513ebb892c59d725165be28dcf5063abe9ade8aff089a",
+      "bytes": 2048,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/round3_identity_grouped_candidate/round3_summary.json",
+      "source_sha256": "9b3eb02f8a0a46009d667ac4a0f341f870b8cfbb840d718cded164ae104407fc",
+      "bytes": 2245,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/six_clinvar_fold_counts.csv",
+      "source_sha256": "3670193144a6f176e06403356de2aa205cff22a2e03833c1dfd7fa49de24a937",
+      "bytes": 428,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/six_clinvar_per_gene_ece.csv",
+      "source_sha256": "849a96913fc1528ae8e5f4c154edce71e5c4009c11b98226ed838819cc68c4a2",
+      "bytes": 817,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/six_clinvar_reliability_bins.csv",
+      "source_sha256": "c4ad0eb41a44d30402d1da69bf2fee27f58f8379f1dd2d4b8f28941f5a7d89ca",
+      "bytes": 1350,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/six_from_gof_fold_counts.csv",
+      "source_sha256": "f032ea63f62414076992ad7d90db72a53ea8b0f6dddf2c29c810e01b0e32b994",
+      "bytes": 429,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/six_from_gof_per_gene_ece.csv",
+      "source_sha256": "7f61e6c9e584e8b4d48252da9ca34af336feee71654c85c49f593b8694e62421",
+      "bytes": 829,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/six_from_gof_reliability_bins.csv",
+      "source_sha256": "ceacacd64399f38a9a3121d81969e26219c90b0000ef5c6fbfc358eaec238b3b",
+      "bytes": 1325,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/outputs/xfit_calibration.json",
+      "source_sha256": "c53ca333509c84ea7408635c8f96dc2286246f3904238300ab8d4ed62e555327",
+      "bytes": 34261,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/run_antibody_interface_robustness.py",
+      "source_sha256": "7dfa101365f95178c4eddee911646774f83735d2ca6b135ddd57f4e5d313d7da",
+      "bytes": 7993,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/run_xfit_calibration.py",
+      "source_sha256": "9253f53f1bc9633719c4440e61d0d66d5f2a9daf7c5e20a97c06b552b4b2de15",
+      "bytes": 19958,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/run_xfit_round2.py",
+      "source_sha256": "dda7926be581bee0005eceea54463a392a777924596e769f1ab9cc4502836849",
+      "bytes": 33035,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/run_xfit_round3.py",
+      "source_sha256": "f483d222b8c7edbc34bbb886b341883311bc4233853b99ebc79d3ed4f19583a4",
+      "bytes": 13122,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "analysis/xfit_calibration_20260918/test_calibrators.py",
+      "source_sha256": "5b3c5677ebd3376c239e8b7aadbc547fe921ba09ff659222afdd04b89c39e9e3",
+      "bytes": 1064,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/FIGURE-PROVENANCE.md",
+      "source_sha256": "fb64266373e825a0882c588fea3202183e3e185ad6e84e8a26f9892fa3c4a1cd",
+      "bytes": 13015,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/SI.pdf",
+      "source_sha256": "8ef98e438f6d7aaac7687689ccbbfe9ae35bc6a57aed578275e206f2a52678d8",
+      "bytes": 399849,
+      "role": "current_author_review_pdf_before_main_das_injection"
+    },
+    {
+      "path": "manuscript/SI.tex",
+      "source_sha256": "804e30e59a52c88f17bdaf406135d7161c320b82be3a6a7061ebb20eca1a2ba8",
+      "bytes": 6717,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/a3_ten_figures_floats.tex",
+      "source_sha256": "b0fe55eda266869b840d370b7aafa3a96dfab8f4e7c816524fc209bd3cfd2aca",
+      "bytes": 3896,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig1.tex",
+      "source_sha256": "518611e4cb89a729dccbdabeacc4570b44bcdeeff1ab7846e2cee17de01eb4e6",
+      "bytes": 942,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig2.tex",
+      "source_sha256": "90174a7899bd8c03e836ed628ad6bda9276e2f5518af3f84ff81f1a674dab2e4",
+      "bytes": 824,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig3.tex",
+      "source_sha256": "67353e8a50d8d4f08a5a3d809f447cd4a236bee7719f9e5dbfd08c769fa8aef2",
+      "bytes": 1124,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig5.tex",
+      "source_sha256": "95b75a4606c531f93ca7b6e5ceef0d3a0ed622107b90d09ceef22f4331441233",
+      "bytes": 1011,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig6.tex",
+      "source_sha256": "5f3f418094976942beb5987a7654cbc72e40fc603686e7300ffac0001d418b95",
+      "bytes": 1329,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig7.tex",
+      "source_sha256": "e3e319a59dfa5a8c5c207b93ed321bdc2889615d72e3aecf26957578ca7fb190",
+      "bytes": 866,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/fig8.tex",
+      "source_sha256": "8c287d17bafea4bdfac7ae7d527f45d2b6577a75fd3a59ee4f679cb8b732457f",
+      "bytes": 1146,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs1.tex",
+      "source_sha256": "1333ac7d7ffa2ca62ec67dd78f07d4c8203a9680d503fc2ab84042e134d28e17",
+      "bytes": 750,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs2.tex",
+      "source_sha256": "fa8e90d10f705ee14bb0b7ceb077bdfa414e6268ab77ae1c3e889dea81cf2a3a",
+      "bytes": 772,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs3.tex",
+      "source_sha256": "3b557ebf6276e038ee84d0551c5d4c67decb49a1cf5fe46780ccb8efacfeb99d",
+      "bytes": 751,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs4.tex",
+      "source_sha256": "5484beb34ee5bb6ce85e75e96630496245624d026e6e352bb87c3969a2565533",
+      "bytes": 621,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs5.tex",
+      "source_sha256": "ee4cccd77ff89e852f1ed9b3433eb1a6cd3061e24d57e9be01d8e38a9fc90322",
+      "bytes": 654,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs6.tex",
+      "source_sha256": "4a32d9007f9c436c48a7348dc9e9a02d41be62e8e43f4befed12da5b361e138c",
+      "bytes": 654,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs7.tex",
+      "source_sha256": "70c79b0a86e0870f940dd0ffca3f68142a7cb120fb3b25ae0a7ea563cac739d8",
+      "bytes": 842,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs8.tex",
+      "source_sha256": "13a625e1b8e3b779414f90ddf1e1107d5158d6b539a8f49ec9bf2e467c931c90",
+      "bytes": 1010,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/figs9.tex",
+      "source_sha256": "40872993617c6c28c5889e81eb3062beb2d9b750506c3861d1f191e41c0639fa",
+      "bytes": 750,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/tab1.tex",
+      "source_sha256": "e391cc7b8fe74c033f503810ce5d27853a65ef895146bbe84626a5594bdf0a14",
+      "bytes": 175,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/captions/tab2.tex",
+      "source_sha256": "833b9a7350052f094cdb45ee72dd4cfb40b3ab706002c70447b00dda812e450f",
+      "bytes": 519,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figure_ledger.md",
+      "source_sha256": "b231b09a91e5ae7bcc9170597323a179b1ee2673ec23764acb827a6fdebd57ec",
+      "bytes": 8325,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/A3_graphical_abstract.display.svg",
+      "source_sha256": "b4ee053f0be126497cab02b802874c7393e7a5dba0d6993c4121e5b33264702f",
+      "bytes": 129603,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/A3_graphical_abstract.pdf",
+      "source_sha256": "b8f717a84e1a22aa8686f1b827ae4c4d11f1f0c7a703c4d684faf14567912c56",
+      "bytes": 38078,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/A3_graphical_abstract.png",
+      "source_sha256": "e89417c93275fbe3360a65a459247f188373835099fe3d459e6e00e5a5ae29be",
+      "bytes": 359623,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/A3_graphical_abstract.provenance.json",
+      "source_sha256": "43e5ab5f701c0c720bf4e3b3db808d978041a24a24f72c22ab961cfcffa9d285",
+      "bytes": 23658,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/A3_graphical_abstract.svg",
+      "source_sha256": "7200bdce22ab6f83ef512b3cc21f2d7afd76e699b2d6f8a345f139537ebbcaf4",
+      "bytes": 33152,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F10_reliability_predictor.pdf",
+      "source_sha256": "e8b2e5327dc0b3970ffab70cd45cff78761f96052333496c9decd437bb12bdc5",
+      "bytes": 45004,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F10_reliability_predictor.png",
+      "source_sha256": "82e559bdbdd8dd373d99404f61fb3b06165f75e9d3a6b85a95653ade09a60316",
+      "bytes": 291803,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F11_boundary_atlas.pdf",
+      "source_sha256": "1331459a9001c396a1cd46044920a38205ced7ff3c38c0be12554476a22c671d",
+      "bytes": 31435,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F11_boundary_atlas.png",
+      "source_sha256": "7372bd12a9867cffa8291626b4949e5991a2852fb32a1a261e93b792477a13d9",
+      "bytes": 104345,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F1_scale_plateau.pdf",
+      "source_sha256": "1dc90173acf6f2dce892f602700585d1b41048b2bbf556e110656cea5ba71fb2",
+      "bytes": 33608,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F1_scale_plateau.png",
+      "source_sha256": "cbb5131e460b346dce60dc1b9e5ade0c7852be25dcdbbe3aa594f8b4297406cb",
+      "bytes": 143521,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F2_cross_model.pdf",
+      "source_sha256": "bbe1a2c917f279ca4f0fec6b01f55e65dea9c8cedeadd89651d4231ab28e009f",
+      "bytes": 30868,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F2_cross_model.png",
+      "source_sha256": "1becbeb4995c8ac8654cab648b5b86f45de13cb3d9c8928ea0d5c2c1933f0815",
+      "bytes": 119728,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F3_clinvar_forest.pdf",
+      "source_sha256": "1b01ec0693add97c11696cb48840f410ac3f639e8e0f97f809c5faf99371e78d",
+      "bytes": 37090,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F3_clinvar_forest.png",
+      "source_sha256": "044a50b6ff76a4f8d85883dc976f24a83cec8421a4d4a4fd1e747b971d549626",
+      "bytes": 237927,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F4_clinical_calibration.pdf",
+      "source_sha256": "9fef8e9a21f7de1747d3d123569b77e82eebf5bb2d1dc1222a5e33fbc8353f13",
+      "bytes": 29182,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F4_clinical_calibration.png",
+      "source_sha256": "fc2e72cdc48b57ecb60c109ad94542bd1fda6775cbaccf45db14b48498c372cb",
+      "bytes": 179180,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F5_stability_ddg.pdf",
+      "source_sha256": "2f2314ae00cce518222aae9bd4f340bc7f54515a31a6e2830619aafdd989268f",
+      "bytes": 32576,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F5_stability_ddg.png",
+      "source_sha256": "7c98d774399aa836a648b19b07191b6afa1ea11d99031de7c56bf4f5e7e19195",
+      "bytes": 121460,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F6_protein_uq.pdf",
+      "source_sha256": "f0cb882246a36ccd499c41814a1255302378c72880f6d2887198918d1b8e77bc",
+      "bytes": 34465,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F6_protein_uq.png",
+      "source_sha256": "18dc9fa8b9fe16a24c4cee10b0c1bd5de96b436a1b34251e7fd3d9660d748319",
+      "bytes": 179046,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F7_20gene_ece.pdf",
+      "source_sha256": "43024f9e1e3ddbd2b9945033451393e0af326da003f2830c3170556948b1e48c",
+      "bytes": 17741,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F7_20gene_ece.png",
+      "source_sha256": "0ff0d9d6fbc31f7c9c1d48afb7485d2d2ec809e284afd49263f6e43ebe47ba7d",
+      "bytes": 146437,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F7_binding_boundary.pdf",
+      "source_sha256": "22dbd4bee1d222391436735f3de03a8a3af40a57133b00beab4c72a0185825f0",
+      "bytes": 299204,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F7_binding_boundary.png",
+      "source_sha256": "32021f9fae997dc95379ca3b88249a966355f508d4bc8375077cfb0465f289b4",
+      "bytes": 652255,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F8_developability_map.pdf",
+      "source_sha256": "c69f93b39471f5ba80d184761eb8d30ec46ab9ecb8057c60b8a2c587b48fabe1",
+      "bytes": 23493,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F8_developability_map.png",
+      "source_sha256": "3efe005ad9508bb4b0f000471371f1c8553aa8f679522a6068a8d770d86f5f5e",
+      "bytes": 73113,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F9_antibody_lm.pdf",
+      "source_sha256": "46c61d76c5a3bb8c7e3940feab51e20294e1598b7491a42210062914b704f088",
+      "bytes": 31958,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/F9_antibody_lm.png",
+      "source_sha256": "9b72882300b1f25888049b9cecec2e767a780b734e8f988798bd08e44fdb181d",
+      "bytes": 132349,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS1_proteingym_atlas.pdf",
+      "source_sha256": "607a4b761ed1e1e968b95341cca4650180ad2a4aad10c3f8918cf1e05802154f",
+      "bytes": 31468,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS1_proteingym_atlas.png",
+      "source_sha256": "8cff6ac071d5ec5e95fc6c52c318e38fca6417360f6b1777cd19e9230359dbe9",
+      "bytes": 209131,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS2_gnomad_control.pdf",
+      "source_sha256": "1eaf8d859d05ebda1dfca6e3901de02b1af105efb084e88bea472dc5be4e6c54",
+      "bytes": 34401,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS2_gnomad_control.png",
+      "source_sha256": "6d5d9ac9f16709aee640eff46af0793c434472442d97fe3d89683081dc5be4fb",
+      "bytes": 175618,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS3_antibody_robustness.pdf",
+      "source_sha256": "4165df627fca44c21e02e60122f47ba7d72d950212c24308efe13a43914729df",
+      "bytes": 33992,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS3_antibody_robustness.png",
+      "source_sha256": "5a771943071bc407534ee15699f27d43af5d9aab3adf4f5fcdbf9e1314f5eb70",
+      "bytes": 175935,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS4_abstention_tiers.pdf",
+      "source_sha256": "d0f41fb1ba2543d701cc77bdabfb91d8517cec493b3c5de3f20166d92ed1ffd1",
+      "bytes": 32950,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS4_abstention_tiers.png",
+      "source_sha256": "38b2fb409729ba25086ed5ade6583ec74a9613b27f2b906d16f75f94468d0fd9",
+      "bytes": 195521,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS5_vep_comparison.pdf",
+      "source_sha256": "4864f858d43c39a1aaa328ab515907a9968fffbbb7995749495560f0bf63ffe8",
+      "bytes": 32813,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/FS5_vep_comparison.png",
+      "source_sha256": "80f082a2edf0b5b9ef6eb4acb2c781ded9950a79d7ecf0242346f77ce2829dff",
+      "bytes": 175610,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/figures/plotdata/A3_EF_input_manifest.json",
+      "source_sha256": "742c579005417824de82a7b98d060f0f099555c50142930ea0cc5c8c5d198e7a",
+      "bytes": 10912,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F10_calibration.csv",
+      "source_sha256": "cd170a4642c9a1ab665cdbc694c08c6786766b37f8132aa90392a6af1b2e6df7",
+      "bytes": 162,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F10_discrimination.csv",
+      "source_sha256": "af5087e57a441cc3a1bab8fb3fc0e04967b7a25144f9c2f5d3dcb57d5ffdfe68",
+      "bytes": 127,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F10_meta.csv",
+      "source_sha256": "6dbf14a56139eefae96a5f20647795cc9c798c0c72a790248c256b79c2ebbde5",
+      "bytes": 99,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F10_reference.csv",
+      "source_sha256": "18be39ad6cda3fbdd0b1318db61d8434989f1e228bca746ac57370724ffa778a",
+      "bytes": 68,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F10_reliability_predictor.csv",
+      "source_sha256": "9ab60e46d9e4c29127343a3c07306a4f2297c67ae22ab2adba304359c59e9766",
+      "bytes": 8679,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F10_v1_overlap_audit.csv",
+      "source_sha256": "011aa0188de397b347b088d3432449ee5e842bfdd2d54a755e735a6a540b80f1",
+      "bytes": 313,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_EF.csv",
+      "source_sha256": "098616b2880353e2ef1c117e68072c833e504a414017714e33f7fa107aeae29d",
+      "bytes": 1195,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_EF.provenance.json",
+      "source_sha256": "a2218cdcc664e4fe2adc4936ffb8e900b4e826cd6d27f177f8afc12d18ad7d09",
+      "bytes": 1394,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_antibody_interface_loo_pdb.csv",
+      "source_sha256": "8b25818938e9d0d8f4b421478ee215ab65fd7beac0bcb7e4c8e289254fb41de9",
+      "bytes": 1446,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_antibody_interface_robustness.json",
+      "source_sha256": "c413af896b7978ec8dcd52331f1cac7a062469bd5893e343847867a4e48c8613",
+      "bytes": 1918,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_atlas_auroc.csv",
+      "source_sha256": "9109235593d5aad0a177e478548900a6b65e402c634f16ab6c4722213feb7cef",
+      "bytes": 239,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F11_atlas_spearman.csv",
+      "source_sha256": "a80a53a87e934e9d70f771cfdc674bb5492669844614b6fe399e0336ae18f857",
+      "bytes": 392,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_EF.csv",
+      "source_sha256": "9bf325596e2785cdb122fa2626e92f039b96c5d533f734fe57a15ea3727fe7de",
+      "bytes": 1389,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_EF.provenance.json",
+      "source_sha256": "0959614acb33851fddbd841abeb82950ed1ce033859b14959fa505164d48ab30",
+      "bytes": 1625,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_full217_scoring.csv",
+      "source_sha256": "243493d2fcb7724644465e9a96efd9c350672fce3126db143ad9b83c9451f278",
+      "bytes": 363,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_full217_scoring.json",
+      "source_sha256": "803c34f31b978aead43bb9545a93da657bbc223374a519a174ace100e17e4866",
+      "bytes": 915,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_scale.csv",
+      "source_sha256": "21c1073c5018ea717b16947ac67ebc94996085510083207aed0ef8cebd90a4c2",
+      "bytes": 141,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_scale_paired_650M_3B.csv",
+      "source_sha256": "6496354cf21a4fc87954ace959d754bcc0f470f3dd6c7dbcde3177ab1a2c3d8c",
+      "bytes": 4030,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F1_scale_paired_650M_3B.json",
+      "source_sha256": "1eef587cd6a1ecbe370c8426ed5d15fc1cd4f25de8b9d40cf88cf0456f248df3",
+      "bytes": 1130,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F2_agreement.csv",
+      "source_sha256": "137f2bedf37a369fd1329fe89479a49de6ea0c258fd40711dec52fc3173177b7",
+      "bytes": 85,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F2_crossmodel.csv",
+      "source_sha256": "40a3726ed0f8062703e919de23f4af900d143f4ff6762c4fbe20816524980800",
+      "bytes": 136,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F3_EF.csv",
+      "source_sha256": "dffa83a3a437a7bd6f604f3e6cd0e4ba39e7f6787a62ac9db68ba8f941e8b7e5",
+      "bytes": 1326,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F3_EF.provenance.json",
+      "source_sha256": "59a10a84922d254ac531613de981a182aff9e01714d5371c670a2dd27a1587c9",
+      "bytes": 1503,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F3_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F3_clinvar.csv",
+      "source_sha256": "ee6dcc67cba8a3356015f611a578d272a6a593211a2c87ae2b63b5ee6a6c6012",
+      "bytes": 876,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F3_clinvar_20260923.csv",
+      "source_sha256": "35ff38fcfb175e587df957d54c17ee4f35f3c8502ecbbfa6db0267b8fa7898fa",
+      "bytes": 2845,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F4_EF.csv",
+      "source_sha256": "eac538208ee04bb4a9c0a96e66cd0cf948064210ba1e264fea1673002d8329d1",
+      "bytes": 1217,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F4_EF.provenance.json",
+      "source_sha256": "51674407d4b0e06bd959800b22b3c5899c4ff9ce3b192745f4ade520870e13d6",
+      "bytes": 1528,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F4_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F4_binding.csv",
+      "source_sha256": "a80bae0108a354f1fa9ff89ef58ffff18f1ceacc21fdc6e4dfffdb9780f3f186",
+      "bytes": 486,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F5_EF.csv",
+      "source_sha256": "7d67987c4b863aa18adddaee99bfb425b34498633a128880bab2c95495ed7976",
+      "bytes": 1417,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F5_EF.provenance.json",
+      "source_sha256": "af77b2da987479e1737010e05ba46d4a96b8106b94af08196cde600aadec151f",
+      "bytes": 1846,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F5_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F5_developability.csv",
+      "source_sha256": "17c2f64b133c446ca316169d727f2e114308013fc515f5a32743c57b1b8ab878",
+      "bytes": 252,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_coverage.csv",
+      "source_sha256": "63fdc2adaa59f86269c952023b7c4d4f6812529239c16cc41eab24329a03c69d",
+      "bytes": 318,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_ece_summary.csv",
+      "source_sha256": "0a6ea22ae4c60c2412356bccce4bde353a004dddd55dd506fa3f52fb73b947f6",
+      "bytes": 321,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_perbin_STATUS.txt",
+      "source_sha256": "ac011054a4175fb490a6b76a2190b5686181d877a55175b9c3eaa8d6502a3b20",
+      "bytes": 2150,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_raw_bins.csv",
+      "source_sha256": "ba03c4a86d358c32313edf5fa8b6e6160d15571922503774a09d8542601ccc9a",
+      "bytes": 300,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_STATUS.txt",
+      "source_sha256": "91bc38b7569d4023813bfdd46f021805831a30fb5a8ea8a6edb0ec090ae22279",
+      "bytes": 525,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_ece.csv",
+      "source_sha256": "1ed9ebd581f5818c41a2b2d050707c25b3696ad6b8935e903bfa488cd2d5ab96",
+      "bytes": 999,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_family.csv",
+      "source_sha256": "a8440730a8eb39ad6bab49c110f9fea97d06d0146b2aabad168bcaac4ff996f2",
+      "bytes": 389,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_folds.csv",
+      "source_sha256": "0cdaccc0eca782fa2a8df11c529714a6e6fab005c8db39e70afba72dee552fa3",
+      "bytes": 443,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_per_gene.csv",
+      "source_sha256": "d43c01c0c981a5794b44edecd536884da8f0b8acd7c5197838cf78548c634ddc",
+      "bytes": 2222,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_STATUS.txt",
+      "source_sha256": "991ee7d8b8e15720019f2511f4d6b73d95d36a6deb37dd03a55d6fd8e110c333",
+      "bytes": 821,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_corr.csv",
+      "source_sha256": "29ed06301207cd778ff5f95b85edebc24621c2c2ce15d306f491b99d90b7f7a6",
+      "bytes": 693,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_dca.csv",
+      "source_sha256": "4bc745679f030f11c2cb6f457e4e104c8340493e6294e61abf407d73bf964e52",
+      "bytes": 2300,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_mechanism.csv",
+      "source_sha256": "bc08986b05910cafa0d4c2a85024b2b646b96a38ec2310c3066c0aea8cd7a656",
+      "bytes": 11326,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_per_gene.csv",
+      "source_sha256": "aa144b03110bfc1512e5a351e2acb6a6f1c22f01bc1cc01072bff452a5cf62f7",
+      "bytes": 4586,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_schemes.csv",
+      "source_sha256": "a8d3f73f1a031a1396eb2eb8e9b440e40daf1460f982c74728370c9e979d2986",
+      "bytes": 1407,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_r2_slope.csv",
+      "source_sha256": "beb3bc821ef88c1777b2269f7585633759e763419164e040a1ea7611af7157a8",
+      "bytes": 499,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_20gene_xfit_reliability.csv",
+      "source_sha256": "7987bbd4cbfe8c04379eacc96c0f406124a078219fc08198df283b65fc06828e",
+      "bytes": 1403,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_EF.csv",
+      "source_sha256": "b682f8e404f046e983d8f207bdb7bf7fcf71813a296a32c77495e7621d1e83f8",
+      "bytes": 1477,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_EF.provenance.json",
+      "source_sha256": "53f489367ad746993b9a7668a2efe8159b395908477cb01c42f7e86e56dbde03",
+      "bytes": 1461,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_coverage.csv",
+      "source_sha256": "051381eab0cecde67b88737f5a7767b77b74b43f424841d82ca5e991e86f26e4",
+      "bytes": 394,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_headtohead.csv",
+      "source_sha256": "8de9595ef64cd26518e1a6f90fb5b3c8f86c9020025ee057bacf49d31c0e488b",
+      "bytes": 282,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_reliability.csv",
+      "source_sha256": "e1fec4da0d6459d4e46bee325f0f9279af59f27acf2b98ba9a835ecea631a2d7",
+      "bytes": 602,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F7_sixgene_xfit_reliability.csv",
+      "source_sha256": "c4ad0eb41a44d30402d1da69bf2fee27f58f8379f1dd2d4b8f28941f5a7d89ca",
+      "bytes": 1350,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8C_liability_pooled_counts.csv",
+      "source_sha256": "41d36ed55c54ef00c08ed4b49c80cfbc3dee051410ad5bb12c0750a8453cc3d5",
+      "bytes": 1282,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8C_liability_pooled_counts.provenance.json",
+      "source_sha256": "0d099333c017a84996cdece12b2f38f8390317f7354ae95528c7a60b7ef8517c",
+      "bytes": 1488,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8C_liability_pooled_counts.schema.json",
+      "source_sha256": "509e969f416bbe841664e0229f4769fc7fa0af0495ef89bceb61883eea4164f6",
+      "bytes": 762,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8_EF.csv",
+      "source_sha256": "104618136b97c207627ef63116bad2206261f191d1926e7298d51152f00df594",
+      "bytes": 1702,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8_EF.provenance.json",
+      "source_sha256": "466c60ce2c2ee6e644064d40d37aa19769b1cc98eb59c3ce04d1e5d0c60a4680",
+      "bytes": 1947,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8_antibody_n4.csv",
+      "source_sha256": "9c1ce563848e74638d42200dfaa7273ec773ae20fc7da465b9552f6613edf148",
+      "bytes": 90,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F8_antibody_n9.csv",
+      "source_sha256": "4e517221a935bcf45394e35872da26da74d20cda334758f70b4e737811052deb",
+      "bytes": 92,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F9_bo_acquisition.csv",
+      "source_sha256": "e0ac52a02bc732fd966820a2e98651f9d7137ef72b7bcd99643ddc0a8c6cbadc",
+      "bytes": 471,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F9_rho_unc.csv",
+      "source_sha256": "fa9a9802dde03c738220bc075818768d5f8af1b2fc56e52acbc4447f2df2cb37",
+      "bytes": 1971,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/F9_summary.csv",
+      "source_sha256": "7090ff790816fafabe5a9711b1abc854648bf9bae5add3e28a2be85c7b45f9a6",
+      "bytes": 213,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS1_proteingym_atlas.csv",
+      "source_sha256": "8e1e330a65fb8ff0f7946ca5502641e6f9214ceb7b8e6b4dfb3b6d0c8a99c7fb",
+      "bytes": 1085,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS1_proteingym_pooled.csv",
+      "source_sha256": "f1e20a5451e18b82807476f18b420a230414f5dd8ab904fceef138ac23d4d389",
+      "bytes": 113,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS2_class_means.csv",
+      "source_sha256": "e33c5b9ca6d1615cc7d9934dadf27fafb5025fcb29a9e2c533c1a97602dd8c3d",
+      "bytes": 77,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS2_clinvar_vs_gnomad.csv",
+      "source_sha256": "d4b461b0e87ab6d8d5c45975fe9c154c99cb9f07b487761c12feac34da96db60",
+      "bytes": 1301,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS3_antibody_robustness.csv",
+      "source_sha256": "96205842095ca818a7bc8744c19acfe6a17ae448f4ab135c5b99d1ba740971fa",
+      "bytes": 1232,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS4_abstention_coverage.csv",
+      "source_sha256": "b556222588812c69833bb86262a8508cf4af5667533d32e7c0d7ce33a62d3c63",
+      "bytes": 184,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS4_abstention_tiers.csv",
+      "source_sha256": "61f05e9fbf418a83b91ec21be3a8d403881057c851ff01c146a3ac42e7415d7e",
+      "bytes": 482,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/FS5_vep_comparison.csv",
+      "source_sha256": "7f0799e3865167ec26c09930bee4b8996d0b7123d16a25a53520682e6f375f86",
+      "bytes": 194,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S1_EF.csv",
+      "source_sha256": "a624d39f297f16fdfaf8c81ce67dc70250ef328ad3af4226795e2d3d917ac795",
+      "bytes": 1292,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S1_EF.provenance.json",
+      "source_sha256": "abb0af2717bce0326c452f93aeb7acc1058e1afd1e5ec8df7954bd4934c73e1d",
+      "bytes": 1823,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S1_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S2_EF.csv",
+      "source_sha256": "a1e7d9751f27433751bb9b7814cd7817ae8d3cd85f54f4d384ef734fd39c7fa2",
+      "bytes": 1156,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S2_EF.provenance.json",
+      "source_sha256": "2880f348f6933e4577ceeb9215a397f485e6742aac2a1662116adede4420312a",
+      "bytes": 1479,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S2_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S3_EF.csv",
+      "source_sha256": "3c1e059ec873431b5cad5b9b552cd4bab67c8740521861d6750476d7f9484a8c",
+      "bytes": 1315,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S3_EF.provenance.json",
+      "source_sha256": "77a826b388017488239dd38c3fbf8c462d71b371f34f73e958dc7d4b46e5e5a0",
+      "bytes": 1445,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S3_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S4_EF.csv",
+      "source_sha256": "97255e852d0c91258604e5aad248c8a856faa9bc00ff7bed38b039716358598d",
+      "bytes": 1319,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S4_EF.provenance.json",
+      "source_sha256": "a2f927ed47a8260600d84a7664ec22b69860eef5e2104863123976fdd16ddac5",
+      "bytes": 1728,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S4_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S5B_supervised_group_mean_median_abs_spearman.csv",
+      "source_sha256": "6b426933db158889e1e91a0bbe830c9a4644dd3e9433ac6cdc55a88daac4b9f6",
+      "bytes": 1222,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S5B_supervised_group_mean_median_abs_spearman.provenance.json",
+      "source_sha256": "729e03b5735f925141bcb0c7a8db8be4356802fadb5bb47a5dad9e2ac0753e0c",
+      "bytes": 1434,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S5B_supervised_group_mean_median_abs_spearman.schema.json",
+      "source_sha256": "1be8d6d1f15a57fbea62f8998ab3c5469e65f6e3474676c422bc17e768841b1a",
+      "bytes": 1124,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S5_EF.csv",
+      "source_sha256": "94df474daeccd24db904319b5b98b0d5c404969b233e827cd89889abaed1db21",
+      "bytes": 1191,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S5_EF.provenance.json",
+      "source_sha256": "6eaf68bb615d38f57972edd39a3eae9e65a89138141c43d8a832191045231ab2",
+      "bytes": 1130,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S5_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S6D_family_mean_protein_auroc.csv",
+      "source_sha256": "1176c90998b44e33e4fc055e519b7b33ed982a5d0846c59ac115695faa06928e",
+      "bytes": 1181,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S6D_family_mean_protein_auroc.provenance.json",
+      "source_sha256": "6ae0e2884bb8539f2bd4ea4c06679a1c17243930b1e71c3b11d151ca5d100f81",
+      "bytes": 1377,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S6D_family_mean_protein_auroc.schema.json",
+      "source_sha256": "1be8d6d1f15a57fbea62f8998ab3c5469e65f6e3474676c422bc17e768841b1a",
+      "bytes": 1124,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S6_EF.csv",
+      "source_sha256": "239203a1046b9d23afabea9c8d1daa9a3a95eb3d474136dff4cc83588bfa4dc3",
+      "bytes": 1176,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S6_EF.provenance.json",
+      "source_sha256": "b31f5d449b490126cdce94a7854beb1ed49e8b708d8839afca37233d6d81b7a9",
+      "bytes": 1338,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S6_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S7A_method_shift_mean_rho_unc.csv",
+      "source_sha256": "4afb2cc0f2249c152f206b054f5a074cd27e74c06074ccb77ff8f63c4bd8a3d4",
+      "bytes": 6683,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S7A_method_shift_mean_rho_unc.provenance.json",
+      "source_sha256": "69f2e2f048cb95b4d699e228cb121e4794f54e0653f82bda69779bf8347276e3",
+      "bytes": 2057,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S7A_method_shift_mean_rho_unc.schema.json",
+      "source_sha256": "1be8d6d1f15a57fbea62f8998ab3c5469e65f6e3474676c422bc17e768841b1a",
+      "bytes": 1124,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S7_EF.csv",
+      "source_sha256": "36d3cb7ec2f5ce08b5d1fae2b12485802f1e3683c50c8e153f053fb751928c2d",
+      "bytes": 1212,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S7_EF.provenance.json",
+      "source_sha256": "ad88ae0cfaec246d8e7982d75e7477fecab85efdce1cbc055f76cab7cb438c9b",
+      "bytes": 1500,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S7_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S8_EF.csv",
+      "source_sha256": "9d28755b05902d0688fec8d043123314648dd51c22ef9e48e084ca59bb3f4684",
+      "bytes": 1264,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S8_EF.provenance.json",
+      "source_sha256": "ae06b555c036801217aeab5850ebc863c661eb45608d4e820e097fc3b374e2d2",
+      "bytes": 1393,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S8_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S9_EF.csv",
+      "source_sha256": "5133f0f6dde819ed894e7fbabaf0e1226da7ddd19d22d429dea6bd606bd1bb10",
+      "bytes": 1287,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S9_EF.provenance.json",
+      "source_sha256": "603fea5268a16f5f815c361555ec9573c55effff96aafc9ae1a47ac2d080600d",
+      "bytes": 1240,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/S9_EF.schema.json",
+      "source_sha256": "421a649b1c383729ebc6d959bea96019e7a6a6f1929b135266742d88eea8d22a",
+      "bytes": 986,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/atlas_not_law_STATUS.txt",
+      "source_sha256": "c8762a0bd1e07348fc090d9c44ee88c085aac8dff74ef6e4a272bcb7f6af67db",
+      "bytes": 2897,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/clinical_brier_difference_20260923.csv",
+      "source_sha256": "bed85101af73027d7f5f62788a432b0830c746ce0076cbfe5b4cf65240c7862c",
+      "bytes": 165,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/clinical_macro_20260923.csv",
+      "source_sha256": "88b40c659a5be6beb6f7531e19ac37db2af9f2aa11f74ac1bc1fd147b7f63854",
+      "bytes": 71,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/clinical_metrics_20260923.csv",
+      "source_sha256": "40e9a0aaefd18fe87c68285f880fcb40f46c864c5ba38b5ace8c1dbe88671fbd",
+      "bytes": 1035,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/clinical_per_gene_calibration_20260923.csv",
+      "source_sha256": "239e83426dd68d5b361934dd1a134aeb27329516d95157fc98d94e1af462d19e",
+      "bytes": 8905,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/figures/plotdata/clinical_reliability_bins_20260923.csv",
+      "source_sha256": "210cb4ab4af7f11405f0221b638cef41fd7ab2af43ad26de4e0ba909c1a39d30",
+      "bytes": 47953,
+      "role": "versioned_plotdata_current_and_historical_see_evidence_boundary"
+    },
+    {
+      "path": "manuscript/manuscript.pdf",
+      "source_sha256": "9ee232e2d5efd3ec8ddd64637a63c82ed42ea4177f27a04711a92063538f2dcb",
+      "bytes": 745739,
+      "role": "current_author_review_pdf_before_main_das_injection"
+    },
+    {
+      "path": "manuscript/manuscript.tex",
+      "source_sha256": "8c6ee3edc9e32f8eb165198d6bc57362e98cb310b34ebef1ffb31f8ac7428e42",
+      "bytes": 38701,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/objects/1a22.cif",
+      "source_sha256": "ce576fa6b09cf179e85abba617059323e268a88c3799c2b85e5b76bd6757bf07",
+      "bytes": 352077,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/objects/binding_examples.csv",
+      "source_sha256": "be34ed50caedd28012b1d9eb8ad8b6d7fa59e42f45427424b537055ba6466ffa",
+      "bytes": 331,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/objects/complex.png",
+      "source_sha256": "3c3c933c0e9b67cab192e38dca953de902b8d92598b52e8196d4afe7084dd8e8",
+      "bytes": 327458,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/objects/provenance.json",
+      "source_sha256": "6ff20ecd689040113afb97bda46a9ca054a31a1baef82b40a333d20a78dff25f",
+      "bytes": 1673,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/objects/render.pml",
+      "source_sha256": "e968288186a7136193892acdbdc77b863d6ed30dfba5c8158511803cae5ec985",
+      "bytes": 1041,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/objects/site.png",
+      "source_sha256": "8d42d19f94ff9a63134f56ec890731a43bc0f02f0b62e06cffc68f0570cc65b7",
+      "bytes": 293696,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/registries/figure_estimands.csv",
+      "source_sha256": "2b129dec0e9c47bde244fb065cd603fc43f1da6a23c3b62743f87870899b222b",
+      "bytes": 29745,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/registries/figure_inputs.sha256",
+      "source_sha256": "0c8927a1c93b1107e0b7208ae780dffbd697ee838784a92ce38992b0b897058f",
+      "bytes": 7439,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/registries/figure_panels.csv",
+      "source_sha256": "92ca83f20f867d82cdc4566e36f468518a9d74da0a4f963380af35d02440374e",
+      "bytes": 17739,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/registries/frozen_task6_stage.sha256",
+      "source_sha256": "fdca8d3fdaaacf939c556884006af9e0451e600046d5a2d8d7fa486a81bedc6d",
+      "bytes": 2931,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/release-current.json",
+      "source_sha256": "316ce80c8ffb4f9cdca043866175db9b05036fc3e83aba4a3f6d98150a2c0578",
+      "bytes": 36555,
+      "role": "source_capsule_binding_not_public_release_authority"
+    },
+    {
+      "path": "manuscript/release-spec.json",
+      "source_sha256": "316ce80c8ffb4f9cdca043866175db9b05036fc3e83aba4a3f6d98150a2c0578",
+      "bytes": 36555,
+      "role": "source_capsule_binding_not_public_release_authority"
+    },
+    {
+      "path": "manuscript/scripts/R/LEGACY-WRITERS.md",
+      "source_sha256": "8b35beed893bda7654ca09978b9f85fe27c41c0fefd14d2b4395d026301fb08c",
+      "bytes": 499,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/assess_atlas_not_law.R",
+      "source_sha256": "6dd4dd0a5c41210be6c217fc5157872820a97b6d5ae5679dbb01492df24fdd29",
+      "bytes": 5556,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/compose_a3.R",
+      "source_sha256": "b55925e038fe1730fa0147aef2bdf1623c1e30d59a0f09f3e593a7517050b85e",
+      "bytes": 6981,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/design_a3_20gene_ece_bins.R",
+      "source_sha256": "47b74ec33f30bda91698652f4e79944ff0fc1aa82f45c4d0c19d14595c21e5d7",
+      "bytes": 4217,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/evidence_panels_a3.R",
+      "source_sha256": "3adc008e07cd86d0d937fb0442ce659f7faeabd19c2c662cb9667ebe1fe6bce4",
+      "bytes": 27254,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_a3_graphical_abstract.R",
+      "source_sha256": "b05d560cad5a309b36f28d014609bfb9df9d98a66bd131d203d7291117b2a74c",
+      "bytes": 867,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f10_stability.R",
+      "source_sha256": "face065acfe5ebbb226a44ff87482903cfeecd91e3fb77ce8030345ce29c8252",
+      "bytes": 3997,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f6_clinical.R",
+      "source_sha256": "0120deb6f50a407007d535c2ba6a970a4805ebf3e0186663117491784efb5e93",
+      "bytes": 2980,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f7_20gene_ece.R",
+      "source_sha256": "67b3d00c875d102afc48291b8749bfe68b8236ce0c4e85a6265f954528a620ba",
+      "bytes": 4371,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f7_20gene_perbin.R",
+      "source_sha256": "ab46b5408c735cb8d4e4caebe5a70fcd4d28c481ee5369533c2eb1d97affcf38",
+      "bytes": 6663,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f7_reliability_predictor.R",
+      "source_sha256": "c5a648fb11b873ce4d1b866bdd9ea4867da2c0da10558e359ebbab6304bcfff8",
+      "bytes": 4490,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f8_antibody.R",
+      "source_sha256": "1e7a044a4386bd75c84a4869d6206cb313c58ae594189382a04638aac7d4a8f9",
+      "bytes": 3201,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_f9_uq.R",
+      "source_sha256": "69f8ba12b5d6ff5286c5a1d99486eb4055547675a6ab3c3ca30d5a06102dbbe1",
+      "bytes": 4613,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_figures.R",
+      "source_sha256": "c4f16639a9ca5095315cdb41d71463cd71d583df2ef5a6d72bdd2b1beb017304",
+      "bytes": 5585,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_four_panel_all.R",
+      "source_sha256": "b4ab9e5025bc9288e3b62a347cd2b3b5e3bb1a135316af623b54292c08fc6557",
+      "bytes": 65381,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_fs1_proteingym.R",
+      "source_sha256": "67d5ac4f9b00c03f7e896b64db2222c2601399355c8daad2c5c254d7af53159a",
+      "bytes": 2422,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_fs2_gnomad_gof.R",
+      "source_sha256": "1676fb18066e208fb19035863798cbfda42a33bd90a8dd6d77cf99b8d50317a9",
+      "bytes": 2365,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_fs3_antibody.R",
+      "source_sha256": "2f2fec1a2f63d569c730489c827f12e93f539fe72dbf976d738dab8fca8d825b",
+      "bytes": 2401,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/make_fs4_abstention.R",
+      "source_sha256": "be38ad3c64ac0098d08c56a968718ddf5c813062fa5e14ce01c631ab73fdc825",
+      "bytes": 3365,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/R/theme_a3.R",
+      "source_sha256": "824aac0a87388db2e474520b6f6db551bb6532e981b7cf74077d18151d527286",
+      "bytes": 8160,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/_sweep_hashes.py",
+      "source_sha256": "25711e5ba2a08d7765ef6163e4502bac86894183f32010d8bf2a515ba93c7836",
+      "bytes": 5096,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/build_pdf.sh",
+      "source_sha256": "d9706de308c2296f942d337397890a183ccb14ed6954964a8c61e840b6af64ab",
+      "bytes": 424,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/build_release_assets.sh",
+      "source_sha256": "993e0f1d4c88d956cc12a24b497fa71b06adcf144317fc95f606c45b8f8ec64c",
+      "bytes": 2693,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/build_submission_pdf.sh",
+      "source_sha256": "b670fb948a192b76fb3f03fd71af269a9cef606de54a3c42739140e9b87927c6",
+      "bytes": 7262,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_a3_expansion_tables.py",
+      "source_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+      "bytes": 43503,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_f10_stability.py",
+      "source_sha256": "0001222a82f9f3838b57eb77a41020035c47c79b614b6f66800c15f17f33b280",
+      "bytes": 4607,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_f9_uq.py",
+      "source_sha256": "aea896a8020c6f2d8974e790494d2c0442f0352716c64eddbb116fc40e7ef4e9",
+      "bytes": 4515,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_fs1_proteingym.py",
+      "source_sha256": "186f23b98fbf959e5c3b11106c0cf737bd3a9eb5a2d9354de9709487797f3ead",
+      "bytes": 2720,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_fs2_gnomad_gof.py",
+      "source_sha256": "2432d3ad997e22c16f7b125a761b9a98dd282533aafd50707dcd7d1cf00b91c7",
+      "bytes": 2255,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_fs3_antibody.py",
+      "source_sha256": "51ccd5738ef2cdeddab90664ac0cc4fb18200ecaba74c417227c3ac9f26c5644",
+      "bytes": 3629,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_fs4_abstention.py",
+      "source_sha256": "6523b905067ff8c2b1a95bc087b67a574ed41394a5b5e62a6702719d4476a399",
+      "bytes": 3021,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/export_plot_data.py",
+      "source_sha256": "7b333d2cdc617b967a0b856bba9bfad298b8f31fc8f72e44e7db0980a3dd8abb",
+      "bytes": 4610,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/make_a3_graphical_abstract_vector.py",
+      "source_sha256": "d136aa51a3ad5bffb6bf2b218d6af55175393d57e83434ee633c9f493b40e6b1",
+      "bytes": 30997,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/make_binding_objects.py",
+      "source_sha256": "9b2d6d5f0ab7762df9bb5c1b4231ec122f3790d66f6543c45e4ae64b8746c69c",
+      "bytes": 6223,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/normalize_a3_pdf_metadata.py",
+      "source_sha256": "139eedb0ad39cdcc179c1a2408a3b102dea582692b3d4827adccf646e7249d21",
+      "bytes": 772,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/rebuild_a3_scientific_numbers.py",
+      "source_sha256": "3ae04dc0e4c774f3ccb3cfa04570fc5f444d7e3842afec2e844fd6e92c870a1e",
+      "bytes": 10824,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/rebuild_current.sh",
+      "source_sha256": "f0f835d1b1afd18fb9e410f1a883330846e33f92995b354d386a891e30b8211f",
+      "bytes": 1045,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/render_a3_stage_sidecars.py",
+      "source_sha256": "a211ebf77cf498f8022a2d4d826bbf7e04766a28b35e20928a0bcfcdacfa6d8b",
+      "bytes": 12077,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/render_structure_panels.py",
+      "source_sha256": "c1cd648169af6aba2186289e1fed3f932e67fd8fe0815a75ac2dea3182c1455a",
+      "bytes": 452,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/stage_release_inputs.py",
+      "source_sha256": "381e5fcfe18d7a65ab170279bbd384b5001ac782f624854ae3f159002fd754e1",
+      "bytes": 3658,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_a3_authority_boundary.py",
+      "source_sha256": "21e95971a4b8769f3202e8549444878a7e300f63a1c87f3a1cba49cba00338b8",
+      "bytes": 4944,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_a3_expansion_estimands.py",
+      "source_sha256": "1d9f297e7b3bb04d94eb8bbf6d02a6ee973b4733e9fd56bb405076901e5159e1",
+      "bytes": 17755,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_a3_graphical_abstract_vector_refinement.py",
+      "source_sha256": "60c47dce2f42a05c7e8d856d9360b69a3f53f1e012fd5e9993cd93443e297613",
+      "bytes": 12979,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_a3_six_panel_compositor.py",
+      "source_sha256": "3144bb2129d39c7d2344f0f8173b4fcb57a87ef0a49c3c6a7888cb1f1f795d3f",
+      "bytes": 13217,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_a3_visual_contract.py",
+      "source_sha256": "37122d00b41cac079699ce1f474e900610b8130ebf3de7401a7baace5b40fb75",
+      "bytes": 5896,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_caption_panel_coverage.py",
+      "source_sha256": "aaf8cfd9e819e1d31c9888212e4fce6da6a459490695fc3ac9d1bbdeca4120cd",
+      "bytes": 2258,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_figure_font_roles.py",
+      "source_sha256": "48172cb2d816c724cc3ea91521845eececef78e774a7d24038a8d6479a66d55d",
+      "bytes": 4515,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_master_figure_registry.py",
+      "source_sha256": "0a1e1dbf3d96a992e44eef998daa5c8d06822526c306312927604bcc59c5984e",
+      "bytes": 9658,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_panel_label_clearance.py",
+      "source_sha256": "5d07497f20f8d6bb783c0c4b03c47b5e8d35c371f9d9d19f4a57751dbf481fd1",
+      "bytes": 7928,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_pdf_layout_contract.py",
+      "source_sha256": "aef6d2c62045d83ee615c042ad84de5e3e6cbdca31b4464fd4921ab4619dbeff",
+      "bytes": 3960,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_rebuild_a3_scientific_numbers.py",
+      "source_sha256": "fdc8bde1f388e7850200a9a73e8e09204407822def74ff0b43caa1bf4c7f461b",
+      "bytes": 893,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_release_contract.py",
+      "source_sha256": "7725f0cea6a551b5af8d061095b8c7a27160b06a971c30a295812dd23921a673",
+      "bytes": 25879,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_shipped_figure_legibility.py",
+      "source_sha256": "207fe0a18b28ce3a89a696828a9a9f64f1bf2194cd4e2b3b3eaab8679a73f8fe",
+      "bytes": 15616,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/tests/test_task7_manuscript_contract.py",
+      "source_sha256": "f3b3010c4ca6409d000b86cd9607baece352900655a641b7122b768ad6d0b412",
+      "bytes": 16987,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/verify_figure_release.py",
+      "source_sha256": "7acc3289aa6fe21d60413c19a121b1174d6938665c8f4169ebef4d30eeb7fad8",
+      "bytes": 4419,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/scripts/verify_submission_package.py",
+      "source_sha256": "e51e7279f951cd88ac31cada7596ae9b523034e20b7cee7dd1c01c66fa2f135b",
+      "bytes": 14644,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/supplement/CLAIM_LEDGER_AND_ARTIFACT_INDEX.md",
+      "source_sha256": "ff7b270d61fa5a2ab6e36e77b7052483e9ac65dddca4b57c1215ee843c6636ff",
+      "bytes": 15442,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/abstract.tex",
+      "source_sha256": "dedd59359dc9fa0bf170bb82b5878f22c232a078dbe5d70f4fc4cf31a02ce4aa",
+      "bytes": 1582,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/clinical_revision.tex",
+      "source_sha256": "25d6b83fd064a4b9c618c0e7708069078e06dcfb70d713820ced11de16c27380",
+      "bytes": 5901,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/clinical_table_20260923.tex",
+      "source_sha256": "5cc5737f6a1da1f6ea66979f06a1566e55e9258ed2f41bbdeaa7b72905ad5ea5",
+      "bytes": 426,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/clinical_values_20260923.tex",
+      "source_sha256": "60fb12573cd516fb9e6e3e29328a38bc357fd4e35f95e81ed9b8aa5ff766ffd4",
+      "bytes": 703,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/code_url_pending.tex",
+      "source_sha256": "34dec91f9d243a2ec4f3a3cae92a4b65abcc2b8d1feab4b81f4215cb910c2d11",
+      "bytes": 332,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/methods.tex",
+      "source_sha256": "f55a0c2ebad006cf2c94b33dab20c38b3fc84def319418cee9b4d8979041fc61",
+      "bytes": 13844,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "manuscript/text/scope_atlas_not_law.tex",
+      "source_sha256": "7b99097ee0a73c5d35fa361010b759ed6981b2654b42bcc4acf860c236227fbf",
+      "bytes": 271,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "reproducibility/METHOD-AUDIT.md",
+      "source_sha256": "0fe0f5e9fcb51cd1ffbed9c31ef860aa27fb43724661ee34a5e61838d141b2c7",
+      "bytes": 2752,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "reproducibility/method-contract.json",
+      "source_sha256": "ee2c7e9668378c046d2b88674604ec95761664bdb057cbb4f7a19675df0363b1",
+      "bytes": 42065,
+      "role": "source_capsule_binding_not_public_release_authority"
+    },
+    {
+      "path": "reproducibility/tests/test_a3_method_integrity.py",
+      "source_sha256": "02df83683a93c10ca49f6ea9dc5a555f0b4ac4a289b91793dedd619b4b18dbb8",
+      "bytes": 2500,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "reproducibility/verify_method_contract.py",
+      "source_sha256": "db96e1f0941075f10032341fec711b23917acf07d123eb9c84654ed85375f751",
+      "bytes": 647,
+      "role": "source_code_build_test_or_evidence_dependency"
+    },
+    {
+      "path": "results-snapshot/N4_antibody_ddg/results.json",
+      "source_sha256": "b4923b01fe4909206a2d49e1e44134944942f9395d4bcc05a2fe8bce64a48836",
+      "bytes": 1439,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/N6_clinvar/clinical_calibration_full20.json",
+      "source_sha256": "8ecb8c44e12555a2a38c3c2a31bfdb4f57e79595cac60d9fd9678ffc71888d7d",
+      "bytes": 9681,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/a3_atlas_auroc.csv",
+      "source_sha256": "9109235593d5aad0a177e478548900a6b65e402c634f16ab6c4722213feb7cef",
+      "bytes": 239,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/a3_atlas_spearman.csv",
+      "source_sha256": "a80a53a87e934e9d70f771cfdc674bb5492669844614b6fe399e0336ae18f857",
+      "bytes": 392,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/make_a3_atlas.R",
+      "source_sha256": "0e35ebb9e2c9ff7cd0dd59c38dd58335acfe3be2d6403c060cbde5c0323bef24",
+      "bytes": 2971,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/make_a3_graphical_abstract.R",
+      "source_sha256": "fc08f2bae1434b39570534479dd42cc5091c3331c2335be150b4f5f81b0932c7",
+      "bytes": 3946,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/make_a3_plotdata.py",
+      "source_sha256": "132a3dcc1178b0790b513f2ae885457875877b45b1749902c5c49b616abec3b1",
+      "bytes": 3230,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/make_a3_schematics.R",
+      "source_sha256": "fec63ed1b528348a64583ab5b1e51fc3a0815d746729fc45a469536a1238b663",
+      "bytes": 6459,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/make_vep_comparison.R",
+      "source_sha256": "b09bc3601cddd4abf3a417d91da1aa1cdb2870174013c085b33611ea6f120863",
+      "bytes": 1300,
+      "role": "historical_snapshot_not_current_clinical"
+    },
+    {
+      "path": "results-snapshot/a3_meta/vep_comparison.csv",
+      "source_sha256": "7f0799e3865167ec26c09930bee4b8996d0b7123d16a25a53520682e6f375f86",
+      "bytes": 194,
+      "role": "historical_snapshot_not_current_clinical"
+    }
+  ],
+  "source_file_count": 365,
+  "source_bytes": 15500421,
+  "locked_input_count": 256,
+  "current_build_input_count": 237,
+  "all_locked_and_current_build_inputs_included": true,
+  "exclusions": {
+    "weights_and_parts": true,
+    "private_submission_and_admin": true,
+    "backups_and_old_pdfs": true,
+    "caches_and_compiled_temporary": true,
+    "upstream_raw_datasets": true
+  },
+  "reference_sequence_payload": {
+    "full_sequences_present_in_permitted_source": false,
+    "exported": "20 reference hashes and lengths, 4677 variant labels and source identity hashes",
+    "upstream_required_for_full_scoring": true
+  }
+}

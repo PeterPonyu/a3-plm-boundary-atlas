@@ -1,0 +1,2 @@
+metric,value,ci_lo,ci_hi,n_variants,n_assays,n_discriminating
+auroc_calibrated,0.7807,0.7567,0.8033,1551,19,13

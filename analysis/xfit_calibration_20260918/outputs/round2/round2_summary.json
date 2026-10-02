@@ -1,0 +1,381 @@
+{
+  "protocol_id": "A3-XFIT-CAL-R2-20260918",
+  "parent_protocol": "A3-XFIT-CAL-20260918",
+  "not_a_restoration": true,
+  "forbidden_claim": "Do not treat any number here as recovery of 0.0207 or 91%",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 16:09:02) [GCC 11.2.0]",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.39",
+  "seed": 20260918,
+  "k_folds": 5,
+  "n_boot": 2000,
+  "n_bins": 10,
+  "min_fit": 8,
+  "thresholds": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "n": 4677,
+  "n_pathogenic": 1108,
+  "pooled_base_rate": 0.23690399828950182,
+  "input_sha256": "35bec90f46bac58bddd862fe99d4767053b1653ddfb5bacb2b366745c67b15b2",
+  "replayed_uncal_ece": 0.24848355100110145,
+  "schemes": {
+    "uncalibrated": {
+      "ece": 0.24848355100110145,
+      "ci_lo": 0.23710503366656166,
+      "ci_hi": 0.25931410553390843,
+      "delta_vs_uncal": 0.0,
+      "delta_vs_pooled": null
+    },
+    "pooled_platt": {
+      "ece": 0.019243764637152324,
+      "ci_lo": 0.013863506170098834,
+      "ci_hi": 0.03153215933669629,
+      "delta_vs_uncal": -0.22923978636394912,
+      "delta_vs_pooled": null
+    },
+    "pooled_isotonic": {
+      "ece": 0.006727063884456838,
+      "ci_lo": 0.0067307296334325525,
+      "ci_hi": 0.021059841145342505,
+      "delta_vs_uncal": -0.2417564871166446,
+      "delta_vs_pooled": null
+    },
+    "pergene_platt": {
+      "ece": 0.014590442948008573,
+      "ci_lo": 0.01152714801540469,
+      "ci_hi": 0.02833162600216474,
+      "delta_vs_uncal": -0.23389310805309288,
+      "delta_vs_pooled": -0.004653321689143751
+    },
+    "pergene_isotonic": {
+      "ece": 0.014855619370034552,
+      "ci_lo": 0.014770077553211013,
+      "ci_hi": 0.029944449588568567,
+      "delta_vs_uncal": -0.2336279316310669,
+      "delta_vs_pooled": 0.008128555485577714
+    },
+    "grouped_platt": {
+      "ece": 0.02047905152328211,
+      "ci_lo": 0.01719967243410105,
+      "ci_hi": 0.034250029390131984,
+      "delta_vs_uncal": -0.22800449947781934,
+      "delta_vs_pooled": 0.0012352868861297862
+    },
+    "grouped_isotonic": {
+      "ece": 0.0060467047054250135,
+      "ci_lo": 0.0069420489496927525,
+      "ci_hi": 0.02159256698611519,
+      "delta_vs_uncal": -0.24243684629567644,
+      "delta_vs_pooled": -0.0006803591790318243
+    },
+    "geneoffset_platt": {
+      "ece": 0.024376956844580955,
+      "ci_lo": 0.02084419513133731,
+      "ci_hi": 0.037103293407390374,
+      "delta_vs_uncal": -0.22410659415652048,
+      "delta_vs_pooled": 0.0051331922074286315
+    },
+    "logo_platt": {
+      "ece": 0.020932228822905605,
+      "ci_lo": 0.01594242037584932,
+      "ci_hi": 0.03297005513014571,
+      "delta_vs_uncal": -0.22755132217819585,
+      "delta_vs_pooled": 0.0016884641857532814
+    },
+    "logo_isotonic": {
+      "ece": 0.016326408523503436,
+      "ci_lo": 0.014000558558320013,
+      "ci_hi": 0.029980229601537595,
+      "delta_vs_uncal": -0.232157142477598,
+      "delta_vs_pooled": 0.009599344639046598
+    }
+  },
+  "n_degrade_pooled_platt": 7,
+  "degraders_pooled_platt": [
+    "AICDA_HUMAN",
+    "BRAF_GOF",
+    "KRAS_GOF",
+    "OTC_HUMAN",
+    "P53_HUMAN",
+    "PIK3CA_GOF",
+    "STK11_GOF"
+  ],
+  "holm_significant_degraders": [
+    "OTC_HUMAN",
+    "PIK3CA_GOF"
+  ],
+  "holm_significant_improvers": [
+    "EGFR_GOF",
+    "FGFR3_GOF",
+    "HEM3_HUMAN",
+    "KCNE1_HUMAN",
+    "KIT_GOF",
+    "MET_HUMAN",
+    "OPSD_HUMAN",
+    "PTEN_GOF",
+    "RB1_GOF",
+    "RET_GOF"
+  ],
+  "pergene_platt_beats_pooled": true,
+  "grouped_platt_beats_pooled": false,
+  "geneoffset_platt_beats_pooled": false,
+  "ols_delta_on_base_and_logn": {
+    "b0": -0.3889634946996453,
+    "b1": 0.7170906925141132,
+    "b2": 0.014724714034380419,
+    "r2": 0.7316025639837607,
+    "n": 20
+  },
+  "correlations": [
+    {
+      "rho": -0.34135338345864663,
+      "p": 0.14342828585707146,
+      "n_perm": 2000,
+      "predictor": "n",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": -0.34135338345864663,
+      "p": 0.14342828585707146,
+      "n_perm": 2000,
+      "predictor": "log_n",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": 0.8150375939849624,
+      "p": 0.0004997501249375312,
+      "n_perm": 2000,
+      "predictor": "base_rate",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": 0.5533834586466165,
+      "p": 0.009995002498750625,
+      "n_perm": 2000,
+      "predictor": "abs_base_minus_pooled",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": 0.8150375939849624,
+      "p": 0.0004997501249375312,
+      "n_perm": 2000,
+      "predictor": "base_minus_pooled",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": -0.8210526315789474,
+      "p": 0.0004997501249375312,
+      "n_perm": 2000,
+      "predictor": "ece_uncal",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": -0.9278195488721804,
+      "p": 0.0004997501249375312,
+      "n_perm": 2000,
+      "predictor": "citl_uncal",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": -0.9759398496240601,
+      "p": 0.0004997501249375312,
+      "n_perm": 2000,
+      "predictor": "citl_pooled_platt",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": 0.05413533834586466,
+      "p": 0.8205897051474262,
+      "n_perm": 2000,
+      "predictor": "s_shift_vs_pooled",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": -0.09774436090225563,
+      "p": 0.6921539230384808,
+      "n_perm": 2000,
+      "predictor": "sd_s",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": 0.1924812030075188,
+      "p": 0.3963018490754623,
+      "n_perm": 2000,
+      "predictor": "ks_uncal_vs_pooled",
+      "outcome": "delta_pooled_platt"
+    },
+    {
+      "rho": 0.06766917293233082,
+      "p": 0.7716141929035483,
+      "n_perm": 2000,
+      "predictor": "mean_p_uncal",
+      "outcome": "delta_pooled_platt"
+    }
+  ],
+  "pergene_skipped_folds": {
+    "AICDA_HUMAN": 0,
+    "BRAF_GOF": 0,
+    "EGFR_GOF": 0,
+    "FGFR3_GOF": 0,
+    "HEM3_HUMAN": 0,
+    "HRAS_GOF": 0,
+    "KCNE1_HUMAN": 0,
+    "KIT_GOF": 0,
+    "KRAS_GOF": 0,
+    "MET_HUMAN": 0,
+    "NRAS_GOF": 0,
+    "OPSD_HUMAN": 0,
+    "OTC_HUMAN": 0,
+    "P53_HUMAN": 0,
+    "PIK3CA_GOF": 0,
+    "PTEN_GOF": 0,
+    "RB1_GOF": 0,
+    "RET_GOF": 0,
+    "STK11_GOF": 0,
+    "VHL_GOF": 0
+  },
+  "geneoffset_fold_coeff": [
+    {
+      "fold": 0,
+      "a": 0.7905861816073215,
+      "b": -1.3330261297378885,
+      "offsets": {
+        "AICDA_HUMAN": 0.30454895231752455,
+        "BRAF_GOF": 0.5145531963041363,
+        "EGFR_GOF": -0.5482169546499046,
+        "FGFR3_GOF": -0.8114615186875135,
+        "HEM3_HUMAN": -0.8942904434161443,
+        "HRAS_GOF": 0.06352459129126077,
+        "KCNE1_HUMAN": -0.21269856746342805,
+        "KIT_GOF": -0.2031394725641813,
+        "KRAS_GOF": 0.44801589845317824,
+        "MET_HUMAN": -1.0409042451891786,
+        "NRAS_GOF": -0.07760160083017328,
+        "OPSD_HUMAN": -0.912326583486303,
+        "OTC_HUMAN": 1.0102356513911974,
+        "P53_HUMAN": 0.8863594201510158,
+        "PIK3CA_GOF": 0.7442869652027941,
+        "PTEN_GOF": -0.09478912012266247,
+        "RB1_GOF": 0.1491375942523087,
+        "RET_GOF": -0.4080701364802823,
+        "STK11_GOF": 0.46561671079389405,
+        "VHL_GOF": 0.6172196627324615
+      }
+    },
+    {
+      "fold": 1,
+      "a": 0.8077112535246838,
+      "b": -1.3245591835879265,
+      "offsets": {
+        "AICDA_HUMAN": 0.28829275523677855,
+        "BRAF_GOF": 0.5607912814662713,
+        "EGFR_GOF": -0.47992127294473097,
+        "FGFR3_GOF": -0.9714917571910822,
+        "HEM3_HUMAN": -0.8903930811419796,
+        "HRAS_GOF": -0.04995163730147153,
+        "KCNE1_HUMAN": -0.16008124199187457,
+        "KIT_GOF": -0.13063515093564806,
+        "KRAS_GOF": 0.31147719926237694,
+        "MET_HUMAN": -1.027463806419565,
+        "NRAS_GOF": 0.13253598245312787,
+        "OPSD_HUMAN": -0.8779511790714973,
+        "OTC_HUMAN": 0.9359230114028179,
+        "P53_HUMAN": 1.0293690396256565,
+        "PIK3CA_GOF": 0.8745604699358499,
+        "PTEN_GOF": -0.09788212466118332,
+        "RB1_GOF": 0.03142732202221752,
+        "RET_GOF": -0.44428858293236645,
+        "STK11_GOF": 0.4291953564385486,
+        "VHL_GOF": 0.5364874167477535
+      }
+    },
+    {
+      "fold": 2,
+      "a": 0.7949010351502335,
+      "b": -1.3245795436329397,
+      "offsets": {
+        "AICDA_HUMAN": 0.29767291036647786,
+        "BRAF_GOF": 0.3534561332474686,
+        "EGFR_GOF": -0.6190996258111422,
+        "FGFR3_GOF": -0.7805957651365326,
+        "HEM3_HUMAN": -0.899710846402972,
+        "HRAS_GOF": 0.06984096438944944,
+        "KCNE1_HUMAN": -0.266993074519335,
+        "KIT_GOF": -0.2026813878502108,
+        "KRAS_GOF": 0.27552119769330646,
+        "MET_HUMAN": -1.0381921478019707,
+        "NRAS_GOF": -0.03871681228021008,
+        "OPSD_HUMAN": -0.6991965926240921,
+        "OTC_HUMAN": 0.9966169199760259,
+        "P53_HUMAN": 0.9931326705851191,
+        "PIK3CA_GOF": 0.8934223695773579,
+        "PTEN_GOF": -0.1728176124540738,
+        "RB1_GOF": 0.1955422750610358,
+        "RET_GOF": -0.43161754869714425,
+        "STK11_GOF": 0.39411122349703925,
+        "VHL_GOF": 0.6803047491844033
+      }
+    },
+    {
+      "fold": 3,
+      "a": 0.7755293274422025,
+      "b": -1.3310189305772555,
+      "offsets": {
+        "AICDA_HUMAN": 0.24428782630405266,
+        "BRAF_GOF": 0.3907609017123077,
+        "EGFR_GOF": -0.48767432067584504,
+        "FGFR3_GOF": -0.912455975738839,
+        "HEM3_HUMAN": -0.9207710670973017,
+        "HRAS_GOF": -0.057837120363196,
+        "KCNE1_HUMAN": -0.31488951262878156,
+        "KIT_GOF": -0.16438140385232383,
+        "KRAS_GOF": 0.39037912576921024,
+        "MET_HUMAN": -1.0086913759480292,
+        "NRAS_GOF": 0.057861209056575415,
+        "OPSD_HUMAN": -0.7597553539045014,
+        "OTC_HUMAN": 0.9887274964630121,
+        "P53_HUMAN": 1.0207986008362695,
+        "PIK3CA_GOF": 0.9975711847828338,
+        "PTEN_GOF": -0.0725910607542024,
+        "RB1_GOF": 0.08046188192322384,
+        "RET_GOF": -0.44514981394128,
+        "STK11_GOF": 0.3272469666282719,
+        "VHL_GOF": 0.6461018114285431
+      }
+    },
+    {
+      "fold": 4,
+      "a": 0.7735243405865319,
+      "b": -1.3158452431862953,
+      "offsets": {
+        "AICDA_HUMAN": 0.24416920599824024,
+        "BRAF_GOF": 0.5666363716308982,
+        "EGFR_GOF": -0.5472120304468134,
+        "FGFR3_GOF": -0.8629693086282237,
+        "HEM3_HUMAN": -1.0047661202133933,
+        "HRAS_GOF": -0.01472561776714199,
+        "KCNE1_HUMAN": -0.14795825319349515,
+        "KIT_GOF": -0.2383329901692287,
+        "KRAS_GOF": 0.30724430318761276,
+        "MET_HUMAN": -0.999063690497741,
+        "NRAS_GOF": 0.062207977427148946,
+        "OPSD_HUMAN": -0.6903145979182201,
+        "OTC_HUMAN": 1.0484658966075784,
+        "P53_HUMAN": 1.0679216501769577,
+        "PIK3CA_GOF": 0.8236306772216168,
+        "PTEN_GOF": -0.07915781274793834,
+        "RB1_GOF": -0.018014786484080933,
+        "RET_GOF": -0.5652992707177852,
+        "STK11_GOF": 0.41226822161052856,
+        "VHL_GOF": 0.6352701749234801
+      }
+    }
+  ]
+}

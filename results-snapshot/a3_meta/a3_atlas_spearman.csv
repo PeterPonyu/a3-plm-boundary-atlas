@@ -1,0 +1,7 @@
+task,value,lo,hi,note
+Stability ΔΔG (MegaScale),0.362,,,no committed CI (ddg_calibration_v2.json:wt.spearman_heldout)
+"Binding ΔΔG, general (non-antibody)",0.222,0.185,0.258,
+"Binding ΔΔG, overall",0.197,0.167,0.231,
+"Binding ΔΔG, antibody interface",0.165,0.075,0.249,
+"Binding ΔΔG, antibody–antigen",0.079,0.002,0.157,
+"Binding ΔΔG, non-interface",-0.002,-0.089,0.078,

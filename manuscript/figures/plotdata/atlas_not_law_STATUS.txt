@@ -1,0 +1,46 @@
+A3 science-bar inventory (capsule CSVs only)
+option: (b) atlas, not a fitted physical-world law
+run_utc: 2026-08-18T15:33:33Z
+
+LOCKED PHYSICAL READOUTS (rank correlation / RMSE, not a kcal slope):
+  SKEMPI overall Spearman=0.197362  95% CI [0.166665, 0.231150]  n=3424  CI_includes_0=FALSE
+  general_nonAB Spearman=0.222226  95% CI [0.184875, 0.257981]  n=2797  CI_includes_0=FALSE
+  antibody_ABAG Spearman=0.078849  95% CI [0.001792, 0.157075]  n=627  CI_includes_0=FALSE
+  interface Spearman=0.254961  95% CI [0.219031, 0.291132]  n=2792
+  noninterface Spearman=-0.002087  95% CI [-0.088861, 0.078118]  n=632  CI_includes_0=TRUE
+  interface vs noninterface CI_overlap=FALSE
+  antibody_ABAG vs general_nonAB CI_overlap=FALSE
+
+F11_atlas_spearman.csv (three-decimal synthesis face):
+  Stability ΔΔG (MegaScale) |  0.362 | NA | NA | no committed CI (ddg_calibration_v2.json:wt.spearman_heldout)
+  Binding ΔΔG, general (non-antibody) |  0.222 |  0.185 | 0.258 | 
+  Binding ΔΔG, overall |  0.197 |  0.167 | 0.231 | 
+  Binding ΔΔG, antibody interface |  0.165 |  0.075 | 0.249 | 
+  Binding ΔΔG, antibody–antigen |  0.079 |  0.002 | 0.157 | 
+  Binding ΔΔG, non-interface | -0.002 | -0.089 | 0.078 | 
+
+  MegaScale homology-held-out Spearman locked cells from F10_discrimination.csv: v2 WT 0.362, v2 masked 0.358
+  stale range [0.336, 0.362] SUPERSEDED (0.336 is not a cell in F10_discrimination.csv)
+  MegaScale calib_rmse range [0.910, 0.951] from F10_calibration.csv
+
+CALIBRATION / ABSTENTION TOKENS (not a physical law):
+  full20 ECE raw=0.2443 calibrated=0.0207 n=4677 n_heldout=2339
+  NOTE: calibrated=0.0207 is inventory only; NOT A PRINTED CLAIM. Printed face uses raw 0.2443 (n_held-out=2339) only.
+  coverage-accuracy Spearman (10 operating points)=-0.8788  [descriptive; n_points=10]
+  full coverage accuracy=0.7948  half coverage accuracy=0.8487
+
+WHY THIS IS NOT OPTION (a):
+  - No committed kcal/mol slope, intercept, or residual law vs experimental ΔΔG.
+  - Antibody–antigen Spearman CI lower bound is 0.00179 (near 0); not a judged A≠B collapse.
+  - Non-interface CI includes 0; manuscript already scopes it as corroborative / range-restricted.
+  - Coverage vs accuracy is an in-panel operating curve on ClinVar, not a physical measurement.
+  - ECE drop is a ClinVar calibration token (in-panel Platt), not transport to a new lab.
+
+MEASUREMENT THAT WOULD BE REQUIRED FOR A LAW PAPER:
+  Paired experimental free-energy or binding measurements (kcal/mol) on a physically
+  held-out condition (new partner, temperature, or complex), with a fitted quantitative
+  map (slope, intercept, residual distribution) whose uncertainty is estimated on that
+  hold-out; and/or an experimental pathogenic/benign outcome measured outside UniRef and
+  ClinVar. Another AUROC or ECE table would not clear the bar.
+
+VERDICT: option (b). Reliability atlas. Do not manufacture a law figure.

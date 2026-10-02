@@ -1,0 +1,171 @@
+\pdfminorversion=7
+\documentclass[12pt]{article}
+
+% === Wiley "Proteins: Structure, Function, and Bioinformatics" -- initial (peer-review) submission ===
+% The journal's reference style is AMA (numbered, superscript citations in order of appearance).
+% Final camera-ready typesetting uses Wiley's official WileyNJD-v2 class with the [AMA] option; this
+% source is a clean, self-contained article-class version compliant with Wiley free-format initial
+% submission (double-spaced, line-numbered, AMA-numbered references).
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{newtxtext,newtxmath}   % Times-like serif text + matching math (Wiley/Proteins house style)
+% Keep URLs breakable without requesting the unavailable T1/ntxtt typewriter
+% shapes that cause font substitution in the submission PDF.
+\usepackage{xurl}
+\usepackage{microtype}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\singlespacing
+\usepackage{lineno}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{authblk}
+\usepackage{caption}
+\usepackage[super,sort&compress]{natbib}   % AMA-style numbered superscript citations
+\usepackage{nameref,hyperref}
+\hypersetup{
+  colorlinks=true,
+  allcolors=blue,
+  pdftitle={Reliability boundaries of protein language model zero-shot variant scores},
+  pdfauthor={Zeyu Fu},
+  pdfsubject={Reliability atlas of ESM-2 zero-shot mutation-effect scores}
+}
+\urlstyle{same}
+\Urlmuskip=0mu plus 1mu\relax
+\emergencystretch=4em   % absorb the occasional long unbreakable token in justified text
+
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+\renewcommand{\topfraction}{0.90}
+\renewcommand{\textfraction}{0.08}
+\renewcommand{\floatpagefraction}{0.75}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+\displaywidowpenalty=10000
+\brokenpenalty=10000
+
+\setcounter{secnumdepth}{0}   % unnumbered section headings (matches the original layout)
+
+% Captions carry their own "Fig N." / "Table N." prefix in the source text, so suppress the
+% automatic "Figure N:" label to avoid double numbering.
+\captionsetup{labelformat=empty,labelsep=none,justification=justified,font=small,skip=5pt}
+
+\title{Reliability boundaries of protein language model zero-shot variant scores}
+
+\author[1]{Zeyu Fu\thanks{Correspondence: \href{mailto:fuzeyu99@126.com}{fuzeyu99@126.com}. ORCID: 0009-0001-8329-0108}}
+\affil[1]{State Key Laboratory of Trauma and Chemical Poisoning, Institute of Combined Injury, Chongqing Engineering Research Center for Nanomedicine, College of Preventive Medicine, Army Medical University, Chongqing, China}
+
+\date{}
+\input{text/clinical_values_20260923}
+
+\begin{document}
+\begin{center}
+{\large\bfseries Supporting Information}\par\smallskip
+{\large Reliability boundaries of protein language model zero-shot variant scores}\par\medskip
+\end{center}
+\noindent\textbf{Author-review revision, 23 September 2026 --- not submission-ready.}
+Supplementary figures S1--S9 retain the original non-clinical evidence.
+Clinical panels S2 and S9 are historical summary-level sensitivities;
+the gnomAD cohort and missing clinical predictor comparison were not newly
+rescored here. Tables S1--S2 use the recovered clinical score version.
+Independent scientific review and final visual acceptance remain open.
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/FS1_proteingym_atlas.pdf}
+\input{captions/figs1}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/FS2_gnomad_control.pdf}
+\input{captions/figs2}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/FS3_antibody_robustness.pdf}
+\input{captions/figs3}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/FS4_abstention_tiers.pdf}
+\input{captions/figs4}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/FS5_vep_comparison.pdf}
+\input{captions/figs5}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/F2_cross_model.pdf}
+\input{captions/figs6}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/F6_protein_uq.pdf}
+\input{captions/figs7}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/F9_antibody_lm.pdf}
+\input{captions/figs8}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth,height=0.70\textheight,keepaspectratio]{figures/F10_reliability_predictor.pdf}
+\input{captions/figs9}
+\end{figure}
+
+
+\clearpage
+\section{Same-score clinical analysis}
+\begin{table}[!htbp]
+\centering\small
+\input{text/clinical_table_20260923}
+\caption{{\bf Table S1. Five-fold clinical probability scores.} All point
+estimates use 4,677 out-of-fold predictions from the recovered N6c-compatible
+LLRs. Brier refit ranges are the 2.5th--97.5th percentiles of 1,000
+identity-grouped, gene-by-class-stratified refitting draws. They are not
+intervals centred on the fixed-fold point and need not contain it.
+The near-zero ECE of pooled prevalence is not evidence of useful variant
+discrimination. Gene and class composition are fixed by the resampling
+design; no clinical-transport inference is made.}
+\end{table}
+
+\begin{table}[!htbp]
+\centering\small
+\begin{tabular}{lrrr}
+\toprule
+Map & OOF ECE & Refit mean & Refit percentile range \\
+\midrule
+Platt & 0.0211 & 0.0247 & [0.0165, 0.0335] \\
+Isotonic & 0.0083 & 0.0159 & [0.0090, 0.0253] \\
+\bottomrule
+\end{tabular}
+\caption{{\bf Table S2. Original OOF estimates and refitting distributions.}
+These quantities are reported separately to expose resampling and refitting
+shifts, not adjusted to reproduce an earlier calibration value. First- and
+second-half Platt ECE ranges are [0.0160, 0.0333] and [0.0168, 0.0337];
+isotonic ranges are [0.0090, 0.0243] and [0.0090, 0.0257]. All draws and
+fold-specific OOF predictions are retained in the reproducibility data.}
+\end{table}
+
+The recovered table contains 1,108 pathogenic and 3,569 benign variants.
+Per-gene discrimination, per-gene calibration and all reliability-bin
+coordinates are separately exported. Historical clinical intervals,
+six-gene calibration, Cox/Holm conclusions and degradation counts are not
+reused as current evidence. The pooled calibrators use gene-mixed fitting
+folds, so the corrected experiment tests within-panel calibration only.
+\end{document}

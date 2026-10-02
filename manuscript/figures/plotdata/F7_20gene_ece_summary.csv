@@ -1,0 +1,5 @@
+panel,score,ece,n,n_heldout,source
+full20,raw,0.2443,4677,2339,clinical_calibration_full20.json
+full20,calibrated,0.0207,4677,2339,clinical_calibration_full20.json
+sixgene,raw,0.1574,1093,547,F7_reliability.csv + clinical_calibration.json
+sixgene,calibrated,0.0466,1093,547,F7_reliability.csv + clinical_calibration.json

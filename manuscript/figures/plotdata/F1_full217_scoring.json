@@ -1,0 +1,31 @@
+{
+  "analysis": "full ProteinGym ESM-2 650M raw-score comparison",
+  "estimator": "per-assay AUROC, averaged within protein, then equal-protein mean",
+  "n_attempted_assays": 217,
+  "results": {
+    "WT-marginal": {
+      "n_discriminating_proteins": 150,
+      "n_proteins": 173,
+      "n_rows": 79220,
+      "n_scored_assays": 201,
+      "protein_mean_auroc": 0.7021032243754214
+    },
+    "masked-marginal": {
+      "n_discriminating_proteins": 152,
+      "n_proteins": 173,
+      "n_rows": 79220,
+      "n_scored_assays": 201,
+      "protein_mean_auroc": 0.6956082434037282
+    }
+  },
+  "sources": {
+    "WT-marginal": {
+      "file": "manifest_650M_wt.csv",
+      "sha256": "8e23b36a2da18c7ff9ed1cae75e36dafd42658da6694d6e7fd2b6b9013d46475"
+    },
+    "masked-marginal": {
+      "file": "manifest_650M_masked.csv",
+      "sha256": "83c5a6259f68d9e32a4191f5a7d114a55a3692c23c34478f75188bba850df180"
+    }
+  }
+}

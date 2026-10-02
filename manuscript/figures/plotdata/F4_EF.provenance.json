@@ -1,0 +1,45 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F4",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "eac538208ee04bb4a9c0a96e66cd0cf948064210ba1e264fea1673002d8329d1",
+  "schema_version": 1,
+  "scientific_payload_sha256": "eac538208ee04bb4a9c0a96e66cd0cf948064210ba1e264fea1673002d8329d1",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "gene",
+        "n_overlap",
+        "auroc_esm2",
+        "esm2_lo",
+        "esm2_hi",
+        "auroc_esm1v",
+        "esm1v_lo",
+        "esm1v_hi"
+      ],
+      "path": "manuscript/figures/plotdata/F7_headtohead.csv",
+      "rows": 4,
+      "sha256": "8de9595ef64cd26518e1a6f90fb5b3c8f86c9020025ee057bacf49d31c0e488b"
+    },
+    {
+      "columns": [
+        "coverage",
+        "accuracy",
+        "error",
+        "pathogenic_precision",
+        "n_kept",
+        "n_pathogenic_calls"
+      ],
+      "path": "manuscript/figures/plotdata/F7_coverage.csv",
+      "rows": 10,
+      "sha256": "051381eab0cecde67b88737f5a7767b77b74b43f424841d82ca5e991e86f26e4"
+    }
+  ]
+}

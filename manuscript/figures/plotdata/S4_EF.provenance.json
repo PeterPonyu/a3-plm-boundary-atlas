@@ -1,0 +1,49 @@
+{
+  "blocked_downstream_actions": [
+    {
+      "action": "replace_with",
+      "panel": "F",
+      "reason": "Committed tier table stores aggregate AUROCs without protein-level scores.",
+      "target": "S4 locked coverage sensitivity"
+    }
+  ],
+  "blocked_reasons": [
+    "Committed tier table stores aggregate AUROCs without protein-level scores."
+  ],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S4",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "97255e852d0c91258604e5aad248c8a856faa9bc00ff7bed38b039716358598d",
+  "schema_version": 1,
+  "scientific_payload_sha256": "97255e852d0c91258604e5aad248c8a856faa9bc00ff7bed38b039716358598d",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "order",
+        "tier",
+        "condition",
+        "auroc",
+        "anti_helpful"
+      ],
+      "path": "manuscript/figures/plotdata/FS4_abstention_tiers.csv",
+      "rows": 12,
+      "sha256": "61f05e9fbf418a83b91ec21be3a8d403881057c851ff01c146a3ac42e7415d7e"
+    },
+    {
+      "columns": [
+        "coverage",
+        "conf_auroc",
+        "shuffle_auroc",
+        "n_proteins"
+      ],
+      "path": "manuscript/figures/plotdata/FS4_abstention_coverage.csv",
+      "rows": 6,
+      "sha256": "b556222588812c69833bb86262a8508cf4af5667533d32e7c0d7ce33a62d3c63"
+    }
+  ]
+}

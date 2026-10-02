@@ -1,0 +1,45 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "F1",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "9bf325596e2785cdb122fa2626e92f039b96c5d533f734fe57a15ea3727fe7de",
+  "schema_version": 1,
+  "scientific_payload_sha256": "9bf325596e2785cdb122fa2626e92f039b96c5d533f734fe57a15ea3727fe7de",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "protein",
+        "auroc_650m_masked",
+        "auroc_3b_masked",
+        "delta_3b_minus_650m"
+      ],
+      "path": "manuscript/figures/plotdata/F1_scale_paired_650M_3B.csv",
+      "rows": 69,
+      "sha256": "6496354cf21a4fc87954ace959d754bcc0f470f3dd6c7dbcde3177ab1a2c3d8c"
+    },
+    {
+      "columns": [
+        "model",
+        "scoring",
+        "score_field",
+        "n_attempted_assays",
+        "n_scored_assays",
+        "n_proteins",
+        "n_variants",
+        "protein_mean_auroc",
+        "n_discriminating_proteins",
+        "fraction_discriminating_proteins"
+      ],
+      "path": "manuscript/figures/plotdata/F1_full217_scoring.csv",
+      "rows": 2,
+      "sha256": "243493d2fcb7724644465e9a96efd9c350672fce3126db143ad9b83c9451f278"
+    }
+  ]
+}

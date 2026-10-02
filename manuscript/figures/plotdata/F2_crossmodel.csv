@@ -1,0 +1,4 @@
+model,family,protein_mean_auroc
+ProtBERT,BERT/UniRef100+BFD,0.711
+ESM-2 650M (masked),ESM/UR50,0.725
+ESM-2 650M (WT),ESM/UR50,0.728

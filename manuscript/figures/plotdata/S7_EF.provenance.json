@@ -1,0 +1,43 @@
+{
+  "blocked_downstream_actions": [],
+  "blocked_reasons": [],
+  "command": "export_a3_expansion_tables.py --root <capsule> --output-dir <dir>",
+  "cpu_only": true,
+  "exporter_sha256": "a989a9c54ee8244c9f33b42b89faa1892892dae03556688befdf4ed5fd78e85a",
+  "figure": "S7",
+  "merge_or_retire_recommendation": "Do not treat E/F payloads as canonical panels until Task 6 renderer and Task 7 manuscript gates pass.",
+  "output_sha256": "36d3cb7ec2f5ce08b5d1fae2b12485802f1e3683c50c8e153f053fb751928c2d",
+  "schema_version": 1,
+  "scientific_payload_sha256": "36d3cb7ec2f5ce08b5d1fae2b12485802f1e3683c50c8e153f053fb751928c2d",
+  "seed": "20260824",
+  "source_contract_sha256": "4b9cef1d0ab300fb76722b36033c751de16da570dae26f479177324993adaa3c",
+  "source_date_policy": "deterministic; no wall-clock timestamp",
+  "sources": [
+    {
+      "columns": [
+        "method",
+        "mean_rho_unc_all",
+        "mean_rho_unc_highshift",
+        "ucb_beats_greedy",
+        "ucb_beats_random",
+        "n_splits"
+      ],
+      "path": "manuscript/figures/plotdata/F9_summary.csv",
+      "rows": 4,
+      "sha256": "7090ff790816fafabe5a9711b1abc854648bf9bae5add3e28a2be85c7b45f9a6"
+    },
+    {
+      "columns": [
+        "split",
+        "shift_class",
+        "greedy",
+        "ucb",
+        "random",
+        "thompson"
+      ],
+      "path": "manuscript/figures/plotdata/F9_bo_acquisition.csv",
+      "rows": 7,
+      "sha256": "e0ac52a02bc732fd966820a2e98651f9d7137ef72b7bcd99643ddc0a8c6cbadc"
+    }
+  ]
+}
